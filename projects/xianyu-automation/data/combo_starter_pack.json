@@ -1,0 +1,191 @@
+{
+  "strategy": "组合打法 - 引流+利润+稳定",
+  "total_products": 6,
+  "pricing_strategy": {
+    "引流款": "¥9.9-19（低价吸引流量）",
+    "利润款": "¥39-59（中高客单价）",
+    "稳定款": "¥19-29（长期稳定收入）"
+  },
+  "products": [
+    {
+      "id": "combo_001",
+      "type": "引流款",
+      "category": "AI工具",
+      "title": "【网盘秒发】ChatGPT提示词大全1000+",
+      "price": 9.9,
+      "original_price": 99,
+      "condition": "全新",
+      "format": "百度网盘",
+      "size": "500MB",
+      "includes": [
+        "1000+各行业提示词模板",
+        "提示词编写公式",
+        "使用技巧文档",
+        "持续更新（已更新至3月）"
+      ],
+      "hot_keywords": ["ChatGPT", "提示词", "AI", "Prompt"],
+      "reason": "自己整理的提示词库，非常实用",
+      "delivery": "自动发货",
+      "status": "active",
+      "views": 0,
+      "wants": 0,
+      "strategy": "低价引流，建立信任，引导购买利润款",
+      "expected_daily_sales": "3-5单"
+    },
+    {
+      "id": "combo_002",
+      "type": "引流款",
+      "category": "考试资料",
+      "title": "【自动发货】四六级真题2015-2024",
+      "price": 15,
+      "original_price": 89,
+      "condition": "全新",
+      "format": "百度网盘+PDF",
+      "size": "2GB",
+      "includes": [
+        "历年真题+详细解析",
+        "高频词汇表",
+        "作文万能模板",
+        "听力音频+原文",
+        "答题技巧总结"
+      ],
+      "hot_keywords": ["四六级", "真题", "英语", "考试"],
+      "reason": "自己备考收集的资料，已上岸",
+      "delivery": "自动发货",
+      "status": "active",
+      "views": 0,
+      "wants": 0,
+      "strategy": "考试季爆款，需求稳定",
+      "expected_daily_sales": "2-4单"
+    },
+    {
+      "id": "combo_003",
+      "type": "利润款",
+      "category": "AI工具",
+      "title": "【全套资料】Midjourney AI绘画从入门到精通",
+      "price": 39,
+      "original_price": 299,
+      "condition": "全新",
+      "format": "百度网盘",
+      "size": "15GB",
+      "includes": [
+        "入门到精通视频课程",
+        "5000+提示词库",
+        "风格参考图库",
+        "商业案例拆解",
+        "接单变现指南",
+        "软件安装包"
+      ],
+      "hot_keywords": ["AI绘画", "Midjourney", "设计", "副业"],
+      "reason": "系统学习的课程，内容很干货",
+      "delivery": "自动发货",
+      "status": "active",
+      "views": 0,
+      "wants": 0,
+      "strategy": "高价值感，配合引流款提高客单价",
+      "expected_daily_sales": "1-2单"
+    },
+    {
+      "id": "combo_004",
+      "type": "利润款",
+      "category": "副业变现",
+      "title": "【亲测有效】小红书运营变现SOP",
+      "price": 49,
+      "original_price": 1999,
+      "condition": "全新",
+      "format": "百度网盘",
+      "size": "8GB",
+      "includes": [
+        "起号方法论（0-1万粉）",
+        "爆款文案模板100套",
+        "选题库（365个选题）",
+        "变现攻略（5种变现方式）",
+        "数据分析技巧",
+        "社群运营SOP",
+        "对接资源（pr/品牌方）"
+      ],
+      "hot_keywords": ["小红书", "运营", "变现", "自媒体"],
+      "reason": "自己实操总结的方法论，已变现",
+      "delivery": "自动发货",
+      "status": "active",
+      "views": 0,
+      "wants": 0,
+      "strategy": "最高客单价，筛选优质客户",
+      "expected_daily_sales": "1单"
+    },
+    {
+      "id": "combo_005",
+      "type": "稳定款",
+      "category": "考试资料",
+      "title": "【全套】考研英语一/二真题+解析",
+      "price": 29,
+      "original_price": 159,
+      "condition": "全新",
+      "format": "百度网盘+PDF",
+      "size": "5GB",
+      "includes": [
+        "2000-2024年真题",
+        "详细解析+答案",
+        "词汇书PDF",
+        "长难句分析",
+        "作文模板",
+        "学习计划表"
+      ],
+      "hot_keywords": ["考研", "英语", "真题", "研究生"],
+      "reason": "考研自用资料，已上岸",
+      "delivery": "自动发货",
+      "status": "active",
+      "views": 0,
+      "wants": 0,
+      "strategy": "全年需求，3-6月和9-12月高峰期",
+      "expected_daily_sales": "2-3单"
+    },
+    {
+      "id": "combo_006",
+      "type": "稳定款",
+      "category": "技能提升",
+      "title": "【系统课程】Python数据分析入门到实战",
+      "price": 29,
+      "original_price": 399,
+      "condition": "全新",
+      "format": "百度网盘",
+      "size": "20GB",
+      "includes": [
+        "基础语法到进阶视频",
+        "数据分析实战项目",
+        "爬虫技术入门",
+        "源码+数据集",
+        "面试题库",
+        "学习路线图"
+      ],
+      "hot_keywords": ["Python", "数据分析", "编程", "教程"],
+      "reason": "转行学习用的课程，已找到工作",
+      "delivery": "自动发货",
+      "status": "active",
+      "views": 0,
+      "wants": 0,
+      "strategy": "技能类长期需求，复购率高",
+      "expected_daily_sales": "1-2单"
+    }
+  ],
+  "revenue_projection": {
+    "conservative": {
+      "daily_sales": "5-8单",
+      "avg_price": "¥25",
+      "daily_revenue": "¥125-200",
+      "monthly_revenue": "¥3750-6000"
+    },
+    "optimistic": {
+      "daily_sales": "10-15单",
+      "avg_price": "¥30",
+      "daily_revenue": "¥300-450",
+      "monthly_revenue": "¥9000-13500"
+    }
+  },
+  "operation_strategy": {
+    "week1": "发布引流款，测试市场反应",
+    "week2": "上架利润款，优化标题价格",
+    "week3": "稳定款补全，建立商品矩阵",
+    "week4": "数据分析，优化转化率"
+  }
+}

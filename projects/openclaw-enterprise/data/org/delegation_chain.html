@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>任务委派链</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        .chain-item {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .chain-level {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .chain-content {
+            flex: 1;
+        }
+        .chain-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .chain-meta {
+            font-size: 13px;
+            color: #666;
+        }
+        .chain-assignee {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 16px;
+            background: #f8f9fa;
+            border-radius: 20px;
+        }
+        .assignee-avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .arrow {
+            text-align: center;
+            color: #999;
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .status-badge {
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .status-backlog { background: #e9ecef; color: #666; }
+        .status-todo { background: #cce5ff; color: #004085; }
+        .status-in_progress { background: #fff3cd; color: #856404; }
+        .status-review { background: #d4edda; color: #155724; }
+        .status-done { background: #d1ecf1; color: #0c5460; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📋 任务委派链</h1>
+            <p>当前活跃的任务委派关系</p>
+        </div>
+
+        <div class="chain-item">
+            <div class="chain-level">L0</div>
+            <div class="chain-content">
+                <div class="chain-title">生成闲鱼商品内容</div>
+                <div class="chain-meta">TK-39A3D071 | 创建: 2026-03-11</div>
+            </div>
+            <div class="chain-assignee">
+                <div class="assignee-avatar">B</div>
+                <span>@bingbing</span>
+            </div>
+            <span class="status-badge status-backlog">backlog</span>
+        </div>
+
+        <div class="arrow">↓</div>
+        <div class="chain-item" style="margin-left: 40px;">
+            <div class="chain-level">L1</div>
+            <div class="chain-content">
+                <div class="chain-title">编写Python脚本</div>
+                <div class="chain-meta">TK-C4BC456B | 父任务: TK-39A3D071</div>
+            </div>
+            <div class="chain-assignee">
+                <div class="assignee-avatar">Y</div>
+                <span>@yitai</span>
+            </div>
+            <span class="status-badge status-backlog">backlog</span>
+        </div>
+
+    </div>
+</body>
+</html>

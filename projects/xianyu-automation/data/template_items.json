@@ -1,0 +1,80 @@
+{
+  "digital": [
+    {
+      "id": "digital_001",
+      "category": "手机",
+      "brand": "Apple",
+      "model": "iPhone 13",
+      "storage": "128G",
+      "color": "星光色",
+      "condition": "95新",
+      "price": 3500,
+      "original_price": 5999,
+      "purchase_date": "2022-06",
+      "warranty": "已过保",
+      "accessories": ["原装充电线", "原盒", "发票"],
+      "reason": "换了iPhone 15，这台出掉",
+      "photos": ["front.jpg", "back.jpg", "details.jpg"]
+    },
+    {
+      "id": "digital_002",
+      "category": "耳机",
+      "brand": "Apple",
+      "model": "AirPods Pro 2",
+      "color": "白色",
+      "condition": "99新",
+      "price": 1400,
+      "original_price": 1899,
+      "purchase_date": "2024-01",
+      "warranty": "剩8个月",
+      "accessories": ["充电盒", "备用耳塞", "原盒"],
+      "reason": "戴不习惯入耳式，出了",
+      "photos": ["case.jpg", "buds.jpg"]
+    }
+  ],
+  "clothing": [
+    {
+      "id": "clothing_001",
+      "category": "外套",
+      "brand": "优衣库",
+      "model": "羽绒服",
+      "size": "L",
+      "color": "黑色",
+      "condition": "9成新",
+      "price": 199,
+      "original_price": 599,
+      "purchase_date": "2023-11",
+      "reason": "尺码买大了，只穿过2次",
+      "photos": ["front.jpg", "tag.jpg"]
+    }
+  ],
+  "home": [
+    {
+      "id": "home_001",
+      "category": "小家电",
+      "brand": "小米",
+      "model": "空气净化器",
+      "condition": "95新",
+      "price": 280,
+      "original_price": 699,
+      "purchase_date": "2023-03",
+      "warranty": "剩1年",
+      "accessories": ["电源线", "说明书", "滤芯"],
+      "reason": "搬家带不走",
+      "photos": ["main.jpg", "filter.jpg"]
+    }
+  ],
+  "books": [
+    {
+      "id": "book_001",
+      "category": "图书",
+      "title": "Python编程：从入门到实践",
+      "author": "Eric Matthes",
+      "condition": "99新",
+      "price": 35,
+      "original_price": 89,
+      "reason": "已读完，转给需要的人",
+      "photos": ["cover.jpg", "content.jpg"]
+    }
+  ]
+}

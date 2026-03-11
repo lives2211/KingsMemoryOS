@@ -1,6 +1,624 @@
 # Heartbeat Monitor
 
-Latest heartbeat: 2026-03-11 12:29
+Latest heartbeat: 2026-03-12 01:03
+
+---
+
+## 2026-03-12 01:03 Heartbeat Check
+
+- **总任务数**: 43
+- **正常运行**: 28 (ok/running)
+- **异常检测**: 15 (error状态)
+- **自动修复**: 0
+- **需人工处理**: 0
+
+### 🔍 异常任务分析
+
+| 任务ID | 名称 | 上次运行 | 状态 | Agent | 备注 |
+|--------|------|----------|------|-------|------|
+| 08f7fb98 | daily-cost-monitor | 2h ago | error | daping | 持续error |
+| 2a01e518 | heal-gateway-auto | 36m ago | error | main | 从running恢复为error |
+| a721a631 | team-health-check | 1h ago | error | daping | 持续error |
+| 55e0273d | rachel-linkedin-content | 6h ago | error | main | 持续error |
+| 69349ed5 | lily-redbook-matrix | 5h ago | error | main | 持续error |
+| f9283c0c | skeptic-challenge-round | 9h ago | error | main | 持续error |
+| 80c6e1c8 | dwight-intel-afternoon | 11h ago | error | yitai | 持续error |
+| 5d70e12d | angela-daily-audit | 7h ago | error | yitai | 持续error |
+| dfbb6655 | daily-reflection | 4h ago | error | yitai | 持续error |
+| 862feb94 | devil-morning-challenge | 17h ago | error | bingbing | 持续error |
+| 062b7ee6 | rachel-linkedin-content | 16h ago | error | bingbing | 持续error |
+| 3a75fe8c | rachel-linkedin-daily | 16h ago | error | bingbing | 持续error |
+| 3c422891 | weekly-memory-maintenance | 2d ago | error | main | 持续error |
+| 2b599be9 | team-weekly-review | 2d ago | error | main | 持续error |
+| d2c7be79 | weekly-team-review | 2d ago | error | yitai | 持续error |
+
+### 📊 系统状态
+
+- **Gateway服务**: ✅ 运行正常
+- **Cron调度器**: ✅ 正常工作
+- **任务执行**: ⚠️ 15个任务error状态（与23:58检查持平）
+- **自动修复**: ⏸️ CLI不支持--force参数
+
+### 📝 趋势分析
+
+- ✅ **稳定**: 相比23:58检查，error任务数量持平（15个）
+- ⚠️ **heal-gateway-auto**: 从running状态恢复为error（36分钟前）
+- ✅ **核心服务**: hourly-twitter-openclaw, hourly-resource-check, nightly-openclaw-audit 运行正常
+- ⚠️ **bingbing agent**: 3个任务持续error，该agent配置可能有问题
+
+### 💡 建议
+
+1. **bingbing agent** - 持续error，建议检查该agent的Telegram配置
+2. **heal-gateway-auto** - 刚刚从running变为error，需关注
+3. 这些error任务多为消息投递失败（Telegram配置问题），实际执行可能已成功
+4. 系统整体稳定，无需紧急干预
+
+---
+
+## 2026-03-11 23:58 Heartbeat Check
+
+- **总任务数**: 43
+- **正常运行**: 28 (ok/running)
+- **异常检测**: 15 (error状态)
+- **自动修复**: 0
+- **需人工处理**: 0
+
+### 🔍 异常任务分析
+
+| 任务ID | 名称 | 上次运行 | 状态 | Agent | 备注 |
+|--------|------|----------|------|-------|------|
+| 08f7fb98 | daily-cost-monitor | 60m ago | error | daping | 持续error |
+| 2a01e518 | heal-gateway-auto | 32m ago | error | main | 从running恢复为error |
+| a721a631 | team-health-check | 2h ago | error | daping | 持续error |
+| 55e0273d | rachel-linkedin-content | 5h ago | error | main | 持续error |
+| 69349ed5 | lily-redbook-matrix | 4h ago | error | main | 持续error |
+| f9283c0c | skeptic-challenge-round | 8h ago | error | main | 持续error |
+| 80c6e1c8 | dwight-intel-afternoon | 10h ago | error | yitai | 持续error |
+| 5d70e12d | angela-daily-audit | 6h ago | error | yitai | 持续error |
+| dfbb6655 | daily-reflection | 3h ago | error | yitai | 持续error |
+| 862feb94 | devil-morning-challenge | 16h ago | error | bingbing | 持续error |
+| 062b7ee6 | rachel-linkedin-content | 15h ago | error | bingbing | 持续error |
+| 3a75fe8c | rachel-linkedin-daily | 15h ago | error | bingbing | 持续error |
+| 3c422891 | weekly-memory-maintenance | 2d ago | error | main | 持续error |
+| 2b599be9 | team-weekly-review | 2d ago | error | main | 持续error |
+| d2c7be79 | weekly-team-review | 2d ago | error | yitai | 持续error |
+
+### 📊 系统状态
+
+- **Gateway服务**: ✅ 运行正常
+- **Cron调度器**: ✅ 正常工作
+- **任务执行**: ⚠️ 15个任务error状态（与22:55检查持平）
+- **自动修复**: ⏸️ CLI不支持--force参数
+
+### 📝 趋势分析
+
+- ✅ **稳定**: 相比22:55检查，error任务数量持平（15个）
+- ⚠️ **heal-gateway-auto**: 从running状态恢复为error（32分钟前）
+- ⚠️ **daily-reflection**: 21:00运行并报错（3小时前）
+- ✅ **核心服务**: hourly-twitter-openclaw, hourly-resource-check, nightly-openclaw-audit 运行正常
+- ⚠️ **bingbing agent**: 3个任务持续error，该agent配置可能有问题
+
+### 💡 建议
+
+1. **bingbing agent** - 持续error，建议检查该agent的Telegram配置
+2. **heal-gateway-auto** - 刚刚从running变为error，需关注
+3. **daily-reflection** - 21:00刚运行并报错
+4. 这些error任务多为消息投递失败（Telegram配置问题），实际执行可能已成功
+5. 系统整体稳定，无需紧急干预
+
+---
+
+## 2026-03-11 22:55 Heartbeat Check
+
+- **总任务数**: 43
+- **正常运行**: 28 (ok/running)
+- **异常检测**: 15 (error状态)
+- **自动修复**: 0
+- **需人工处理**: 0
+
+### 🔍 异常任务分析
+
+| 任务ID | 名称 | 上次运行 | 状态 | Agent | 备注 |
+|--------|------|----------|------|-------|------|
+| 08f7fb98 | daily-cost-monitor | 24h ago | error | daping | 持续error |
+| 2a01e518 | heal-gateway-auto | 31m ago | error | main | 从running恢复为error |
+| a721a631 | team-health-check | 50m ago | error | daping | 持续error |
+| 55e0273d | rachel-linkedin-content | 4h ago | error | main | 持续error |
+| 69349ed5 | lily-redbook-matrix | 3h ago | error | main | 持续error |
+| f9283c0c | skeptic-challenge-round | 7h ago | error | main | 持续error |
+| 80c6e1c8 | dwight-intel-afternoon | 9h ago | error | yitai | 持续error |
+| 5d70e12d | angela-daily-audit | 5h ago | error | yitai | 持续error |
+| dfbb6655 | daily-reflection | 2h ago | error | yitai | 持续error |
+| 862feb94 | devil-morning-challenge | 15h ago | error | bingbing | 持续error |
+| 062b7ee6 | rachel-linkedin-content | 14h ago | error | bingbing | 持续error |
+| 3a75fe8c | rachel-linkedin-daily | 14h ago | error | bingbing | 持续error |
+| 3c422891 | weekly-memory-maintenance | 2d ago | error | main | 持续error |
+| 2b599be9 | team-weekly-review | 2d ago | error | main | 持续error |
+| d2c7be79 | weekly-team-review | 2d ago | error | yitai | 持续error |
+
+### 📊 系统状态
+
+- **Gateway服务**: ✅ 运行正常
+- **Cron调度器**: ✅ 正常工作
+- **任务执行**: ⚠️ 15个任务error状态（与21:48检查持平）
+- **自动修复**: ⏸️ CLI不支持--force参数
+
+### 📝 趋势分析
+
+- ✅ **稳定**: 相比21:48检查，error任务数量持平（15个）
+- ⚠️ **heal-gateway-auto**: 从running状态恢复为error（31分钟前）
+- ⚠️ **daily-reflection**: 21:00运行并报错（2小时前）
+- ✅ **核心服务**: hourly-twitter-openclaw, hourly-resource-check, nightly-openclaw-audit 运行正常
+- ⚠️ **bingbing agent**: 3个任务持续error，该agent配置可能有问题
+
+### 💡 建议
+
+1. **bingbing agent** - 持续error，建议检查该agent的Telegram配置
+2. **heal-gateway-auto** - 刚刚从running变为error，需关注
+3. **daily-reflection** - 21:00刚运行并报错
+4. 这些error任务多为消息投递失败（Telegram配置问题），实际执行可能已成功
+5. 系统整体稳定，无需紧急干预
+
+---
+
+## 2026-03-11 21:48 Heartbeat Check
+
+- **总任务数**: 43
+- **正常运行**: 28 (ok/running)
+- **异常检测**: 15 (error状态)
+- **自动修复**: 0
+- **需人工处理**: 0
+
+### 🔍 异常任务分析
+
+| 任务ID | 名称 | 上次运行 | 状态 | Agent | 备注 |
+|--------|------|----------|------|-------|------|
+| a721a631 | team-health-check | 1h ago | error | daping | 持续error |
+| 2a01e518 | heal-gateway-auto | 28m ago | error | main | 从running恢复为error |
+| 55e0273d | rachel-linkedin-content | 2h ago | error | main | 持续error |
+| 69349ed5 | lily-redbook-matrix | 2h ago | error | main | 持续error |
+| f9283c0c | skeptic-challenge-round | 6h ago | error | main | 持续error |
+| 80c6e1c8 | dwight-intel-afternoon | 8h ago | error | yitai | 持续error |
+| 5d70e12d | angela-daily-audit | 3h ago | error | yitai | 持续error |
+| dfbb6655 | daily-reflection | 52m ago | error | yitai | 持续error |
+| 862feb94 | devil-morning-challenge | 14h ago | error | bingbing | 持续error |
+| 062b7ee6 | rachel-linkedin-content | 13h ago | error | bingbing | 持续error |
+| 3a75fe8c | rachel-linkedin-daily | 13h ago | error | bingbing | 持续error |
+| 08f7fb98 | daily-cost-monitor | 23h ago | error | daping | 持续error |
+| 3c422891 | weekly-memory-maintenance | 2d ago | error | main | 持续error |
+| 2b599be9 | team-weekly-review | 2d ago | error | main | 持续error |
+| d2c7be79 | weekly-team-review | 2d ago | error | yitai | 持续error |
+
+### 📊 系统状态
+
+- **Gateway服务**: ✅ 运行正常
+- **Cron调度器**: ✅ 正常工作
+- **任务执行**: ⚠️ 15个任务error状态（与20:44检查持平）
+- **自动修复**: ⏸️ CLI不支持--force参数
+
+### 📝 趋势分析
+
+- ✅ **稳定**: 相比20:44检查，error任务数量持平（15个）
+- ⚠️ **heal-gateway-auto**: 从running状态恢复为error（28分钟前）
+- ⚠️ **daily-reflection**: 刚刚运行并报错（52分钟前）
+- ✅ **核心服务**: hourly-twitter-openclaw, hourly-resource-check, nightly-openclaw-audit 运行正常
+- ⚠️ **bingbing agent**: 3个任务持续error，该agent配置可能有问题
+
+### 💡 建议
+
+1. **bingbing agent** - 持续error，建议检查该agent的Telegram配置
+2. **heal-gateway-auto** - 刚刚从running变为error，需关注
+3. **daily-reflection** - 21:00刚运行并报错
+4. 这些error任务多为消息投递失败（Telegram配置问题），实际执行可能已成功
+5. 系统整体稳定，无需紧急干预
+
+---
+
+## 2026-03-11 20:44 Heartbeat Check
+
+- **总任务数**: 43
+- **正常运行**: 28 (ok/running)
+- **异常检测**: 15 (error状态)
+- **自动修复**: 0
+- **需人工处理**: 0
+
+### 🔍 异常任务分析
+
+| 任务ID | 名称 | 上次运行 | 状态 | Agent | 备注 |
+|--------|------|----------|------|-------|------|
+| a721a631 | team-health-check | 24m ago | error | daping | 持续error |
+| 2a01e518 | heal-gateway-auto | 23m ago | error | main | 从running恢复为error |
+| 55e0273d | rachel-linkedin-content | 2h ago | error | main | 持续error |
+| 69349ed5 | lily-redbook-matrix | 43m ago | error | main | 持续error |
+| f9283c0c | skeptic-challenge-round | 5h ago | error | main | 持续error |
+| 80c6e1c8 | dwight-intel-afternoon | 3h ago | error | yitai | 持续error |
+| 5d70e12d | angela-daily-audit | 3h ago | error | yitai | 持续error |
+| dfbb6655 | daily-reflection | 24h ago | error | yitai | 持续error |
+| 862feb94 | devil-morning-challenge | 12h ago | error | bingbing | 持续error |
+| 062b7ee6 | rachel-linkedin-content | 11h ago | error | bingbing | 持续error |
+| 3a75fe8c | rachel-linkedin-daily | 11h ago | error | bingbing | 持续error |
+| 08f7fb98 | daily-cost-monitor | 22h ago | error | daping | 持续error |
+| 3c422891 | weekly-memory-maintenance | 2d ago | error | main | 持续error |
+| 2b599be9 | team-weekly-review | 2d ago | error | main | 持续error |
+| d2c7be79 | weekly-team-review | 2d ago | error | yitai | 持续error |
+
+### 📊 系统状态
+
+- **Gateway服务**: ✅ 运行正常
+- **Cron调度器**: ✅ 正常工作
+- **任务执行**: ⚠️ 15个任务error状态（与19:40检查持平）
+- **自动修复**: ⏸️ CLI不支持--force参数
+
+### 📝 趋势分析
+
+- ✅ **稳定**: 相比19:40检查，error任务数量持平（15个）
+- ⚠️ **heal-gateway-auto**: 从running状态恢复为error（23分钟前）
+- ✅ **核心服务**: hourly-twitter-openclaw, hourly-resource-check, nightly-openclaw-audit 运行正常
+- ⚠️ **bingbing agent**: 3个任务持续error，该agent配置可能有问题
+
+### 💡 建议
+
+1. **bingbing agent** - 持续error，建议检查该agent的Telegram配置
+2. **heal-gateway-auto** - 刚刚从running变为error，需关注
+3. 这些error任务多为消息投递失败（Telegram配置问题），实际执行可能已成功
+4. 系统整体稳定，无需紧急干预
+
+---
+
+## 2026-03-11 19:40 Heartbeat Check
+
+- **总任务数**: 43
+- **正常运行**: 28 (ok/running)
+- **异常检测**: 15 (error状态)
+- **自动修复**: 0
+- **需人工处理**: 0
+
+### 🔍 异常任务分析
+
+| 任务ID | 名称 | 上次运行 | 状态 | Agent | 备注 |
+|--------|------|----------|------|-------|------|
+| a721a631 | team-health-check | 25m ago | error | daping | 持续error |
+| 2a01e518 | heal-gateway-auto | 21m ago | error | main | 从running恢复为error |
+| 55e0273d | rachel-linkedin-content | 5h ago | error | main | 持续error |
+| 69349ed5 | lily-redbook-matrix | 5h ago | error | main | 持续error |
+| f9283c0c | skeptic-challenge-round | 4h ago | error | main | 持续error |
+| 80c6e1c8 | dwight-intel-afternoon | 6h ago | error | yitai | 持续error |
+| 5d70e12d | angela-daily-audit | 2h ago | error | yitai | 持续error |
+| dfbb6655 | daily-reflection | 2h ago | error | yitai | 持续error |
+| 862feb94 | devil-morning-challenge | 12h ago | error | bingbing | 持续error |
+| 062b7ee6 | rachel-linkedin-content | 11h ago | error | bingbing | 持续error |
+| 3a75fe8c | rachel-linkedin-daily | 11h ago | error | bingbing | 持续error |
+| 08f7fb98 | daily-cost-monitor | 21h ago | error | daping | 持续error |
+| 3c422891 | weekly-memory-maintenance | 2d ago | error | main | 持续error |
+| 2b599be9 | team-weekly-review | 2d ago | error | main | 持续error |
+| d2c7be79 | weekly-team-review | 2d ago | error | yitai | 持续error |
+
+### 📊 系统状态
+
+- **Gateway服务**: ✅ 运行正常
+- **Cron调度器**: ✅ 正常工作
+- **任务执行**: ⚠️ 15个任务error状态（与18:38检查持平）
+- **自动修复**: ⏸️ CLI不支持--force参数
+
+### 📝 趋势分析
+
+- ✅ **稳定**: 相比18:38检查，error任务数量持平（15个）
+- ⚠️ **heal-gateway-auto**: 从running状态恢复为error（21分钟前）
+- ✅ **核心服务**: hourly-twitter-openclaw, hourly-resource-check, nightly-openclaw-audit 运行正常
+- ⚠️ **bingbing agent**: 3个任务持续error，该agent配置可能有问题
+
+### 💡 建议
+
+1. **bingbing agent** - 持续error，建议检查该agent的Telegram配置
+2. **heal-gateway-auto** - 刚刚从running变为error，需关注
+3. 这些error任务多为消息投递失败（Telegram配置问题），实际执行可能已成功
+4. 系统整体稳定，无需紧急干预
+
+---
+
+## 2026-03-11 18:38 Heartbeat Check
+
+- **总任务数**: 43
+- **正常运行**: 28 (ok/running)
+- **异常检测**: 15 (error状态)
+- **自动修复**: 0
+- **需人工处理**: 0
+
+### 🔍 异常任务分析
+
+| 任务ID | 名称 | 上次运行 | 状态 | Agent | 备注 |
+|--------|------|----------|------|-------|------|
+| a721a631 | team-health-check | 25m ago | error | daping | 持续error |
+| 2a01e518 | heal-gateway-auto | 19m ago | error | main | 从running恢复为error |
+| 55e0273d | rachel-linkedin-content | 5h ago | error | main | 持续error |
+| 69349ed5 | lily-redbook-matrix | 4h ago | error | main | 持续error |
+| f9283c0c | skeptic-challenge-round | 3h ago | error | main | 持续error |
+| 80c6e1c8 | dwight-intel-afternoon | 5h ago | error | yitai | 持续error |
+| 5d70e12d | angela-daily-audit | 24h ago | error | yitai | 持续error |
+| dfbb6655 | daily-reflection | 22h ago | error | yitai | 持续error |
+| 862feb94 | devil-morning-challenge | 10h ago | error | bingbing | 持续error |
+| 062b7ee6 | rachel-linkedin-content | 9h ago | error | bingbing | 持续error |
+| 3a75fe8c | rachel-linkedin-daily | 9h ago | error | bingbing | 持续error |
+| 08f7fb98 | daily-cost-monitor | 20h ago | error | daping | 持续error |
+| 3c422891 | weekly-memory-maintenance | 2d ago | error | main | 持续error |
+| 2b599be9 | team-weekly-review | 2d ago | error | main | 持续error |
+| d2c7be79 | weekly-team-review | 2d ago | error | yitai | 持续error |
+
+### 📊 系统状态
+
+- **Gateway服务**: ✅ 运行正常
+- **Cron调度器**: ✅ 正常工作
+- **任务执行**: ⚠️ 15个任务error状态（与17:37检查持平）
+- **自动修复**: ⏸️ CLI不支持--force参数
+
+### 📝 趋势分析
+
+- ✅ **稳定**: 相比17:37检查，error任务数量持平（15个）
+- ⚠️ **heal-gateway-auto**: 从running状态恢复为error（19分钟前）
+- ✅ **核心服务**: hourly-twitter-openclaw, hourly-resource-check, nightly-openclaw-audit 运行正常
+- ⚠️ **bingbing agent**: 3个任务持续error，该agent配置可能有问题
+
+### 💡 建议
+
+1. **bingbing agent** - 持续error，建议检查该agent的Telegram配置
+2. **heal-gateway-auto** - 刚刚从running变为error，需关注
+3. 这些error任务多为消息投递失败（Telegram配置问题），实际执行可能已成功
+4. 系统整体稳定，无需紧急干预
+
+---
+
+## 2026-03-11 17:37 Heartbeat Check
+
+- **总任务数**: 43
+- **正常运行**: 28 (ok/running)
+- **异常检测**: 15 (error状态)
+- **自动修复**: 0
+- **需人工处理**: 0
+
+### 🔍 异常任务分析
+
+| 任务ID | 名称 | 上次运行 | 状态 | Agent | 备注 |
+|--------|------|----------|------|-------|------|
+| a721a631 | team-health-check | 1h ago | error | daping | 持续error |
+| 2a01e518 | heal-gateway-auto | 18m ago | error | main | 从running恢复为error |
+| 55e0273d | rachel-linkedin-content | 4h ago | error | main | 持续error |
+| 69349ed5 | lily-redbook-matrix | 3h ago | error | main | 持续error |
+| f9283c0c | skeptic-challenge-round | 2h ago | error | main | 持续error |
+| 80c6e1c8 | dwight-intel-afternoon | 4h ago | error | yitai | 持续error |
+| 5d70e12d | angela-daily-audit | 24h ago | error | yitai | 持续error |
+| dfbb6655 | daily-reflection | 21h ago | error | yitai | 持续error |
+| 862feb94 | devil-morning-challenge | 9h ago | error | bingbing | 持续error |
+| 062b7ee6 | rachel-linkedin-content | 8h ago | error | bingbing | 持续error |
+| 3a75fe8c | rachel-linkedin-daily | 8h ago | error | bingbing | 持续error |
+| 08f7fb98 | daily-cost-monitor | 19h ago | error | daping | 持续error |
+| 3c422891 | weekly-memory-maintenance | 2d ago | error | main | 持续error |
+| 2b599be9 | team-weekly-review | 2d ago | error | main | 持续error |
+| d2c7be79 | weekly-team-review | 2d ago | error | yitai | 持续error |
+
+### 📊 系统状态
+
+- **Gateway服务**: ✅ 运行正常
+- **Cron调度器**: ✅ 正常工作
+- **任务执行**: ⚠️ 15个任务error状态（与16:35检查持平）
+- **自动修复**: ⏸️ CLI不支持--force参数
+
+### 📝 趋势分析
+
+- ✅ **稳定**: 相比16:35检查，error任务数量持平（15个）
+- ⚠️ **heal-gateway-auto**: 从running状态恢复为error（18分钟前）
+- ✅ **核心服务**: hourly-twitter-openclaw, hourly-resource-check, nightly-openclaw-audit 运行正常
+- ⚠️ **bingbing agent**: 3个任务持续error，该agent配置可能有问题
+
+### 💡 建议
+
+1. **bingbing agent** - 持续error，建议检查该agent的Telegram配置
+2. **heal-gateway-auto** - 刚刚从running变为error，需关注
+3. 这些error任务多为消息投递失败（Telegram配置问题），实际执行可能已成功
+4. 系统整体稳定，无需紧急干预
+
+---
+
+## 2026-03-11 16:35 Heartbeat Check
+
+- **总任务数**: 43
+- **正常运行**: 28 (ok/running)
+- **异常检测**: 15 (error状态)
+- **自动修复**: 0
+- **需人工处理**: 0
+
+### 🔍 异常任务分析
+
+| 任务ID | 名称 | 上次运行 | 状态 | Agent | 备注 |
+|--------|------|----------|------|-------|------|
+| a721a631 | team-health-check | 31m ago | error | daping | 持续error |
+| 2a01e518 | heal-gateway-auto | 17m ago | error | main | 从running恢复为error |
+| 55e0273d | rachel-linkedin-content | 3h ago | error | main | 持续error |
+| 69349ed5 | lily-redbook-matrix | 2h ago | error | main | 持续error |
+| f9283c0c | skeptic-challenge-round | 36m ago | error | main | 持续error |
+| 80c6e1c8 | dwight-intel-afternoon | 3h ago | error | yitai | 持续error |
+| 5d70e12d | angela-daily-audit | 22h ago | error | yitai | 持续error |
+| dfbb6655 | daily-reflection | 20h ago | error | yitai | 持续error |
+| 862feb94 | devil-morning-challenge | 8h ago | error | bingbing | 持续error |
+| 062b7ee6 | rachel-linkedin-content | 7h ago | error | bingbing | 持续error |
+| 3a75fe8c | rachel-linkedin-daily | 8h ago | error | bingbing | 持续error |
+| 08f7fb98 | daily-cost-monitor | 18h ago | error | daping | 持续error |
+| 3c422891 | weekly-memory-maintenance | 2d ago | error | main | 持续error |
+| 2b599be9 | team-weekly-review | 2d ago | error | main | 持续error |
+| d2c7be79 | weekly-team-review | 2d ago | error | yitai | 持续error |
+
+### 📊 系统状态
+
+- **Gateway服务**: ✅ 运行正常
+- **Cron调度器**: ✅ 正常工作
+- **任务执行**: ⚠️ 15个任务error状态（与15:33检查持平）
+- **自动修复**: ⏸️ CLI不支持--force参数
+
+### 📝 趋势分析
+
+- ✅ **稳定**: 相比15:33检查，error任务数量持平（15个）
+- ⚠️ **heal-gateway-auto**: 从running状态恢复为error（17分钟前）
+- ✅ **核心服务**: hourly-twitter-openclaw, hourly-resource-check, nightly-openclaw-audit 运行正常
+- ⚠️ **bingbing agent**: 3个任务持续error，该agent配置可能有问题
+
+### 💡 建议
+
+1. **bingbing agent** - 持续error，建议检查该agent的Telegram配置
+2. **heal-gateway-auto** - 刚刚从running变为error，需关注
+3. 这些error任务多为消息投递失败（Telegram配置问题），实际执行可能已成功
+4. 系统整体稳定，无需紧急干预
+
+---
+
+## 2026-03-11 15:33 Heartbeat Check
+
+- **总任务数**: 43
+- **正常运行**: 28 (ok/running)
+- **异常检测**: 15 (error状态)
+- **自动修复**: 0
+- **需人工处理**: 0
+
+### 🔍 异常任务分析
+
+| 任务ID | 名称 | 上次运行 | 状态 | Agent | 备注 |
+|--------|------|----------|------|-------|------|
+| a721a631 | team-health-check | 1h ago | error | daping | 持续error |
+| 2a01e518 | heal-gateway-auto | 15m ago | error | main | 从running恢复为error |
+| 55e0273d | rachel-linkedin-content | 2h ago | error | main | 持续error |
+| 69349ed5 | lily-redbook-matrix | 34m ago | error | main | 持续error |
+| f9283c0c | skeptic-challenge-round | 5h ago | error | main | 持续error |
+| 80c6e1c8 | dwight-intel-afternoon | 1h ago | error | yitai | 持续error |
+| 5d70e12d | angela-daily-audit | 21h ago | error | yitai | 持续error |
+| dfbb6655 | daily-reflection | 19h ago | error | yitai | 持续error |
+| 862feb94 | devil-morning-challenge | 7h ago | error | bingbing | 持续error |
+| 062b7ee6 | rachel-linkedin-content | 6h ago | error | bingbing | 持续error |
+| 3a75fe8c | rachel-linkedin-daily | 7h ago | error | bingbing | 持续error |
+| 08f7fb98 | daily-cost-monitor | 17h ago | error | daping | 持续error |
+| 3c422891 | weekly-memory-maintenance | 2d ago | error | main | 持续error |
+| 2b599be9 | team-weekly-review | 2d ago | error | main | 持续error |
+| d2c7be79 | weekly-team-review | 2d ago | error | yitai | 持续error |
+
+### 📊 系统状态
+
+- **Gateway服务**: ✅ 运行正常
+- **Cron调度器**: ✅ 正常工作
+- **任务执行**: ⚠️ 15个任务error状态（与14:31检查持平）
+- **自动修复**: ⏸️ CLI不支持--force参数
+
+### 📝 趋势分析
+
+- ✅ **稳定**: 相比14:31检查，error任务数量持平（15个）
+- ⚠️ **heal-gateway-auto**: 从running状态恢复为error（15分钟前）
+- ✅ **核心服务**: hourly-twitter-openclaw, hourly-resource-check, nightly-openclaw-audit 运行正常
+- ⚠️ **bingbing agent**: 3个任务持续error，该agent配置可能有问题
+
+### 💡 建议
+
+1. **bingbing agent** - 持续error，建议检查该agent的Telegram配置
+2. **heal-gateway-auto** - 刚刚从running变为error，需关注
+3. 这些error任务多为消息投递失败（Telegram配置问题），实际执行可能已成功
+4. 系统整体稳定，无需紧急干预
+
+---
+
+## 2026-03-11 14:31 Heartbeat Check
+
+- **总任务数**: 43
+- **正常运行**: 28 (ok/running)
+- **异常检测**: 15 (error状态)
+- **自动修复**: 0
+- **需人工处理**: 0
+
+### 🔍 异常任务分析
+
+| 任务ID | 名称 | 上次运行 | 状态 | Agent | 备注 |
+|--------|------|----------|------|-------|------|
+| a721a631 | team-health-check | 21m ago | error | daping | 持续error |
+| 2a01e518 | heal-gateway-auto | 13m ago | error | main | 从running恢复为error |
+| 55e0273d | rachel-linkedin-content | 32m ago | error | main | 持续error |
+| 69349ed5 | lily-redbook-matrix | 4h ago | error | main | 持续error |
+| f9283c0c | skeptic-challenge-round | 4h ago | error | main | 持续error |
+| 80c6e1c8 | dwight-intel-afternoon | 30m ago | error | yitai | 持续error |
+| 5d70e12d | angela-daily-audit | 20h ago | error | yitai | 持续error |
+| dfbb6655 | daily-reflection | 18h ago | error | yitai | 持续error |
+| 862feb94 | devil-morning-challenge | 6h ago | error | bingbing | 持续error |
+| 062b7ee6 | rachel-linkedin-content | 5h ago | error | bingbing | 持续error |
+| 3a75fe8c | rachel-linkedin-daily | 5h ago | error | bingbing | 持续error |
+| 08f7fb98 | daily-cost-monitor | 16h ago | error | daping | 持续error |
+| 3c422891 | weekly-memory-maintenance | 1d ago | error | main | 持续error |
+| 2b599be9 | team-weekly-review | 1d ago | error | main | 持续error |
+| d2c7be79 | weekly-team-review | 1d ago | error | yitai | 持续error |
+
+### 📊 系统状态
+
+- **Gateway服务**: ✅ 运行正常
+- **Cron调度器**: ✅ 正常工作
+- **任务执行**: ⚠️ 15个任务error状态（与13:30检查持平）
+- **自动修复**: ⏸️ CLI不支持--force参数
+
+### 📝 趋势分析
+
+- ✅ **稳定**: 相比13:30检查，error任务数量持平（15个）
+- ⚠️ **heal-gateway-auto**: 从running状态恢复为error（13分钟前）
+- ✅ **核心服务**: hourly-twitter-openclaw, hourly-resource-check, nightly-openclaw-audit 运行正常
+- ⚠️ **bingbing agent**: 3个任务持续error，该agent配置可能有问题
+
+### 💡 建议
+
+1. **bingbing agent** - 持续error，建议检查该agent的Telegram配置
+2. **heal-gateway-auto** - 刚刚从running变为error，需关注
+3. 这些error任务多为消息投递失败（Telegram配置问题），实际执行可能已成功
+4. 系统整体稳定，无需紧急干预
+
+---
+
+## 2026-03-11 13:30 Heartbeat Check
+
+- **总任务数**: 43
+- **正常运行**: 28 (ok/running)
+- **异常检测**: 15 (error状态)
+- **自动修复**: 0
+- **需人工处理**: 0
+
+### 🔍 异常任务分析
+
+| 任务ID | 名称 | 上次运行 | 状态 | Agent | 备注 |
+|--------|------|----------|------|-------|------|
+| a721a631 | team-health-check | 1h ago | error | daping | 持续error |
+| 2a01e518 | heal-gateway-auto | 12m ago | error | main | 从running恢复为error |
+| 55e0273d | rachel-linkedin-content | 5h ago | error | main | 持续error |
+| 69349ed5 | lily-redbook-matrix | 3h ago | error | main | 持续error |
+| f9283c0c | skeptic-challenge-round | 3h ago | error | main | 持续error |
+| 80c6e1c8 | dwight-intel-afternoon | 23h ago | error | yitai | 持续error |
+| 5d70e12d | angela-daily-audit | 19h ago | error | yitai | 持续error |
+| dfbb6655 | daily-reflection | 17h ago | error | yitai | 持续error |
+| 862feb94 | devil-morning-challenge | 24h ago | error | bingbing | 持续error |
+| 062b7ee6 | rachel-linkedin-content | 4h ago | error | bingbing | 持续error |
+| 3a75fe8c | rachel-linkedin-daily | 4h ago | error | bingbing | 持续error |
+| 08f7fb98 | daily-cost-monitor | 15h ago | error | daping | 持续error |
+| 3c422891 | weekly-memory-maintenance | 1d ago | error | main | 持续error |
+| 2b599be9 | team-weekly-review | 1d ago | error | main | 持续error |
+| d2c7be79 | weekly-team-review | 1d ago | error | yitai | 持续error |
+
+### 📊 系统状态
+
+- **Gateway服务**: ✅ 运行正常
+- **Cron调度器**: ✅ 正常工作
+- **任务执行**: ⚠️ 15个任务error状态（与12:29检查持平）
+- **自动修复**: ⏸️ CLI不支持--force参数
+
+### 📝 趋势分析
+
+- ✅ **稳定**: 相比12:29检查，error任务数量持平（15个）
+- ⚠️ **heal-gateway-auto**: 从running状态恢复为error（12分钟前）
+- ✅ **核心服务**: hourly-twitter-openclaw, hourly-resource-check, nightly-openclaw-audit 运行正常
+- ⚠️ **bingbing agent**: 3个任务持续error，该agent配置可能有问题
+
+### 💡 建议
+
+1. **bingbing agent** - 持续error，建议检查该agent的Telegram配置
+2. **heal-gateway-auto** - 刚刚从running变为error，需关注
+3. 这些error任务多为消息投递失败（Telegram配置问题），实际执行可能已成功
+4. 系统整体稳定，无需紧急干预
 
 ---
 

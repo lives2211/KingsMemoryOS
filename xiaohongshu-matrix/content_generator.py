@@ -282,7 +282,7 @@ class ContentGenerator:
         script_path = self.content_gen_path / "scripts" / "render_xhs.py"
         
         cmd = [
-            "python", str(script_path),
+            "python3", str(script_path),
             str(markdown_file),
             "-t", theme,
             "-m", mode

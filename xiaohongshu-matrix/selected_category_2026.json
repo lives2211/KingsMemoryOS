@@ -1,0 +1,37 @@
+{
+  "year": 2026,
+  "category": "AI智能体",
+  "category_id": "ai-agent",
+  "sub_category": "多Agent协作",
+  "keywords": [
+    "AI Agent",
+    "智能体",
+    "自动化",
+    "工作流",
+    "AI助手"
+  ],
+  "trend_score": 98,
+  "growth_rate": "+400%",
+  "competition": "medium",
+  "monetization": "high",
+  "content_titles": [
+    "AI智能体变现方法，亲测有效",
+    "AI智能体实战案例，直接抄作业",
+    "实测30天，AI智能体真实效果",
+    "AI智能体避坑指南，新手必看",
+    "AI智能体工具评测，只推荐这3个"
+  ],
+  "posting_strategy": {
+    "frequency": "每天1-2篇",
+    "best_time": "晚上8-10点（下班后）",
+    "content_mix": "60%干货 + 25%案例 + 15%互动",
+    "video_ratio": "70%视频 + 30%图文"
+  },
+  "monetization_methods": [
+    "知识付费课程",
+    "工具推荐佣金",
+    "咨询服务",
+    "企业培训",
+    "AI工具代理"
+  ]
+}

@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenClaw 组织架构</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .header p {
+            opacity: 0.9;
+            font-size: 16px;
+        }
+        .org-chart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+        .level {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            width: 100%;
+        }
+        .agent-card {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            min-width: 180px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+        .agent-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.3);
+        }
+        .agent-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0 auto 15px;
+        }
+        .agent-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .agent-title {
+            font-size: 14px;
+            color: #667eea;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        .agent-dept {
+            font-size: 12px;
+            color: #999;
+            margin-bottom: 10px;
+        }
+        .agent-caps {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            justify-content: center;
+        }
+        .cap-tag {
+            background: #f0f0f0;
+            color: #666;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+        }
+        .connector {
+            width: 2px;
+            height: 30px;
+            background: rgba(255,255,255,0.5);
+            margin: -10px auto;
+        }
+        .level-label {
+            text-align: center;
+            color: rgba(255,255,255,0.8);
+            font-size: 14px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .level-0 .agent-card {
+            border: 3px solid gold;
+        }
+        .level-0 .agent-title {
+            color: #d4af37;
+        }
+        .report-line {
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            width: 2px;
+            height: 40px;
+            background: rgba(255,255,255,0.5);
+            transform: translateX(-50%);
+        }
+        @media (max-width: 768px) {
+            .level {
+                flex-direction: column;
+                align-items: center;
+            }
+            .agent-card {
+                min-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🦞 OpenClaw Enterprise</h1>
+            <p>组织架构图 - Agent 团队层级</p>
+        </div>
+        
+        <div class="org-chart">
+            <!-- CEO 层 -->
+            <div class="level level-0">
+                <div class="agent-card">
+                    <div class="agent-avatar">M</div>
+                    <div class="agent-name">Monica</div>
+                    <div class="agent-title">龙虾总管</div>
+                    <div class="agent-dept">管理层</div>
+                    <div class="agent-caps">
+                        <span class="cap-tag">统筹</span>
+                        <span class="cap-tag">决策</span>
+                        <span class="cap-tag">协调</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="connector"></div>
+            
+            <!-- 高管层 -->
+            <div class="level-label">Executive Team</div>
+            <div class="level level-1">
+
+                <div class="agent-card">
+                    <div class="report-line"></div>
+                    <div class="agent-avatar">B</div>
+                    <div class="agent-name">bingbing</div>
+                    <div class="agent-title">创意官</div>
+                    <div class="agent-dept">创作部</div>
+                    <div class="agent-caps">
+                        <span class="cap-tag">内容创作</span><span class="cap-tag">设计</span><span class="cap-tag">文案</span>
+                    </div>
+                </div>
+
+                <div class="agent-card">
+                    <div class="report-line"></div>
+                    <div class="agent-avatar">Y</div>
+                    <div class="agent-name">yitai</div>
+                    <div class="agent-title">技术官</div>
+                    <div class="agent-dept">技术部</div>
+                    <div class="agent-caps">
+                        <span class="cap-tag">编程</span><span class="cap-tag">开发</span><span class="cap-tag">技术架构</span>
+                    </div>
+                </div>
+
+                <div class="agent-card">
+                    <div class="report-line"></div>
+                    <div class="agent-avatar">D</div>
+                    <div class="agent-name">daping</div>
+                    <div class="agent-title">检测官</div>
+                    <div class="agent-dept">质检部</div>
+                    <div class="agent-caps">
+                        <span class="cap-tag">检测</span><span class="cap-tag">分析</span><span class="cap-tag">测试</span>
+                    </div>
+                </div>
+
+                <div class="agent-card">
+                    <div class="report-line"></div>
+                    <div class="agent-avatar">S</div>
+                    <div class="agent-name">spikey</div>
+                    <div class="agent-title">审计官</div>
+                    <div class="agent-dept">审计部</div>
+                    <div class="agent-caps">
+                        <span class="cap-tag">审计</span><span class="cap-tag">复盘</span><span class="cap-tag">质量</span>
+                    </div>
+                </div>
+
+                <div class="agent-card">
+                    <div class="report-line"></div>
+                    <div class="agent-avatar">小</div>
+                    <div class="agent-name">小红财</div>
+                    <div class="agent-title">运营官</div>
+                    <div class="agent-dept">运营部</div>
+                    <div class="agent-caps">
+                        <span class="cap-tag">社媒运营</span><span class="cap-tag">小红书</span><span class="cap-tag">公众号</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 40px; color: rgba(255,255,255,0.6);">
+            <p>💡 汇报关系: 所有 Agent 直接向 Monica 汇报</p>
+            <p>🎯 任务委派: 通过 Ticket 系统层层分解</p>
+        </div>
+    </div>
+</body>
+</html>

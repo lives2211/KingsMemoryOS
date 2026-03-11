@@ -1,0 +1,151 @@
+{
+  "trending_2025": {
+    "description": "2025年3月闲鱼虚拟资料热门商品",
+    "last_updated": "2026-03-11",
+    "categories": {
+      "ai_tools": {
+        "name": "AI工具教程",
+        "trend": "up",
+        "growth": "+150%",
+        "items": [
+          {
+            "title": "ChatGPT提示词工程大全",
+            "price": 19,
+            "hot_keywords": ["提示词", "Prompt", "AI写作"],
+            "demand_score": 95
+          },
+          {
+            "title": "Midjourney AI绘画从入门到精通",
+            "price": 29,
+            "hot_keywords": ["AI绘画", "Midjourney", "设计"],
+            "demand_score": 92
+          },
+          {
+            "title": "AI视频生成教程（Sora/Runway）",
+            "price": 39,
+            "hot_keywords": ["AI视频", "Sora", "Runway"],
+            "demand_score": 88
+          },
+          {
+            "title": "AI数字人/虚拟主播制作",
+            "price": 49,
+            "hot_keywords": ["数字人", "虚拟主播", "直播"],
+            "demand_score": 85
+          }
+        ]
+      },
+      "exam_materials": {
+        "name": "考试资料",
+        "trend": "stable",
+        "growth": "+20%",
+        "items": [
+          {
+            "title": "2025考研英语全套资料",
+            "price": 39,
+            "hot_keywords": ["考研", "英语", "真题"],
+            "demand_score": 90,
+            "season": "3-6月,9-12月"
+          },
+          {
+            "title": "2025公务员考试资料包",
+            "price": 49,
+            "hot_keywords": ["公考", "行测", "申论"],
+            "demand_score": 88,
+            "season": "全年"
+          },
+          {
+            "title": "四六级全套备考资料",
+            "price": 19,
+            "hot_keywords": ["四六级", "英语", "真题"],
+            "demand_score": 85,
+            "season": "考前2个月"
+          },
+          {
+            "title": "教师资格证考试资料",
+            "price": 29,
+            "hot_keywords": ["教资", "教师", "考试"],
+            "demand_score": 82,
+            "season": "3月,9月"
+          }
+        ]
+      },
+      "side_hustle": {
+        "name": "副业赚钱",
+        "trend": "up",
+        "growth": "+80%",
+        "items": [
+          {
+            "title": "小红书运营变现SOP",
+            "price": 49,
+            "hot_keywords": ["小红书", "运营", "变现"],
+            "demand_score": 93
+          },
+          {
+            "title": "闲鱼运营全套教程",
+            "price": 39,
+            "hot_keywords": ["闲鱼", "运营", "副业"],
+            "demand_score": 90
+          },
+          {
+            "title": "抖音短视频剪辑课程",
+            "price": 29,
+            "hot_keywords": ["抖音", "剪辑", "短视频"],
+            "demand_score": 87
+          },
+          {
+            "title": "跨境电商入门到精通",
+            "price": 59,
+            "hot_keywords": ["跨境电商", "亚马逊", "Shopee"],
+            "demand_score": 84
+          }
+        ]
+      },
+      "programming": {
+        "name": "编程技能",
+        "trend": "stable",
+        "growth": "+30%",
+        "items": [
+          {
+            "title": "Python数据分析全套课程",
+            "price": 39,
+            "hot_keywords": ["Python", "数据分析", "编程"],
+            "demand_score": 88
+          },
+          {
+            "title": "前端开发（HTML/CSS/JS）",
+            "price": 29,
+            "hot_keywords": ["前端", "HTML", "JavaScript"],
+            "demand_score": 85
+          },
+          {
+            "title": "爬虫技术实战教程",
+            "price": 35,
+            "hot_keywords": ["爬虫", "Python", "数据采集"],
+            "demand_score": 82
+          }
+        ]
+      }
+    },
+    "recommendations": {
+      "newbie": {
+        "title": "新手推荐组合",
+        "items": [
+          "ChatGPT提示词工程大全（引流款）",
+          "四六级全套备考资料（稳定款）",
+          "小红书运营变现SOP（利润款）"
+        ],
+        "expected_revenue": "1000-3000元/月"
+      },
+      "trending": {
+        "title": "2025趋势款",
+        "items": [
+          "AI绘画教程",
+          "AI视频生成",
+          "数字人制作",
+          "ChatGPT高级应用"
+        ],
+        "expected_revenue": "2000-5000元/月"
+      }
+    }
+  }
+}

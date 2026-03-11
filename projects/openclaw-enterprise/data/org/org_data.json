@@ -1,0 +1,79 @@
+{
+  "generated_at": "2026-03-12T00:13:15.707072",
+  "total_agents": 6,
+  "levels": 2,
+  "structure": {
+    "id": "main",
+    "name": "Monica",
+    "title": "龙虾总管",
+    "department": "管理层",
+    "level": 0,
+    "children": [
+      {
+        "id": "bingbing",
+        "name": "bingbing",
+        "title": "创意官",
+        "department": "创作部",
+        "level": 1,
+        "capabilities": [
+          "内容创作",
+          "设计",
+          "文案"
+        ],
+        "children": []
+      },
+      {
+        "id": "yitai",
+        "name": "yitai",
+        "title": "技术官",
+        "department": "技术部",
+        "level": 1,
+        "capabilities": [
+          "编程",
+          "开发",
+          "技术架构"
+        ],
+        "children": []
+      },
+      {
+        "id": "daping",
+        "name": "daping",
+        "title": "检测官",
+        "department": "质检部",
+        "level": 1,
+        "capabilities": [
+          "检测",
+          "分析",
+          "测试"
+        ],
+        "children": []
+      },
+      {
+        "id": "spikey",
+        "name": "spikey",
+        "title": "审计官",
+        "department": "审计部",
+        "level": 1,
+        "capabilities": [
+          "审计",
+          "复盘",
+          "质量"
+        ],
+        "children": []
+      },
+      {
+        "id": "xiaohongcai",
+        "name": "小红财",
+        "title": "运营官",
+        "department": "运营部",
+        "level": 1,
+        "capabilities": [
+          "社媒运营",
+          "小红书",
+          "公众号"
+        ],
+        "children": []
+      }
+    ]
+  }
+}

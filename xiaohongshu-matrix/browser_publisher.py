@@ -158,10 +158,17 @@ class BrowserPublisher:
     
     def _fill_content(self, content):
         """填写正文"""
+        # 检查内容长度，小红书限制约 260KB (260096 bytes)
+        MAX_CONTENT_LENGTH = 250000  # 留一些余量
+        if len(content.encode('utf-8')) > MAX_CONTENT_LENGTH:
+            print(f"  ⚠️  内容过长 ({len(content.encode('utf-8'))} bytes)，截断到 {MAX_CONTENT_LENGTH} bytes")
+            # 截断内容，保留前 250KB
+            content = content.encode('utf-8')[:MAX_CONTENT_LENGTH].decode('utf-8', errors='ignore')
+        
         # 找到正文输入框
         content_input = self.page.locator('div[contenteditable="true"], textarea[placeholder*="内容"]').first
         content_input.fill(content)
-        print(f"  📝 正文: {content[:50]}...")
+        print(f"  📝 正文: {content[:50]}... (共 {len(content.encode('utf-8'))} bytes)")
         time.sleep(random.uniform(1, 2))
     
     def _set_private(self):

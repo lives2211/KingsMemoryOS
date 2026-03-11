@@ -1,0 +1,39 @@
+{
+  "xianyu_content": {
+    "max_title_length": 25,
+    "description_template": "three_section",
+    "auto_keywords": true,
+    "keywords_count": 5
+  },
+  "xianyu_manage": {
+    "max_items_per_day": 50,
+    "delay_min": 1,
+    "delay_max": 3,
+    "peak_hours": [
+      "07:00-09:00",
+      "19:00-21:00"
+    ],
+    "auto_price_adjust": true,
+    "price_adjust_threshold": {
+      "views_high_wants_low": 0.3,
+      "views_low": 0.1
+    }
+  },
+  "xianyu_publish": {
+    "max_per_hour": 10,
+    "interval_min": 300,
+    "interval_max": 900,
+    "dry_run": true
+  },
+  "xianyu_metrics": {
+    "data_retention_days": 90,
+    "auto_export_csv": true,
+    "export_schedule": "daily"
+  },
+  "notifications": {
+    "enabled": true,
+    "channels": ["discord"],
+    "on_error": true,
+    "on_success": false
+  }
+}

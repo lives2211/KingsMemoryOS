@@ -1,0 +1,50 @@
+{
+  "TK-39A3D071": {
+    "id": "TK-39A3D071",
+    "title": "生成闲鱼商品内容",
+    "description": "为虚拟资料生成标题和描述",
+    "status": "backlog",
+    "priority": "P2",
+    "assignee": "bingbing",
+    "creator": "main",
+    "project": "xianyu",
+    "created_at": "2026-03-11T23:29:10.088676",
+    "started_at": null,
+    "completed_at": null,
+    "deadline": null,
+    "estimated_cost": 0.0,
+    "actual_cost": 0.0,
+    "parent_ticket": null,
+    "sub_tickets": [
+      "TK-C4BC456B"
+    ],
+    "context": {},
+    "reviewer": null,
+    "review_notes": null,
+    "result": null,
+    "artifacts": []
+  },
+  "TK-C4BC456B": {
+    "id": "TK-C4BC456B",
+    "title": "编写Python脚本",
+    "description": "编写内容生成脚本",
+    "status": "backlog",
+    "priority": "P2",
+    "assignee": "yitai",
+    "creator": "main",
+    "project": "xianyu",
+    "created_at": "2026-03-11T23:29:45.061228",
+    "started_at": null,
+    "completed_at": null,
+    "deadline": null,
+    "estimated_cost": 0.0,
+    "actual_cost": 0.0,
+    "parent_ticket": "TK-39A3D071",
+    "sub_tickets": [],
+    "context": {},
+    "reviewer": null,
+    "review_notes": null,
+    "result": null,
+    "artifacts": []
+  }
+}

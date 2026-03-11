@@ -1,0 +1,21 @@
+{
+  "category": "AI科技",
+  "category_id": "ai-tech",
+  "sub_category": "ChatGPT使用技巧",
+  "keywords": [
+    "AI",
+    "ChatGPT",
+    "人工智能"
+  ],
+  "content_themes": [
+    "AI科技入门指南",
+    "AI科技实战技巧",
+    "AI科技避坑指南",
+    "AI科技变现方法"
+  ],
+  "posting_strategy": {
+    "frequency": "每天1-2篇",
+    "best_time": "晚上8-10点",
+    "content_mix": "70%干货 + 20%案例 + 10%互动"
+  }
+}

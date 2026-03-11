@@ -66,6 +66,22 @@ fi
 
 ---
 
+## Backup Check
+
+每天执行：
+
+```bash
+./backup.sh
+```
+
+如果 push 成功：
+BACKUP_OK
+
+如果 push 失败：
+BACKUP_FAILED
+
+---
+
 ## 紧急处理流程
 
 ### Gateway崩溃
