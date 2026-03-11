@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIAS Dashboard - Self-Improving Agent System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e;
+            color: #eee;
+            min-height: 100vh;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 2rem;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .header p {
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .stat-card {
+            background: #16213e;
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid #0f3460;
+            transition: transform 0.2s;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+            border-color: #e94560;
+        }
+        .stat-card h3 {
+            color: #e94560;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+        .stat-value {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        .stat-label {
+            color: #a0a0a0;
+            font-size: 0.9rem;
+        }
+        .section {
+            background: #16213e;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #0f3460;
+        }
+        .section h2 {
+            color: #e94560;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .learning-item {
+            background: #0f3460;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            border-left: 4px solid #e94560;
+        }
+        .learning-item.critical {
+            border-left-color: #ff4757;
+        }
+        .learning-item.high {
+            border-left-color: #ffa502;
+        }
+        .learning-item.medium {
+            border-left-color: #2ed573;
+        }
+        .learning-meta {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.8rem;
+            color: #a0a0a0;
+            margin-top: 0.5rem;
+        }
+        .badge {
+            background: #e94560;
+            color: white;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+        }
+        .badge.archived {
+            background: #535c68;
+        }
+        .chart-container {
+            height: 200px;
+            background: #0f3460;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #a0a0a0;
+        }
+        .refresh-btn {
+            background: #e94560;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.2s;
+        }
+        .refresh-btn:hover {
+            background: #ff6b7a;
+        }
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: #a0a0a0;
+            border-top: 1px solid #0f3460;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🧠 SIAS Dashboard</h1>
+        <p>Self-Improving Agent System - 实时监控与统计</p>
+    </div>
+
+    <div class="container">
+        <!-- 统计卡片 -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>📊 总学习数</h3>
+                <div class="stat-value" id="total-learn">12</div>
+                <div class="stat-label">所有记录</div>
+            </div>
+            <div class="stat-card">
+                <h3>❌ 错误记录</h3>
+                <div class="stat-value" id="errors-count">2</div>
+                <div class="stat-label">ERRORS.md</div>
+            </div>
+            <div class="stat-card">
+                <h3>💡 最佳实践</h3>
+                <div class="stat-value" id="learnings-count">4</div>
+                <div class="stat-label">LEARNINGS.md</div>
+            </div>
+            <div class="stat-card">
+                <h3>✏️ 用户纠正</h3>
+                <div class="stat-value" id="corrections-count">2</div>
+                <div class="stat-label">CORRECTIONS.md</div>
+            </div>
+        </div>
+
+        <!-- 最近学习 -->
+        <div class="section">
+            <h2>📝 最近学习记录</h2>
+            <div id="recent-learnings">
+                <div class="learning-item critical">
+                    <strong>[LRN-20260310-002] WAL-Protokoll korrekt implementiert</strong>
+                    <div class="learning-meta">
+                        <span>Area: workflow</span>
+                        <span>Priority: critical</span>
+                        <span class="badge">active</span>
+                    </div>
+                </div>
+                <div class="learning-item high">
+                    <strong>[LRN-20260310-003] Memory-LanceDB-Pro Integration</strong>
+                    <div class="learning-meta">
+                        <span>Area: system</span>
+                        <span>Priority: high</span>
+                        <span class="badge">active</span>
+                    </div>
+                </div>
+                <div class="learning-item medium">
+                    <strong>[FEAT-20260310-001] SIAS Dashboard erstellen</strong>
+                    <div class="learning-meta">
+                        <span>Area: workflow</span>
+                        <span>Priority: medium</span>
+                        <span class="badge">active</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 学习趋势 -->
+        <div class="section">
+            <h2>📈 学习趋势 (最近7天)</h2>
+            <div class="chart-container">
+                <p>图表功能开发中...<br>当前数据: 今日 12 条记录</p>
+            </div>
+        </div>
+
+        <!-- Agent 状态 -->
+        <div class="section">
+            <h2>👥 Agent 部署状态</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem;">
+                <div class="stat-card" style="text-align: center;">
+                    <div class="stat-value" style="font-size: 2rem;">🦞</div>
+                    <div>main</div>
+                    <span class="badge">active</span>
+                </div>
+                <div class="stat-card" style="text-align: center;">
+                    <div class="stat-value" style="font-size: 2rem;">💻</div>
+                    <div>yitai</div>
+                    <span class="badge">active</span>
+                </div>
+                <div class="stat-card" style="text-align: center;">
+                    <div class="stat-value" style="font-size: 2rem;">🎨</div>
+                    <div>bingbing</div>
+                    <span class="badge">active</span>
+                </div>
+                <div class="stat-card" style="text-align: center;">
+                    <div class="stat-value" style="font-size: 2rem;">🔍</div>
+                    <div>daping</div>
+                    <span class="badge">active</span>
+                </div>
+                <div class="stat-card" style="text-align: center;">
+                    <div class="stat-value" style="font-size: 2rem;">📊</div>
+                    <div>spikey</div>
+                    <span class="badge">active</span>
+                </div>
+                <div class="stat-card" style="text-align: center;">
+                    <div class="stat-value" style="font-size: 2rem;">📱</div>
+                    <div>xiaohongcai</div>
+                    <span class="badge">active</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 操作按钮 -->
+        <div class="section" style="text-align: center;">
+            <button class="refresh-btn" onclick="location.reload()">🔄 刷新数据</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>SIAS v1.0 | OpenClaw Plugin | Last Updated: 2026-03-10</p>
+    </div>
+
+    <script>
+        // 简单的数据更新模拟
+        console.log('SIAS Dashboard loaded');
+        
+        // 可以在这里添加从 API 获取数据的逻辑
+        // fetch('/api/sias-stats').then(...)
+    </script>
+</body>
+</html>

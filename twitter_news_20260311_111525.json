@@ -1,0 +1,112 @@
+{
+  "fetch_time": "2026-03-11T11:15:25.307494",
+  "count": 5,
+  "tweets": [
+    {
+      "id": "2031411127532343318",
+      "url": "https://x.com/jakevin7/status/2031411127532343318",
+      "text": "继 twitter-cli 和 tg-cli 之后，小红书 CLI 也来了！\n\n逆向了小红书 Web 端的接口，终端里就能搜笔记、看评论、点赞收藏、发帖子。 Cookie 自动提取，不需要配 API Key。\n\n同样做了不少反风控：Chrome UA/指纹伪装、请求间隔随机化、Referrer 链路模拟等。\n\nhttps://t.co/gEHsnRw16q",
+      "author_name": "卡比卡比",
+      "author_screen_name": "jakevin7",
+      "author_verified": true,
+      "created_at": "Tue Mar 10 16:45:29 +0000 2026",
+      "likes": 482,
+      "retweets": 79,
+      "replies": 23,
+      "views": 25085,
+      "bookmarks": 610,
+      "media": [],
+      "urls": [
+        "https://github.com/jackwener/xiaohongshu-cli"
+      ],
+      "is_retweet": false,
+      "quoted_text": null,
+      "quoted_author": null,
+      "lang": "zh"
+    },
+    {
+      "id": "2031555735860174980",
+      "url": "https://x.com/epsteinsearchin/status/2031555735860174980",
+      "text": "NPR tracked the serial numbers in the Epstein files.\n\n37 pages from the FBI interviews are missing.\n\nThe DOJ says they're withheld for an \"ongoing investigation.\"\n\nThe DOJ also says no one is being investigated.",
+      "author_name": "Epstein File Search",
+      "author_screen_name": "epsteinsearchin",
+      "author_verified": true,
+      "created_at": "Wed Mar 11 02:20:06 +0000 2026",
+      "likes": 457,
+      "retweets": 142,
+      "replies": 6,
+      "views": 3069,
+      "bookmarks": 12,
+      "media": [],
+      "urls": [],
+      "is_retweet": true,
+      "quoted_text": null,
+      "quoted_author": null,
+      "lang": "en"
+    },
+    {
+      "id": "2031329754775957853",
+      "url": "https://x.com/dashen_wang/status/2031329754775957853",
+      "text": "用 Paperclip，我开始运营“一人公司”了\n\n国外大神已经靠 Paperclip 跑出一人公司模型\n\n自动化接单、自动化交付、自动化增长，赚得盆满钵满\n\n我研究完才发现：\n\n这玩意儿不是“一个 Agent”\n\n而是“一个公司操作系统”\n\n它把你所有的 AI 工人\n\nOpenClaw、Claude Code、Cursor、Codex https://t.co/GCGMhlBPHc",
+      "author_name": "AI最严厉的父亲",
+      "author_screen_name": "dashen_wang",
+      "author_verified": true,
+      "created_at": "Tue Mar 10 11:22:08 +0000 2026",
+      "likes": 232,
+      "retweets": 48,
+      "replies": 11,
+      "views": 16672,
+      "bookmarks": 393,
+      "media": [
+        "[图片] https://pbs.twimg.com/media/HDC7o6UawAAZSUS.jpg"
+      ],
+      "urls": [],
+      "is_retweet": false,
+      "quoted_text": null,
+      "quoted_author": null,
+      "lang": "zh"
+    },
+    {
+      "id": "2031492830636683708",
+      "url": "https://x.com/Jimmy_JingLv/status/2031492830636683708",
+      "text": "如果你想给自己的 AI 小龙虾配备一个后端工程师，InsForge 就是最佳选择。\n\nOpenClaw 负责聊天和任务调度，但它不会建数据库、不会部署网站、不会管认证——直到遇见 InsForge。\n\nInsForge 是开源的 AI-native Supabase 替代品，专为 AI 编码 Agent",
+      "author_name": "吕立青_JimmyLv 2𐃏26",
+      "author_screen_name": "Jimmy_JingLv",
+      "author_verified": true,
+      "created_at": "Tue Mar 10 22:10:08 +0000 2026",
+      "likes": 86,
+      "retweets": 11,
+      "replies": 1,
+      "views": 5706,
+      "bookmarks": 128,
+      "media": [],
+      "urls": [],
+      "is_retweet": false,
+      "quoted_text": null,
+      "quoted_author": null,
+      "lang": "zh"
+    },
+    {
+      "id": "2031535582879338885",
+      "url": "https://x.com/oragnes/status/2031535582879338885",
+      "text": "卧槽，Claude Code 新增了/btw 功能\n\n功能虽小，但作用很大\n\n核心用途：\n\n当 Claude 正在执行长任务（比如重构代码、调试）时\n\n你可以随时输入： \n\n/btw \n\n你的问题就能快速开启侧链对话（side chain conversations）\n\n提出旁白问题，而不会中断主工作流。\n\n示例：\n\n主任务：让 Claude 重构某个模块 https://t.co/F7Pajq1O7m",
+      "author_name": "比特币橙子Trader",
+      "author_screen_name": "oragnes",
+      "author_verified": true,
+      "created_at": "Wed Mar 11 01:00:01 +0000 2026",
+      "likes": 42,
+      "retweets": 6,
+      "replies": 6,
+      "views": 7301,
+      "bookmarks": 22,
+      "media": [
+        "[视频] https://video.twimg.com/amplify_video/2031530545826639875/vid/avc1/1080x1080/6yY_IkYGQNwrlMXE.mp4?tag=21"
+      ],
+      "urls": [],
+      "is_retweet": false,
+      "quoted_text": "卧槽，ClaudeCode 的移动版来了\n\nAnthropic 刚刚向 Max 用户推送了 Claude Code 的史诗级更新：\n\nRemote Control\n\n终端输入 /remote-control\n\n你的电脑和手机瞬间打通\n\n上下文完全保留，手机直接无缝跑代码、发指令 https://t.co/pELahM7gBQ",
+      "quoted_author": "比特币橙子Trader (@oragnes)",
+      "lang": "zh"
+    }
+  ]
+}

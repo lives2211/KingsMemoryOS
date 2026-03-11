@@ -1,0 +1,28 @@
+# 小红书矩阵运营系统 - Cron配置
+# 生成时间: 2026-03-11T10:30:15.794983
+# 
+# 安装方法:
+#   crontab cron.txt
+#
+# 查看任务:
+#   crontab -l
+#
+# 删除任务:
+#   crontab -r
+
+SHELL=/bin/bash
+PATH=/usr/local/bin:/usr/bin:/bin
+HOME=/home/fengxueda
+
+# 每日生成小红书发布计划
+0 6 * * * cd /home/fengxueda/.openclaw/workspace/xiaohongshu-matrix && python3 scheduler.py >> logs/scheduler.log 2>&1
+
+# 小红书自动发布检查
+*/10 * * * * cd /home/fengxueda/.openclaw/workspace/xiaohongshu-matrix && python3 auto_post.py --once >> logs/auto_post.log 2>&1
+
+# 每日数据报告
+0 23 * * * cd /home/fengxueda/.openclaw/workspace/xiaohongshu-matrix && python3 analytics.py --report >> logs/daily_report.log 2>&1
+
+# 每周数据导出
+0 0 * * 0 cd /home/fengxueda/.openclaw/workspace/xiaohongshu-matrix && python3 analytics.py --export >> logs/weekly_export.log 2>&1
+

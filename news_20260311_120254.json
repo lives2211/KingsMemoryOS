@@ -1,0 +1,221 @@
+{
+  "fetch_time": "2026-03-11T12:02:54.176977",
+  "count": 10,
+  "items": [
+    {
+      "id": "e27d4ae3966966974a0c2ac94ca5945e",
+      "title": "Zig – Type Resolution Redesign and Language Changes",
+      "content": "<a href=\"https://news.ycombinator.com/item?id=47330836\">Comments</a>",
+      "url": "https://ziglang.org/devlog/2026/#2026-03-10",
+      "author": "Hacker News",
+      "source": "rss",
+      "source_name": "Hacker News",
+      "created_at": "2026-03-11 01:24:47",
+      "published_at": "Wed, 11 Mar 2026 01:24:47 +0000",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "views": 0,
+      "bookmarks": 0,
+      "media": [],
+      "tags": [
+        "tech",
+        "hn"
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": "a1aae376192da4ba09702756a24511a6",
+      "title": "U+237C ⍼ Is Azimuth",
+      "content": "<a href=\"https://news.ycombinator.com/item?id=47329605\">Comments</a>",
+      "url": "https://ionathan.ch/2026/02/16/angzarr.html",
+      "author": "Hacker News",
+      "source": "rss",
+      "source_name": "Hacker News",
+      "created_at": "2026-03-10 22:33:45",
+      "published_at": "Tue, 10 Mar 2026 22:33:45 +0000",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "views": 0,
+      "bookmarks": 0,
+      "media": [],
+      "tags": [
+        "tech",
+        "hn"
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": "6e2d63f4587a9c1789f18844839baee4",
+      "title": "Cloudflare crawl endpoint",
+      "content": "<a href=\"https://news.ycombinator.com/item?id=47329557\">Comments</a>",
+      "url": "https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/",
+      "author": "Hacker News",
+      "source": "rss",
+      "source_name": "Hacker News",
+      "created_at": "2026-03-10 22:27:15",
+      "published_at": "Tue, 10 Mar 2026 22:27:15 +0000",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "views": 0,
+      "bookmarks": 0,
+      "media": [],
+      "tags": [
+        "tech",
+        "hn"
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": "f0ef0a2dc37156e7ed145c026659ea81",
+      "title": "Agents that run while I sleep",
+      "content": "<a href=\"https://news.ycombinator.com/item?id=47327559\">Comments</a>",
+      "url": "https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep",
+      "author": "Hacker News",
+      "source": "rss",
+      "source_name": "Hacker News",
+      "created_at": "2026-03-10 19:09:46",
+      "published_at": "Tue, 10 Mar 2026 19:09:46 +0000",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "views": 0,
+      "bookmarks": 0,
+      "media": [],
+      "tags": [
+        "tech",
+        "hn"
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": "f23ec3a75228ec110970ca879c7dd094",
+      "title": "ABB: Physical AI simulation boosts ROI for factory automation",
+      "content": "<p>A new ABB and NVIDIA partnership shows physical AI simulation is driving real ROI in factory automation and solving production hurdles. Manufacturers have often found it difficult to make intelligent robotics work reliably outside testing environments. The core issue is the gap between digital training models and actual factory floors, where lighting, material physics, and [&#8230;]</p>\n<p>The post <a href=\"https://www.artificialintelligence-news.com/news/abb-physical-ai-simulation-secures-factory-automation-roi/\">ABB: Physical AI simulation boosts ROI for factory automation</a> appeared first on <a href=\"https://www.artificialintelligence-news.com\">AI News</a>.</p>",
+      "url": "https://www.artificialintelligence-news.com/news/abb-physical-ai-simulation-secures-factory-automation-roi/",
+      "author": "Ryan Daws",
+      "source": "rss",
+      "source_name": "AI News",
+      "created_at": "2026-03-10 17:22:41",
+      "published_at": "Tue, 10 Mar 2026 17:22:41 +0000",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "views": 0,
+      "bookmarks": 0,
+      "media": [],
+      "tags": [
+        "ai"
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": "975415972e40e908c87d62845048bd95",
+      "title": "Tony Hoare has died",
+      "content": "<a href=\"https://news.ycombinator.com/item?id=47324054\">Comments</a>",
+      "url": "https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html",
+      "author": "Hacker News",
+      "source": "rss",
+      "source_name": "Hacker News",
+      "created_at": "2026-03-10 14:50:16",
+      "published_at": "Tue, 10 Mar 2026 14:50:16 +0000",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "views": 0,
+      "bookmarks": 0,
+      "media": [],
+      "tags": [
+        "tech",
+        "hn"
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": "22c18ed97306a5b4017b786a2999a7cb",
+      "title": "How Pokémon Go is giving delivery robots an inch-perfect view of the world",
+      "content": "Pokémon Go was the world’s first augmented-reality megahit. Released in 2016 by the Google spinout Niantic, the AR twist on the juggernaut Pokémon franchise fast became a global phenomenon. From Chicago to Oslo to Enoshima, players hit the streets in the urgent hope of catching a Jigglypuff or a Squirtle or (with a huge amount&#8230;",
+      "url": "https://www.technologyreview.com/2026/03/10/1134099/how-pokemon-go-is-helping-robots-deliver-pizza-on-time/",
+      "author": "Will Douglas Heaven",
+      "source": "rss",
+      "source_name": "MIT Tech Review",
+      "created_at": "2026-03-10 13:47:26",
+      "published_at": "Tue, 10 Mar 2026 13:47:26 +0000",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "views": 0,
+      "bookmarks": 0,
+      "media": [],
+      "tags": [
+        "tech"
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": "ea45d2f2667904d10f636319dd57e6f1",
+      "title": "Prioritizing energy intelligence for sustainable growth",
+      "content": "Loudoun County, Virginia, once known for its pastoral scenery and proximity to Washington, DC, has earned a more modern reputation in recent years: The area has the highest concentration of data centers on the planet. Ten years ago, these facilities powered email and e-commerce. Today, thanks to the meteoric rise in demand for AI-infused everything,&#8230;",
+      "url": "https://www.technologyreview.com/2026/03/10/1133972/prioritizing-energy-intelligence-for-sustainable-growth/",
+      "author": "MIT Technology Review Insights",
+      "source": "rss",
+      "source_name": "MIT Tech Review",
+      "created_at": "2026-03-10 13:00:00",
+      "published_at": "Tue, 10 Mar 2026 13:00:00 +0000",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "views": 0,
+      "bookmarks": 0,
+      "media": [],
+      "tags": [
+        "tech"
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": "7324d62342f348d28f56e2c763f6487a",
+      "title": "Agentic AI in finance speeds up operational automation",
+      "content": "<p>In finance, achieving operational automation by integrating agentic AI requires a data-centric foundation to drive real value. Financial infrastructure provider SEI has engaged IBM to modernise its internal operations via AI and automation. The joint initiative focuses on process redesign and targeted system updates to deliver consistent client experiences, building a modern and data-enabled foundation [&#8230;]</p>\n<p>The post <a href=\"https://www.artificialintelligence-news.com/news/agentic-ai-in-finance-speeds-up-operational-automation/\">Agentic AI in finance speeds up operational automation</a> appeared first on <a href=\"https://www.artificialintelligence-news.com\">AI News</a>.</p>",
+      "url": "https://www.artificialintelligence-news.com/news/agentic-ai-in-finance-speeds-up-operational-automation/",
+      "author": "Ryan Daws",
+      "source": "rss",
+      "source_name": "AI News",
+      "created_at": "2026-03-10 12:55:37",
+      "published_at": "Tue, 10 Mar 2026 12:55:37 +0000",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "views": 0,
+      "bookmarks": 0,
+      "media": [],
+      "tags": [
+        "ai"
+      ],
+      "engagement_score": 0
+    },
+    {
+      "id": "fb6fbb88f5c7e58c4bc6cd0339dbd631",
+      "title": "The Download: AI’s role in the Iran war, and an escalating legal fight",
+      "content": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How AI is turning the Iran conflict into&#160;theater&#160; Much of the spotlight on AI in the Iran conflict has focused on models like Claude helping the US military decide where to&#8230;",
+      "url": "https://www.technologyreview.com/2026/03/10/1134077/the-download-ai-iran-war-theater-anthropic-sues-us/",
+      "author": "Thomas Macaulay",
+      "source": "rss",
+      "source_name": "MIT Tech Review",
+      "created_at": "2026-03-10 12:55:32",
+      "published_at": "Tue, 10 Mar 2026 12:55:32 +0000",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "views": 0,
+      "bookmarks": 0,
+      "media": [],
+      "tags": [
+        "tech"
+      ],
+      "engagement_score": 0
+    }
+  ]
+}

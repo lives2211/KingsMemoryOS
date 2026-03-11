@@ -1,0 +1,156 @@
+{
+  "channels": {
+    "telegram": {
+      "enabled": false
+    },
+    "discord": {
+      "enabled": true,
+      "accounts": {
+        "default": {
+          "name": "龙虾总管",
+          "botToken": "YOUR_MAIN_BOT_TOKEN",
+          "dmPolicy": "allowlist",
+          "allowFrom": ["6615665748"],
+          "guilds": {
+            "1480388799589515446": {
+              "channels": {
+                "总频道": {
+                  "channelId": "1480388799589515446",
+                  "requireMention": false
+                },
+                "龙虾总管": {
+                  "channelId": "1480409331659968624",
+                  "requireMention": false
+                }
+              }
+            }
+          }
+        },
+        "daping": {
+          "name": "分析师大饼",
+          "botToken": "YOUR_DAPING_BOT_TOKEN",
+          "dmPolicy": "allowlist",
+          "allowFrom": ["6615665748"],
+          "guilds": {
+            "1480388799589515446": {
+              "channels": {
+                "大饼频道": {
+                  "channelId": "1480409519304609894",
+                  "requireMention": false
+                }
+              }
+            }
+          }
+        },
+        "bingbing": {
+          "name": "推文冰冰",
+          "botToken": "YOUR_BINGBING_BOT_TOKEN",
+          "dmPolicy": "allowlist",
+          "allowFrom": ["6615665748"],
+          "guilds": {
+            "1480388799589515446": {
+              "channels": {
+                "冰冰频道": {
+                  "channelId": "1480409628214034503",
+                  "requireMention": false
+                }
+              }
+            }
+          }
+        },
+        "yitai": {
+          "name": "代码姨太",
+          "botToken": "YOUR_YITAI_BOT_TOKEN",
+          "dmPolicy": "allowlist",
+          "allowFrom": ["6615665748"],
+          "guilds": {
+            "1480388799589515446": {
+              "channels": {
+                "姨太频道": {
+                  "channelId": "1480409693469020292",
+                  "requireMention": false
+                }
+              }
+            }
+          }
+        },
+        "spikey": {
+          "name": "审计Spikey",
+          "botToken": "YOUR_SPIKEY_BOT_TOKEN",
+          "dmPolicy": "allowlist",
+          "allowFrom": ["6615665748"],
+          "guilds": {
+            "1480388799589515446": {
+              "channels": {
+                "Spikey频道": {
+                  "channelId": "1480409775320600670",
+                  "requireMention": false
+                }
+              }
+            }
+          }
+        },
+        "xiaohongcai": {
+          "name": "小红财",
+          "botToken": "YOUR_XIAOHONGCAI_BOT_TOKEN",
+          "dmPolicy": "allowlist",
+          "allowFrom": ["6615665748"],
+          "guilds": {
+            "1480388799589515446": {
+              "channels": {
+                "小红财频道": {
+                  "channelId": "1480409885119348867",
+                  "requireMention": false
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "bindings": [
+    {
+      "agentId": "main",
+      "match": {
+        "channel": "discord",
+        "accountId": "default"
+      }
+    },
+    {
+      "agentId": "daping",
+      "match": {
+        "channel": "discord",
+        "accountId": "daping"
+      }
+    },
+    {
+      "agentId": "bingbing",
+      "match": {
+        "channel": "discord",
+        "accountId": "bingbing"
+      }
+    },
+    {
+      "agentId": "yitai",
+      "match": {
+        "channel": "discord",
+        "accountId": "yitai"
+      }
+    },
+    {
+      "agentId": "spikey",
+      "match": {
+        "channel": "discord",
+        "accountId": "spikey"
+      }
+    },
+    {
+      "agentId": "xiaohongcai",
+      "match": {
+        "channel": "discord",
+        "accountId": "xiaohongcai"
+      }
+    }
+  ]
+}

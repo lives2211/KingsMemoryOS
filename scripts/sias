@@ -1,0 +1,184 @@
+#!/bin/bash
+# SIAS CLI - 命令行快速添加学习
+
+set -e
+
+WORKSPACE="${HOME}/.openclaw/workspace"
+LEARNINGS_DIR="${WORKSPACE}/.learnings"
+DATE=$(date +%Y%m%d)
+
+show_help() {
+    cat << EOF
+SIAS CLI - 快速添加学习记录
+
+Usage: sias <command> [options]
+
+Commands:
+    add, a          添加新的学习记录
+    list, l         列出所有学习记录
+    stats, s        显示统计信息
+    promote, p      手动升级记录到 MEMORY.md
+    sync            同步 Agents 间的学习
+    dashboard       打开 Dashboard
+    help            显示帮助
+
+Examples:
+    sias add --type LRN --title "New learning" --content "Details..."
+    sias list --type ERR
+    sias stats
+    sias promote LRN-20260310-001
+
+EOF
+}
+
+cmd_add() {
+    local type="LRN"
+    local title=""
+    local content=""
+    local area="workflow"
+    local priority="medium"
+    
+    # 解析参数
+    while [[ $# -gt 0 ]]; do
+        case $1 in
+            --type|-t) type="$2"; shift 2 ;;
+            --title|-T) title="$2"; shift 2 ;;
+            --content|-c) content="$2"; shift 2 ;;
+            --area|-a) area="$2"; shift 2 ;;
+            --priority|-p) priority="$2"; shift 2 ;;
+            *) shift ;;
+        esac
+    done
+    
+    # 验证
+    if [[ -z "$title" ]]; then
+        echo "Error: Title is required"
+        echo "Usage: sias add --title \"Your title\" --content \"Your content\""
+        exit 1
+    fi
+    
+    # 确定文件
+    local filename
+    case $type in
+        ERR) filename="ERRORS.md" ;;
+        LRN) filename="LEARNINGS.md" ;;
+        COR) filename="CORRECTIONS.md" ;;
+        FEAT) filename="FEATURE_REQUESTS.md" ;;
+        *) echo "Error: Invalid type. Use ERR, LRN, COR, or FEAT"; exit 1 ;;
+    esac
+    
+    # 生成 ID
+    local count=$(grep -c "^## \[" "${LEARNINGS_DIR}/${filename}" 2>/dev/null || echo 0)
+    local id="${type}-${DATE}-$(printf '%03d' $((count + 1)))"
+    
+    # 添加到文件
+    cat >> "${LEARNINGS_DIR}/${filename}" << EOF
+
+## [${id}] ${title}
+- **Area**: ${area}
+- **Priority**: ${priority}
+- **Status**: active
+- **Trigger**: CLI add command
+- **Content**: ${content}
+- **Action**: Review and apply
+EOF
+    
+    echo "✅ Added [${id}] to ${filename}"
+}
+
+cmd_list() {
+    local type=""
+    
+    while [[ $# -gt 0 ]]; do
+        case $1 in
+            --type|-t) type="$2"; shift 2 ;;
+            *) shift ;;
+        esac
+    done
+    
+    echo "=== SIAS Learning Records ==="
+    echo ""
+    
+    for file in ERRORS.md LEARNINGS.md CORRECTIONS.md FEATURE_REQUESTS.md; do
+        [[ -n "$type" && ! "$file" =~ ${type} ]] && continue
+        
+        local filepath="${LEARNINGS_DIR}/${file}"
+        [[ -f "$filepath" ]] || continue
+        
+        local count=$(grep -c "^## \[" "$filepath" 2>/dev/null || echo 0)
+        local name=$(echo "$file" | sed 's/.md//')
+        
+        echo "📄 ${name}: ${count} entries"
+        
+        # 显示最近3条
+        grep "^## \[" "$filepath" 2>/dev/null | tail -3 | sed 's/^## /   - /'
+        echo ""
+    done
+}
+
+cmd_stats() {
+    echo "=== SIAS Statistics ==="
+    echo ""
+    
+    local total=0
+    for file in ERRORS.md LEARNINGS.md CORRECTIONS.md FEATURE_REQUESTS.md; do
+        local filepath="${LEARNINGS_DIR}/${file}"
+        local count=0
+        if [[ -f "$filepath" ]]; then
+            count=$(grep -c "^## \[" "$filepath" 2>/dev/null || echo 0)
+        fi
+        total=$((total + count))
+        local name=$(echo "$file" | sed 's/.md//')
+        echo "  ${name}: ${count}"
+    done
+    
+    echo ""
+    echo "  Total: ${total}"
+    echo ""
+    
+    # Dashboard 状态
+    if pgrep -f "python3.*http.server.*8082" > /dev/null; then
+        echo "  Dashboard: 🟢 Running (http://localhost:8082)"
+    else
+        echo "  Dashboard: 🔴 Stopped"
+    fi
+}
+
+cmd_promote() {
+    local id="$1"
+    
+    if [[ -z "$id" ]]; then
+        echo "Error: Entry ID required"
+        echo "Usage: sias promote <ID>"
+        exit 1
+    fi
+    
+    python3 "${WORKSPACE}/scripts/sias-auto-promote.py"
+}
+
+cmd_sync() {
+    "${WORKSPACE}/scripts/sias-sync.sh"
+}
+
+cmd_dashboard() {
+    if pgrep -f "python3.*http.server.*8082" > /dev/null; then
+        echo "Dashboard already running at http://localhost:8082"
+    else
+        echo "Starting dashboard..."
+        cd "${WORKSPACE}/sias-dashboard" && python3 -m http.server 8082 > /tmp/sias-dashboard.log 2>&1 &
+        sleep 2
+        echo "Dashboard started at http://localhost:8082"
+    fi
+}
+
+# 主命令处理
+case "${1:-help}" in
+    add|a) shift; cmd_add "$@" ;;
+    list|l) shift; cmd_list "$@" ;;
+    stats|s) shift; cmd_stats "$@" ;;
+    promote|p) shift; cmd_promote "$@" ;;
+    sync) shift; cmd_sync "$@" ;;
+    dashboard) shift; cmd_dashboard "$@" ;;
+    help|--help|-h) show_help ;;
+    *) echo "Unknown command: $1"; show_help; exit 1 ;;
+esac

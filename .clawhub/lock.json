@@ -1,0 +1,769 @@
+{
+  "version": 1,
+  "skills": {
+    "elite-longterm-memory": {
+      "version": "1.2.3",
+      "installedAt": 1770820995246
+    },
+    "voice-wake-say": {
+      "version": "1.0.1",
+      "installedAt": 1770820999900
+    },
+    "jarvis-voice": {
+      "version": "1.0.0",
+      "installedAt": 1770821005624
+    },
+    "self-improving-agent-1-0-2": {
+      "version": "1.0.0",
+      "installedAt": 1770821048826
+    },
+    "learning": {
+      "version": "1.0.0",
+      "installedAt": 1770821053908
+    },
+    "autonomous-agent": {
+      "version": "2.1.1",
+      "installedAt": 1770821074897
+    },
+    "odoo-openclaw-skill": {
+      "version": "2.0.5",
+      "installedAt": 1770823314449
+    },
+    "a2a-hub": {
+      "version": "1.3.0",
+      "installedAt": 1770823318498
+    },
+    "clawdbot-crm-skill": {
+      "version": "0.1.0",
+      "installedAt": 1770823322396
+    },
+    "openclaw-aisa-finance-equity-crypto-price-market-data-news": {
+      "version": "1.0.0",
+      "installedAt": 1770823325299
+    },
+    "mertsniper": {
+      "version": "1.0.1",
+      "installedAt": 1770823329360
+    },
+    "pomodoro-bot": {
+      "version": "1.0.0",
+      "installedAt": 1770823332257
+    },
+    "moltstreet": {
+      "version": "1.0.2",
+      "installedAt": 1770823337083
+    },
+    "openclaw-aisa-search-web-academic-tavily": {
+      "version": "1.0.0",
+      "installedAt": 1770823341355
+    },
+    "recursive-generosity-protocol": {
+      "version": "1.0.0",
+      "installedAt": 1770823346106
+    },
+    "feishu-docs": {
+      "version": "1.1.1",
+      "installedAt": 1770823350089
+    },
+    "eyebot-tradebot": {
+      "version": "1.8.0",
+      "installedAt": 1770823354309
+    },
+    "feishu-deep-research": {
+      "version": "2.0.0",
+      "installedAt": 1770823357705
+    },
+    "text-translator": {
+      "version": "1.1.0",
+      "installedAt": 1770823360631
+    },
+    "data-cog": {
+      "version": "1.0.1",
+      "installedAt": 1770823363778
+    },
+    "amazon-product-api-skill": {
+      "version": "0.1.0",
+      "installedAt": 1770823368476
+    },
+    "lygo-mint-verifier": {
+      "version": "1.0.0",
+      "installedAt": 1770823372092
+    },
+    "audit-code": {
+      "version": "1.0.0",
+      "installedAt": 1770823375342
+    },
+    "scan-skill": {
+      "version": "1.0.0",
+      "installedAt": 1770823378546
+    },
+    "vet-repo": {
+      "version": "1.0.0",
+      "installedAt": 1770823381427
+    },
+    "skill-auditor-pro": {
+      "version": "2.1.1",
+      "installedAt": 1770823385093
+    },
+    "openscan": {
+      "version": "1.0.0",
+      "installedAt": 1770823388666
+    },
+    "build-session": {
+      "version": "1.0.0",
+      "installedAt": 1770823391708
+    },
+    "time-tracker": {
+      "version": "1.0.2",
+      "installedAt": 1770823394349
+    },
+    "mistral-ocr": {
+      "version": "1.0.2",
+      "installedAt": 1770823596190
+    },
+    "beauty-generation-api": {
+      "version": "1.2.15",
+      "installedAt": 1770823599724
+    },
+    "studying": {
+      "version": "1.0.0",
+      "installedAt": 1770823604371
+    },
+    "imap-email": {
+      "version": "1.0.3",
+      "installedAt": 1770823608942
+    },
+    "clawfriend": {
+      "version": "1.1.0",
+      "installedAt": 1770823615459
+    },
+    "which-llm": {
+      "version": "1.0.9",
+      "installedAt": 1770823618965
+    },
+    "skill-manager": {
+      "version": "1.0.0",
+      "installedAt": 1770823624113
+    },
+    "memory-tools": {
+      "version": "1.1.1",
+      "installedAt": 1770823678437
+    },
+    "continuous-learning": {
+      "version": "1.0.0",
+      "installedAt": 1770823683544
+    },
+    "workflow-automation": {
+      "version": "1.0.0",
+      "installedAt": 1770823687106
+    },
+    "slovecaptcha": {
+      "version": "1.0.2",
+      "installedAt": 1770823689990
+    },
+    "google-ai-usage-monitor": {
+      "version": "1.0.0",
+      "installedAt": 1770823693943
+    },
+    "restart-guard": {
+      "version": "1.1.0",
+      "installedAt": 1770823698551
+    },
+    "clawdtalk-client": {
+      "version": "1.3.0",
+      "installedAt": 1770823702484
+    },
+    "testing": {
+      "version": "1.0.0",
+      "installedAt": 1770823705928
+    },
+    "mineru": {
+      "version": "1.0.1",
+      "installedAt": 1770823709183
+    },
+    "zoho-recruit": {
+      "version": "1.0.3",
+      "installedAt": 1770823712281
+    },
+    "zoho-people": {
+      "version": "1.0.3",
+      "installedAt": 1770823716492
+    },
+    "zoho-inventory": {
+      "version": "1.0.3",
+      "installedAt": 1770823720052
+    },
+    "zoho-calendar": {
+      "version": "1.0.3",
+      "installedAt": 1770823724337
+    },
+    "zoho-mail": {
+      "version": "1.0.4",
+      "installedAt": 1770823728726
+    },
+    "zoho-crm": {
+      "version": "1.0.3",
+      "installedAt": 1770823731879
+    },
+    "moltrade": {
+      "version": "1.0.7",
+      "installedAt": 1770823736921
+    },
+    "zoho-bigin": {
+      "version": "1.0.3",
+      "installedAt": 1770823742000
+    },
+    "whatsapp-automation-a2a": {
+      "version": "1.4.1",
+      "installedAt": 1770823745505
+    },
+    "kaspa-dev": {
+      "version": "0.1.0",
+      "installedAt": 1770823750062
+    },
+    "attio-api": {
+      "version": "1.0.3",
+      "installedAt": 1770823754423
+    },
+    "github-api": {
+      "version": "1.0.3",
+      "installedAt": 1770823757421
+    },
+    "monday": {
+      "version": "1.0.3",
+      "installedAt": 1770823761641
+    },
+    "linear-api": {
+      "version": "1.0.3",
+      "installedAt": 1770823766950
+    },
+    "feishu-api-bitable": {
+      "version": "1.0.0",
+      "installedAt": 1770823777139
+    },
+    "ai-assistant-skills": {
+      "version": "1.0.4",
+      "installedAt": 1770823781250
+    },
+    "book-roofing": {
+      "version": "1.0.1",
+      "installedAt": 1770823784708
+    },
+    "book-auto-body": {
+      "version": "1.0.1",
+      "installedAt": 1770823789411
+    },
+    "book-brake-service": {
+      "version": "1.0.1",
+      "installedAt": 1770823792489
+    },
+    "solvr": {
+      "version": "1.3.0",
+      "installedAt": 1770823796916
+    },
+    "flashcards-podcasts-master": {
+      "version": "1.0.0",
+      "installedAt": 1770823801759
+    },
+    "feishu-native-emoji": {
+      "version": "1.0.1",
+      "installedAt": 1770823809901
+    },
+    "moltmarkets-trader": {
+      "version": "1.0.1",
+      "installedAt": 1770823813844
+    },
+    "trial": {
+      "version": "1.0.0",
+      "installedAt": 1770823818094
+    },
+    "usdc": {
+      "version": "1.0.0",
+      "installedAt": 1770823821738
+    },
+    "personal-finance": {
+      "version": "1.0.0",
+      "installedAt": 1770823825218
+    },
+    "soroban": {
+      "version": "1.0.1",
+      "installedAt": 1770823830384
+    },
+    "kaspa-wallet": {
+      "version": "1.0.0",
+      "installedAt": 1770823834190
+    },
+    "baidu-search": {
+      "version": "1.0.6",
+      "installedAt": 1770823837626
+    },
+    "conversation-summary": {
+      "version": "1.0.1",
+      "installedAt": 1770823844546
+    },
+    "skill-ai-assistant": {
+      "version": "1.0.0",
+      "installedAt": 1770823852238
+    },
+    "skill-summary": {
+      "version": "1.0.0",
+      "installedAt": 1770823857601
+    },
+    "tencent-cloud-cos-skill": {
+      "version": "1.0.0",
+      "installedAt": 1770823873938
+    },
+    "memory-continuity": {
+      "version": "1.0.0",
+      "installedAt": 1770823882235
+    },
+    "rokid": {
+      "version": "0.0.4",
+      "installedAt": 1770823890093
+    },
+    "email-daily-summary": {
+      "version": "0.1.0",
+      "installedAt": 1770823896161
+    },
+    "diarybeast-app": {
+      "version": "1.0.0",
+      "installedAt": 1770823900502
+    },
+    "vincent-agent-wallet": {
+      "version": "1.0.0",
+      "installedAt": 1770823905910
+    },
+    "lightweight-kb": {
+      "version": "1.0.0",
+      "installedAt": 1770823913163
+    },
+    "staratheris-arya-reminders": {
+      "version": "0.1.0",
+      "installedAt": 1770823919256
+    },
+    "woocommerce": {
+      "version": "1.0.3",
+      "installedAt": 1770823923534
+    },
+    "tardis": {
+      "version": "1.2.0",
+      "installedAt": 1770823927534
+    },
+    "google-play": {
+      "version": "1.0.3",
+      "installedAt": 1770823930316
+    },
+    "google-slides": {
+      "version": "1.0.3",
+      "installedAt": 1770823932977
+    },
+    "klaviyo": {
+      "version": "1.0.3",
+      "installedAt": 1770823936298
+    },
+    "mailchimp": {
+      "version": "1.0.3",
+      "installedAt": 1770823941507
+    },
+    "intercom": {
+      "version": "0.0.2",
+      "installedAt": 1770823946519
+    },
+    "diarybeast": {
+      "version": "1.2.1",
+      "installedAt": 1770823949791
+    },
+    "lobster-tank": {
+      "version": "1.1.0",
+      "installedAt": 1770823953932
+    },
+    "pdf-text-extractor": {
+      "version": "1.0.0",
+      "installedAt": 1770823958292
+    },
+    "signalshield-analyst-teneo": {
+      "version": "1.0.4",
+      "installedAt": 1770823961748
+    },
+    "metals-agent-teneo": {
+      "version": "1.0.5",
+      "installedAt": 1770823966228
+    },
+    "gas-war-sniper-teneo": {
+      "version": "1.0.6",
+      "installedAt": 1770823970442
+    },
+    "fitnesscoach-teneo": {
+      "version": "1.0.6",
+      "installedAt": 1770823974266
+    },
+    "coindeskfeedagent-teneo": {
+      "version": "1.0.5",
+      "installedAt": 1770823977629
+    },
+    "smart-accounts-kit": {
+      "version": "1.0.6",
+      "installedAt": 1770823983292
+    },
+    "lifi-skill": {
+      "version": "2.0.1",
+      "installedAt": 1770823987542
+    },
+    "x-platform-agent-teneo": {
+      "version": "1.0.13",
+      "installedAt": 1770823990426
+    },
+    "amazon-teneo": {
+      "version": "1.0.9",
+      "installedAt": 1770823994563
+    },
+    "openclaw-agent-optimize": {
+      "version": "1.0.9",
+      "installedAt": 1770823999074
+    },
+    "whatsapp-business": {
+      "version": "1.0.3",
+      "installedAt": 1770824002413
+    },
+    "feishu-docx-powerwrite": {
+      "version": "0.1.0",
+      "installedAt": 1770824006976
+    },
+    "teneo-agent-sdk": {
+      "version": "1.0.0",
+      "installedAt": 1770824011216
+    },
+    "youtube-api-skill": {
+      "version": "1.0.3",
+      "installedAt": 1770824014400
+    },
+    "trello-api": {
+      "version": "1.0.3",
+      "installedAt": 1770824018715
+    },
+    "blogburst": {
+      "version": "1.2.0",
+      "installedAt": 1770824023007
+    },
+    "ooze-agents": {
+      "version": "2.0.0",
+      "installedAt": 1770824025808
+    },
+    "gog-calendar": {
+      "version": "1.0.0",
+      "installedAt": 1770824030237
+    },
+    "cicd-pipeline": {
+      "version": "1.0.0",
+      "installedAt": 1770824034832
+    },
+    "docker-sandbox": {
+      "version": "1.0.0",
+      "installedAt": 1770824038049
+    },
+    "brainz-tasks": {
+      "version": "1.0.0",
+      "installedAt": 1770824042254
+    },
+    "pdf-extract": {
+      "version": "1.0.0",
+      "installedAt": 1770824046772
+    },
+    "diagram-generator": {
+      "version": "1.1.1",
+      "installedAt": 1770824050103
+    },
+    "outlook-api": {
+      "version": "1.0.3",
+      "installedAt": 1770824054555
+    },
+    "google-meet": {
+      "version": "1.0.4",
+      "installedAt": 1770824057849
+    },
+    "python": {
+      "version": "1.0.0",
+      "installedAt": 1770824062114
+    },
+    "avatar-video-messages": {
+      "version": "0.1.2",
+      "installedAt": 1770824065587
+    },
+    "xiaohongshutools": {
+      "version": "0.1.0",
+      "installedAt": 1770824072180
+    },
+    "crypto-self-learning": {
+      "version": "1.0.0",
+      "installedAt": 1770824076547
+    },
+    "xero": {
+      "version": "1.0.4",
+      "installedAt": 1770824079946
+    },
+    "typeform": {
+      "version": "1.0.4",
+      "installedAt": 1770824082941
+    },
+    "stripe-api": {
+      "version": "1.0.8",
+      "installedAt": 1770824085846
+    },
+    "shopify": {
+      "version": "1.0.1",
+      "installedAt": 1770824089442
+    },
+    "salesforce-api": {
+      "version": "1.0.4",
+      "installedAt": 1770824094626
+    },
+    "gembox-skill": {
+      "version": "0.9.0",
+      "installedAt": 1770824098162
+    },
+    "god-mode": {
+      "version": "0.1.0",
+      "installedAt": 1770824103349
+    },
+    "autonomous-skill-orchestrator": {
+      "version": "1.2.0",
+      "installedAt": 1770824107688
+    },
+    "api-gateway": {
+      "version": "1.0.23",
+      "installedAt": 1770824115650
+    },
+    "amygdala-memory": {
+      "version": "1.7.0",
+      "installedAt": 1770824121994
+    },
+    "win-mouse-native": {
+      "version": "1.0.0",
+      "installedAt": 1770824126313
+    },
+    "google-calendar": {
+      "version": "0.1.0",
+      "installedAt": 1770824129215
+    },
+    "nodetool": {
+      "version": "0.6.3",
+      "installedAt": 1770824132405
+    },
+    "the-2026-guide-to-prompt-engineering-ibm-4a7e73bd": {
+      "version": "1.0.0",
+      "installedAt": 1770824135674
+    },
+    "molt-city": {
+      "version": "1.0.0",
+      "installedAt": 1770824139942
+    },
+    "agentchan": {
+      "version": "1.0.0",
+      "installedAt": 1770824142914
+    },
+    "aikek": {
+      "version": "1.0.0",
+      "installedAt": 1770824146311
+    },
+    "ercdata": {
+      "version": "1.0.0",
+      "installedAt": 1770824149789
+    },
+    "pdf": {
+      "version": "0.1.0",
+      "installedAt": 1770824153824
+    },
+    "productboard-release": {
+      "version": "0.1.0",
+      "installedAt": 1770824156862
+    },
+    "silverback-defi": {
+      "version": "4.0.0",
+      "installedAt": 1770824160343
+    },
+    "openwork": {
+      "version": "2.4.1",
+      "installedAt": 1770824164618
+    },
+    "use-soulseek": {
+      "version": "1.0.2",
+      "installedAt": 1770824167960
+    },
+    "senior-devops": {
+      "version": "1.0.0",
+      "installedAt": 1770824172551
+    },
+    "voice-note-to-midi": {
+      "version": "0.1.0",
+      "installedAt": 1770824175789
+    },
+    "konteks": {
+      "version": "1.0.2",
+      "installedAt": 1770824178782
+    },
+    "sure": {
+      "version": "1.0.0",
+      "installedAt": 1770824182230
+    },
+    "mondilo": {
+      "version": "1.0.0",
+      "installedAt": 1770824185314
+    },
+    "skills-devo": {
+      "version": "1.0.0",
+      "installedAt": 1770824189669
+    },
+    "qmd-markdown-search": {
+      "version": "1.0.0",
+      "installedAt": 1770824192894
+    },
+    "git-essentials": {
+      "version": "1.0.0",
+      "installedAt": 1770824195669
+    },
+    "canva": {
+      "version": "1.0.0",
+      "installedAt": 1770824200039
+    },
+    "tiangong-wps-ppt-automation": {
+      "version": "0.1.0",
+      "installedAt": 1770824204439
+    },
+    "tiangong-wps-word-automation": {
+      "version": "0.1.0",
+      "installedAt": 1770824207572
+    },
+    "luma": {
+      "version": "1.0.0",
+      "installedAt": 1770824211298
+    },
+    "korea-metropolitan-bus-alerts": {
+      "version": "1.0.1",
+      "installedAt": 1770824215628
+    },
+    "plane": {
+      "version": "1.0.0",
+      "installedAt": 1770824219904
+    },
+    "nas-master": {
+      "version": "1.0.0",
+      "installedAt": 1770824224092
+    },
+    "simmer-copytrading": {
+      "version": "1.3.1",
+      "installedAt": 1770824227723
+    },
+    "home-assistant": {
+      "version": "1.0.0",
+      "installedAt": 1770824230843
+    },
+    "mpc-accept-crypto-payments": {
+      "version": "0.3.0",
+      "installedAt": 1770824236279
+    },
+    "my-tesla": {
+      "version": "0.1.64",
+      "installedAt": 1770824247593
+    },
+    "email-prompt-injection-defense": {
+      "version": "1.0.1",
+      "installedAt": 1770824250677
+    },
+    "n8n-monitor": {
+      "version": "1.0.1",
+      "installedAt": 1770824254975
+    },
+    "supernote-cloud": {
+      "version": "1.0.0",
+      "installedAt": 1770824258531
+    },
+    "proactive-agent": {
+      "version": "3.1.0",
+      "installedAt": 1770824264551
+    },
+    "voice-agent": {
+      "version": "1.0.1",
+      "installedAt": 1770824268548
+    },
+    "save-money": {
+      "version": "4.2.0",
+      "installedAt": 1770824271739
+    },
+    "find-skills": {
+      "version": "0.1.0",
+      "installedAt": 1770874434661
+    },
+    "agent-council": {
+      "version": "1.0.0",
+      "installedAt": 1770883207043
+    },
+    "agent-identity-kit": {
+      "version": "1.0.0",
+      "installedAt": 1770883212878
+    },
+    "agenticflow-skill": {
+      "version": "0.1.0",
+      "installedAt": 1770883218766
+    },
+    "agentlens": {
+      "version": "1.0.0",
+      "installedAt": 1770883224759
+    },
+    "git-sync": {
+      "version": "1.0.1",
+      "installedAt": 1770883237958
+    },
+    "git-summary": {
+      "version": "1.0.0",
+      "installedAt": 1770883246522
+    },
+    "pr-reviewer": {
+      "version": "1.0.0",
+      "installedAt": 1770883259692
+    },
+    "cognitive-memory": {
+      "version": "1.0.8",
+      "installedAt": 1770883270904
+    },
+    "essence-distiller": {
+      "version": "1.0.1",
+      "installedAt": 1770883278699
+    },
+    "qmd": {
+      "version": "1.0.0",
+      "installedAt": 1770884478247
+    },
+    "vercel-react-best-practices": {
+      "version": "1.0.0",
+      "installedAt": 1770884645463
+    },
+    "remotion-best-practices": {
+      "version": "1.0.0",
+      "installedAt": 1770884662053
+    },
+    "frontend-design": {
+      "version": "1.0.0",
+      "installedAt": 1770884670346
+    },
+    "browser-use": {
+      "version": "1.0.0",
+      "installedAt": 1770884679627
+    },
+    "web-design": {
+      "version": "1.0.0",
+      "installedAt": 1770884703106
+    },
+    "evolver": {
+      "version": "1.27.2",
+      "installedAt": 1772829622152
+    },
+    "ai-news-daily": {
+      "version": "1.0.3",
+      "installedAt": 1772524875877
+    },
+    "feishu-evolver-wrapper": {
+      "version": "1.7.1",
+      "installedAt": 1773024127634
+    }
+  }
+}

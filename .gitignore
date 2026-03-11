@@ -1,0 +1,24 @@
+node_modules/
+.env
+.env.*
+*.log
+tmp/
+dist/
+build/
+.cache/
+.DS_Store
+*.zip
+OpenClaw.Manager_*.AppImage
+OpenClaw.Manager_*.deb
+pinchtab
+
+# Sensitive config files with tokens
+memory/shared/discord-config-generated.json
+memory/shared/telegram-to-discord-migration-guide.md
+workspace-daping/intel/research/discord-*.json
+workspace-daping/intel/research/openclaw-discord-*.json
+workspace-bingbing/discord-config-patch.json
+config/*.env
+twitter-credentials.env
+xiaohongshu-matrix/.env.*
+

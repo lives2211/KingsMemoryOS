@@ -1,0 +1,192 @@
+#!/bin/bash
+# Dwight超级情报收集器 - 全渠道版
+# 运行时间: 每天08:00
+
+DATE=$(date +%Y-%m-%d)
+TIME=$(date +%H:%M:%S)
+INTEL_DIR="/media/fengxueda/D/openclaw-data/workspace/workspace-yitai/intel"
+DATA_FILE="$INTEL_DIR/data/${DATE}.json"
+MARKDOWN_FILE="$INTEL_DIR/DAILY-INTEL.md"
+LOG_FILE="$INTEL_DIR/logs/${DATE}.log"
+
+mkdir -p "$INTEL_DIR/data" "$INTEL_DIR/logs"
+
+echo "[$TIME] 🚀 Dwight情报收集开始" | tee -a "$LOG_FILE"
+
+# ============================================
+# 1. 6551 API - 加密/AI新闻 (P0)
+# ============================================
+echo "[$TIME] 📡 收集6551新闻..." | tee -a "$LOG_FILE"
+NEWS_6551=$(curl -s -X POST "https://ai.6551.io/open/news_search" \
+  -H "Authorization: Bearer ${OPENNEWS_TOKEN:-}" \
+  -H "Content-Type: application/json" \
+  -d '{"q": "Bitcoin OR ETH OR Solana OR AI OR OpenClaw OR agent", "limit": 20, "freshness": "pd"}' 2>/dev/null)
+
+if [ -n "$NEWS_6551" ]; then
+    echo "✅ 6551新闻获取成功" | tee -a "$LOG_FILE"
+else
+    echo "⚠️ 6551新闻获取失败" | tee -a "$LOG_FILE"
+fi
+
+# ============================================
+# 2. Nitter RSS - Twitter热点 (P0)
+# ============================================
+echo "[$TIME] 🐦 收集Twitter热点..." | tee -a "$LOG_FILE"
+
+NITTER_HOSTS=("nitter.privacydev.net" "nitter.net" "nitter.it")
+TWITTER_HOT=""
+
+for host in "${NITTER_HOSTS[@]}"; do
+    TWITTER_HOT=$(curl -s --max-time 15 "https://${host}/search?f=tweets&q=AI%20agent&since=d" 2>/dev/null | \
+        grep -oP '(?<=<title>)[^<]+' | tail -n +2 | head -10)
+    if [ -n "$TWITTER_HOT" ]; then
+        echo "✅ Twitter获取成功: $host" | tee -a "$LOG_FILE"
+        break
+    fi
+done
+
+if [ -z "$TWITTER_HOT" ]; then
+    echo "⚠️ Twitter获取失败，尝试备用方案..." | tee -a "$LOG_FILE"
+fi
+
+# ============================================
+# 3. GitHub Trending - 技术趋势 (P1)
+# ============================================
+echo "[$TIME] ⭐ 收集GitHub Trending..." | tee -a "$LOG_FILE"
+
+GITHUB_TRENDING=$(curl -s "https://github.com/trending?since=daily" 2>/dev/null | \
+    grep -oP '(?<=href=")/[^/]+/[^/]+(?=")' | head -10 | sort -u)
+
+if [ -n "$GITHUB_TRENDING" ]; then
+    echo "✅ GitHub Trending获取成功" | tee -a "$LOG_FILE"
+else
+    echo "⚠️ GitHub Trending获取失败" | tee -a "$LOG_FILE"
+fi
+
+# ============================================
+# 4. Hacker News - 技术讨论 (P1)
+# ============================================
+echo "[$TIME] 📰 收集Hacker News..." | tee -a "$LOG_FILE"
+
+HN_TOP=$(curl -s "https://hacker-news.firebaseio.com/v0/topstories.json" 2>/dev/null | \
+    tr ',' '\n' | head -10)
+
+HN_STORIES=""
+for id in $HN_TOP; do
+    story=$(curl -s "https://hacker-news.firebaseio.com/v0/item/${id}.json" 2>/dev/null | \
+        grep -oP '(?<=\"title\":\")[^\"]+' | head -1)
+    if [ -n "$story" ]; then
+        HN_STORIES="${HN_STORIES}${story}\n"
+    fi
+done
+
+if [ -n "$HN_STORIES" ]; then
+    echo "✅ Hacker News获取成功" | tee -a "$LOG_FILE"
+else
+    echo "⚠️ Hacker News获取失败" | tee -a "$LOG_FILE"
+fi
+
+# ============================================
+# 5. RSSHub - 多平台聚合 (P2)
+# ============================================
+echo "[$TIME] 🌐 收集RSSHub..." | tee -a "$LOG_FILE"
+
+RSSHUB_SOURCES=(
+    "https://rsshub.app/twitter/search/AI%20agent"
+    "https://rsshub.app/github/trending/daily/any"
+)
+
+RSSHUB_CONTENT=""
+for rss_url in "${RSSHUB_SOURCES[@]}"; do
+    content=$(curl -s --max-time 10 "$rss_url" 2>/dev/null | \
+        grep -oP '(?<=<title>)[^<]+' | tail -n +2 | head -5)
+    if [ -n "$content" ]; then
+        RSSHUB_CONTENT="${RSSHUB_CONTENT}${content}\n"
+    fi
+done
+
+if [ -n "$RSSHUB_CONTENT" ]; then
+    echo "✅ RSSHub获取成功" | tee -a "$LOG_FILE"
+else
+    echo "⚠️ RSSHub获取失败" | tee -a "$LOG_FILE"
+fi
+
+# ============================================
+# 生成JSON数据文件
+# ============================================
+echo "[$TIME] 💾 生成数据文件..." | tee -a "$LOG_FILE"
+
+cat > "$DATA_FILE" << EOF
+{
+  "date": "$DATE",
+  "time": "$TIME",
+  "sources": {
+    "6551": $(echo "$NEWS_6551" | jq -c '.' 2>/dev/null || echo 'null'),
+    "twitter_nitter": $(echo "$TWITTER_HOT" | jq -R -s -c 'split("\n") | map(select(length > 0))' 2>/dev/null || echo '[]'),
+    "github_trending": $(echo "$GITHUB_TRENDING" | jq -R -s -c 'split("\n") | map(select(length > 0))' 2>/dev/null || echo '[]'),
+    "hackernews": $(echo -e "$HN_STORIES" | jq -R -s -c 'split("\n") | map(select(length > 0))' 2>/dev/null || echo '[]'),
+    "rsshub": $(echo -e "$RSSHUB_CONTENT" | jq -R -s -c 'split("\n") | map(select(length > 0))' 2>/dev/null || echo '[]')
+  },
+  "metadata": {
+    "collector": "Dwight",
+    "version": "2.0",
+    "total_sources": 5
+  }
+}
+EOF
+
+# ============================================
+# 生成Markdown摘要
+# ============================================
+echo "[$TIME] 📝 生成Markdown摘要..." | tee -a "$LOG_FILE"
+
+cat > "$MARKDOWN_FILE" << EOF
+# Daily Intel Report - $DATE
+*Generated by Dwight at $TIME*
+
+## 📊 数据概览
+- **日期**: $DATE
+- **来源**: 6551, Twitter/Nitter, GitHub, HN, RSSHub
+- **收集者**: Dwight (情报官)
+
+---
+
+## 🔥 Top Stories
+
+### Crypto & AI News (6551)
+$(echo "$NEWS_6551" | jq -r '.results[:5] | .[] | "- **\(.title)** (Score: \(.aiRating.score // "N/A"))\n  - Signal: \(.signal // "neutral")\n  - Source: \(.source)\n"' 2>/dev/null || echo "_数据解析中..._")
+
+### Twitter Hot Topics
+$(echo "$TWITTER_HOT" | sed 's/^/- /' 2>/dev/null || echo "_暂无数据_")
+
+### GitHub Trending
+$(echo "$GITHUB_TRENDING" | sed 's/^/- /' 2>/dev/null || echo "_暂无数据_")
+
+### Hacker News Top
+$(echo -e "$HN_STORIES" | sed 's/^/- /' 2>/dev/null || echo "_暂无数据_")
+
+### RSSHub Aggregated
+$(echo -e "$RSSHUB_CONTENT" | sed 's/^/- /' 2>/dev/null || echo "_暂无数据_")
+
+---
+
+## 📁 原始数据
+- **JSON**: \`intel/data/${DATE}.json\`
+- **Log**: \`intel/logs/${DATE}.log\`
+
+---
+
+*Next update: Tomorrow 08:00*
+EOF
+
+echo "[$TIME] ✅ 情报收集完成!" | tee -a "$LOG_FILE"
+echo "[$TIME] 📄 Markdown: $MARKDOWN_FILE" | tee -a "$LOG_FILE"
+echo "[$TIME] 📊 JSON: $DATA_FILE" | tee -a "$LOG_FILE"
+
+# Telegram通知（如果配置了bot）
+if [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$TELEGRAM_CHAT_ID" ]; then
+    curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+        -d "chat_id=${TELEGRAM_CHAT_ID}" \
+        -d "text=🚀 Dwight情报已更新！%0A📅 ${DATE}%0A📄 ${MARKDOWN_FILE}" \
+        > /dev/null 2>&1
+fi
