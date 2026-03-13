@@ -281,11 +281,15 @@ class ContentGenerator:
         """调用render_xhs生成图片"""
         script_path = self.content_gen_path / "scripts" / "render_xhs.py"
         
+        # 获取输出目录（markdown文件所在目录）
+        output_dir = markdown_file.parent
+        
         cmd = [
             "python3", str(script_path),
             str(markdown_file),
             "-t", theme,
-            "-m", mode
+            "-m", mode,
+            "-o", str(output_dir)
         ]
         
         try:

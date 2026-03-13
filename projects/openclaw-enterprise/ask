@@ -1,0 +1,12 @@
+#!/bin/bash
+# 向总指挥提问/派任务
+# 用法: ./ask "任务描述"
+
+if [ -z "$1" ]; then
+    echo "用法: ./ask "任务描述""
+    echo "示例: ./ask "帮我爬取数据，预算10美元""
+    exit 1
+fi
+
+cd "$(dirname "$0")"
+echo "$1" | python3 auto_dispatcher.py

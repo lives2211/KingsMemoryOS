@@ -1,0 +1,4 @@
+#!/bin/bash
+# 启动 Discord Bot 监听
+cd "$(dirname "$0")"
+python3 discord_bot.py

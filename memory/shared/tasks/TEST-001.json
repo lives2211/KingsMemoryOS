@@ -1,0 +1,19 @@
+{
+  "id": "TEST-001",
+  "title": "测试真正独立 Agent",
+  "description": "验证 Agent 是否真正独立执行",
+  "budget": 10,
+  "priority": "normal",
+  "assigned_to": "spikey",
+  "assigned_at": "2026-03-13T16:28:59.025449",
+  "status": "assigned",
+  "agent_role": "审计官",
+  "agent_skills": [
+    "审计",
+    "复盘",
+    "质量",
+    "审查",
+    "检查"
+  ],
+  "workspace": "/home/fengxueda/.openclaw/workspace-spikey"
+}

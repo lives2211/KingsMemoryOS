@@ -1,0 +1,121 @@
+Tweet 1:
+🛠️ 如何构建自己的 OpenClaw Skill
+
+Skill: my-skill-67
+
+我将展示从零到发布的完整流程 👇
+
+Tweet 2:
+Step 1: 项目结构
+
+```
+my-skill-67/
+├── SKILL.md          # 文档
+├── src/
+│   └── index.py      # 主代码
+├── config.yaml       # 配置
+└── requirements.txt  # 依赖
+```
+
+GitHub 模板:
+https://github.com/openclaw/skill-template
+
+Tweet 3:
+Step 2: SKILL.md 文档
+
+```markdown
+# My-Skill-67
+
+## Description
+Brief description here
+
+## Installation
+```bash
+openclaw skill install my-skill-67
+```
+
+## Usage
+Example commands...
+```
+
+文档是关键！
+
+Tweet 4:
+Step 3: 核心代码
+
+```python
+# src/index.py
+from openclaw import Skill
+
+class MySkill67Skill(Skill):
+    def run(self, input_data):
+        # Your logic here
+        result = process(input_data)
+        return result
+```
+
+保持代码简洁。
+
+Tweet 5:
+Step 4: 测试
+
+```bash
+# 本地测试
+openclaw skill test my-skill-67
+
+# 调试模式
+openclaw skill test my-skill-67 --debug
+```
+
+确保所有测试通过。
+
+Tweet 6:
+Step 5: 发布到社区
+
+```bash
+# 提交到 ClawHub
+openclaw skill publish my-skill-67
+
+# 分享你的 Skill
+openclaw skill share my-skill-67
+```
+
+社区会帮你 review。
+
+Tweet 7:
+最佳实践:
+
+✅ 写清晰的文档
+✅ 提供使用示例
+✅ 处理错误情况
+✅ 添加单元测试
+✅ 保持代码整洁
+
+❌ 不要硬编码 API keys
+❌ 不要忽略错误处理
+
+Tweet 8:
+完整示例:
+
+GitHub: https://github.com/openclaw/example-skill
+
+包含:
+• 完整项目结构
+• 测试用例
+• CI/CD 配置
+• 文档模板
+
+Fork 并修改即可。
+
+Tweet 9:
+下一步:
+
+1. Fork 模板仓库
+2. 实现你的逻辑
+3. 测试并提交
+4. 分享给社区
+
+期待看到你的 Skill! 🚀
+
+#OpenClaw #Skill #Development #Tutorial
+

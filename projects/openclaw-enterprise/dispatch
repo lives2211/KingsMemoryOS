@@ -1,0 +1,26 @@
+#!/bin/bash
+# 自然语言任务派发脚本
+# 用法: ./dispatch "你的任务描述"
+
+if [ -z "$1" ]; then
+    echo "🚀 自然语言任务派发"
+    echo ""
+    echo "用法:"
+    echo "  ./dispatch \"帮我爬取twitter数据，预算10美元\""
+    echo "  ./dispatch \"设计一个小红书封面\""
+    echo "  ./dispatch \"写一篇文案，5刀\""
+    echo ""
+    echo "或者使用交互模式:"
+    echo "  ./dispatch -i"
+    exit 1
+fi
+
+cd "$(dirname "$0")"
+
+if [ "$1" == "-i" ] || [ "$1" == "--interactive" ]; then
+    # 交互模式
+    python3 natural_dispatch.py --interactive
+else
+    # 单任务模式
+    echo "$1" | python3 natural_dispatch.py
+fi

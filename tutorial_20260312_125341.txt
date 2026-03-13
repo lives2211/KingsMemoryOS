@@ -1,0 +1,119 @@
+Tweet 1:
+⚡ 自动化工作流: Social Media Management
+
+节省: 2 hours/day
+
+完整搭建指南 👇
+
+Tweet 2:
+工作流概述:
+
+社交媒体自动管理
+
+使用的 Skills:
+• ai-content-pipeline
+• ai-image-generation
+• ai-video-generation
+
+完全自动化，零人工干预。
+
+Tweet 3:
+配置步骤:
+
+1️⃣ 安装所需 Skills
+2️⃣ 配置 API Keys
+3️⃣ 设置工作流 YAML
+4️⃣ 测试运行
+5️⃣ 部署到生产
+
+详细配置见 thread 👇
+
+Tweet 4:
+YAML 配置示例:
+
+```yaml
+workflow: social-media-management
+schedule: "0 9 * * *"  # 每天9点
+
+steps:
+  - skill: ai-content-pipeline
+  - skill: ai-image-generation
+  - skill: ai-video-generation
+```
+
+保存为 workflow.yaml
+
+Tweet 5:
+运行:
+
+```bash
+# 手动运行
+openclaw workflow run workflow.yaml
+
+# 定时运行
+openclaw workflow schedule workflow.yaml
+```
+
+开始自动化！
+
+Tweet 6:
+结果:
+
+⏱️ 节省时间: 2 hours/day
+📈 效率提升: 500%+
+💰 成本: $0
+😌 压力: 大幅降低
+
+ROI: 无限大
+
+Tweet 7:
+适用场景:
+
+✅ 重复性内容创作
+✅ 批量数据处理
+✅ 定时任务执行
+✅ 跨平台同步
+
+任何重复工作都可以自动化。
+
+Tweet 8:
+高级技巧:
+
+💡 条件判断:
+   if: result.status == 'success'
+
+💡 错误处理:
+   retry: 3
+   on_error: notify
+
+💡 并行执行:
+   parallel: true
+
+💡 数据传递:
+   output -> input
+
+Tweet 9:
+监控:
+
+```bash
+# 查看运行日志
+openclaw logs --workflow social-media-management
+
+# 实时监控
+openclaw logs --follow
+```
+
+随时掌握状态。
+
+Tweet 10:
+开始你的自动化:
+
+1. 选择工作流模板
+2. 自定义配置
+3. 测试运行
+4. 部署上线
+
+模板: https://clawhub.com/workflows
+
+#OpenClaw #Automation #Workflow #SocialMediaManagement
+

@@ -1,0 +1,30 @@
+{
+  "primary_thread": [
+    "🔥 GitHub Trending #1: Agency Agents\n\n⭐ 15950 stars\n📈 连续4天登顶GitHub Trending\n\nThis AI Agency framework is changing how we build autonomous systems.\n\nComplete breakdown 👇",
+    "What is Agency Agents?\n\nGitHub: https://github.com/mirofish/agency-agents\n\nAI Agency模式，群体智能范式\n\nKey features:\n✅ Multi-agent collaboration\n✅ Autonomous task execution\n✅ Production-ready\n✅ Open source",
+    "Why it's trending:\n\nThe AI Agency pattern is emerging as the next evolution:\n\n1. Single Agent → Limited scope\n2. Multi-Agent → Collaboration\n3. Agency → Full autonomy\n\nThis framework enables level 3.",
+    "Technical highlights:\n\n• Swarm intelligence architecture\n• Dynamic task delegation\n• Fault-tolerant design\n• Extensible agent system\n\nBuilt for real-world deployment.",
+    "Use cases:\n\n✅ Automated research teams\n✅ Content production agencies\n✅ Software development teams\n✅ Data processing pipelines\n\nAny workflow with multiple steps.",
+    "Comparison with OpenClaw:\n\nAgency Agents: Multi-agent orchestration\nOpenClaw: Skill-based automation\n\nThey're complementary:\n• Use OpenClaw for individual tasks\n• Use Agency Agents for coordination\n\nBest of both worlds.",
+    "Getting started:\n\n```bash\ngit clone https://github.com/mirofish/agency-agents\ncd agency-agents\npip install -r requirements.txt\npython examples/basic_agency.py\n```\n\n5 minutes to first agent.",
+    "Community:\n\n• 15950+ stars in 4 days\n• Active Discord community\n• Regular updates\n• Production users\n\nEarly but promising.",
+    "My take:\n\nThis is the direction AI is heading:\nFrom tools → agents → agencies\n\nWorth watching closely.\n\nGitHub: https://github.com/mirofish/agency-agents\n\n#AI #Agents #OpenSource #GitHubTrending #AgencyAI"
+  ],
+  "skill_thread": [
+    "🛠️ OpenClaw Skill Spotlight:\nApp Store Screenshots\n\nAuto-generate professional App Store screenshots\nQuality score: 100/100\n\nPerfect for indie developers 👇",
+    "The problem:\n\nCreating App Store screenshots is tedious:\n• Multiple device sizes\n• Localization requirements\n• Design consistency\n• Time consuming\n\nThis Skill automates it all.",
+    "What it does:\n\n✅ Auto-captures app screens\n✅ Applies device frames\n✅ Adds text overlays\n✅ Generates all sizes\n✅ Exports for all locales\n\nOne command, complete assets.",
+    "Usage:\n\n```bash\nopenclaw run app-store-screenshots \\\n  --app-path ./MyApp.app \\\n  --devices iPhone15,iPadPro \\\n  --locales en,zh,ja\n```\n\nThat's it. Screenshots ready.",
+    "Results:\n\n⏱️ Time saved: 3-4 hours\n📱 Devices: All supported\n🌍 Locales: Auto-generated\n🎨 Quality: Professional\n\nCost: $0 (included in OpenClaw)",
+    "Perfect for:\n\n✅ Indie developers\n✅ App agencies\n✅ Frequent updaters\n✅ Multi-language apps\n\nTry it: openclaw skill install app-store-screenshots\n\n#OpenClaw #AppDev #IndieDev #Automation"
+  ],
+  "summary": {
+    "date": "2026-03-12",
+    "total_tweets": 15,
+    "topics": [
+      "GitHub Trending",
+      "OpenClaw Skill"
+    ],
+    "estimated_time": "30-40 minutes"
+  }
+}

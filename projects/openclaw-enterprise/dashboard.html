@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦞 OpenClaw 任务派发系统</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 2px solid #e94560;
+            margin-bottom: 30px;
+        }
+        h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .subtitle { color: #888; font-size: 1.1em; }
+        
+        .dispatch-box {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .dispatch-box h2 {
+            color: #e94560;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        textarea {
+            width: 100%;
+            min-height: 100px;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            background: #0f0f1a;
+            color: #fff;
+            font-size: 16px;
+            resize: vertical;
+            margin-bottom: 15px;
+        }
+        .input-row {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .input-row input, .input-row select {
+            flex: 1;
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            background: #0f0f1a;
+            color: #fff;
+            font-size: 14px;
+        }
+        button {
+            background: #e94560;
+            color: #fff;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        button:hover { background: #ff6b6b; transform: translateY(-2px); }
+        button:disabled { background: #444; cursor: not-allowed; }
+        
+        .agents-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .agent-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s;
+        }
+        .agent-card:hover { border-color: #e94560; transform: translateY(-5px); }
+        .agent-emoji { font-size: 3em; margin-bottom: 10px; }
+        .agent-name { font-size: 1.3em; font-weight: 600; margin-bottom: 5px; }
+        .agent-role { color: #e94560; font-size: 0.9em; margin-bottom: 10px; }
+        .agent-skills { color: #888; font-size: 0.85em; }
+        
+        .tasks-section {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 30px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .tasks-section h2 {
+            color: #e94560;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .task-item {
+            background: rgba(0,0,0,0.2);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #e94560;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .task-info { flex: 1; }
+        .task-title { font-size: 1.1em; font-weight: 600; margin-bottom: 8px; }
+        .task-meta {
+            display: flex;
+            gap: 15px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .task-meta span { display: flex; align-items: center; gap: 5px; }
+        .task-status {
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+        .status-backlog { background: #4a5568; }
+        .status-progress { background: #3182ce; }
+        .status-done { background: #38a169; }
+        
+        .result-box {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(0,0,0,0.3);
+            display: none;
+        }
+        .result-box.show { display: block; }
+        .result-box.success { border: 1px solid #38a169; }
+        .result-box.error { border: 1px solid #e94560; }
+        
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #666;
+        }
+        .empty-state-icon { font-size: 4em; margin-bottom: 20px; }
+        
+        @media (max-width: 768px) {
+            .input-row { flex-direction: column; }
+            .task-item { flex-direction: column; gap: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🦞 OpenClaw 任务派发系统</h1>
+            <p class="subtitle">智能识别 · 自动匹配 · 即时派发</p>
+        </header>
+        
+        <div class="dispatch-box">
+            <h2>📝 快速派发任务</h2>
+            <textarea id="taskInput" placeholder="输入任务描述，例如：帮我爬取 Twitter 数据，预算10美元...">帮我</textarea>
+            <div class="input-row">
+                <input type="number" id="budgetInput" placeholder="预算 (USD)" value="10">
+                <select id="priorityInput">
+                    <option value="low">低优先级</option>
+                    <option value="normal" selected>普通</option>
+                    <option value="high">高优先级</option>
+                    <option value="urgent">紧急</option>
+                </select>
+            </div>
+            <button onclick="dispatchTask()" id="dispatchBtn">🚀 智能派发</button>
+            <div id="resultBox" class="result-box"></div>
+        </div>
+        
+        <div class="agents-grid">
+            <div class="agent-card">
+                <div class="agent-emoji">💻</div>
+                <div class="agent-name">@yitai</div>
+                <div class="agent-role">技术官</div>
+                <div class="agent-skills">编程 · 代码 · 脚本 · 开发 · 调试 · 爬取</div>
+            </div>
+            <div class="agent-card">
+                <div class="agent-emoji">🎨</div>
+                <div class="agent-name">@bingbing</div>
+                <div class="agent-role">创意官</div>
+                <div class="agent-skills">设计 · 创意 · 封面 · 内容 · 文案 · 写作</div>
+            </div>
+            <div class="agent-card">
+                <div class="agent-emoji">📊</div>
+                <div class="agent-name">@daping</div>
+                <div class="agent-role">检测官</div>
+                <div class="agent-skills">分析 · 数据 · 检测 · 监控 · 竞品</div>
+            </div>
+            <div class="agent-card">
+                <div class="agent-emoji">🔍</div>
+                <div class="agent-name">@spikey</div>
+                <div class="agent-role">审计官</div>
+                <div class="agent-skills">审计 · 复盘 · 质量 · 审查 · 检查</div>
+            </div>
+            <div class="agent-card">
+                <div class="agent-emoji">📱</div>
+                <div class="agent-name">@xiaohongcai</div>
+                <div class="agent-role">运营官</div>
+                <div class="agent-skills">社媒 · 运营 · 发布 · 小红书 · 公众号</div>
+            </div>
+        </div>
+        
+        <div class="tasks-section">
+            <h2>📋 任务列表</h2>
+            <div id="tasksList">
+                <div class="empty-state">
+                    <div class="empty-state-icon">📭</div>
+                    <p>暂无任务，在上方输入任务描述开始派发</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const API_URL = 'http://localhost:3100';
+        
+        async function dispatchTask() {
+            const input = document.getElementById('taskInput');
+            const budget = document.getElementById('budgetInput');
+            const priority = document.getElementById('priorityInput');
+            const btn = document.getElementById('dispatchBtn');
+            const resultBox = document.getElementById('resultBox');
+            
+            if (!input.value.trim()) {
+                showResult('请输入任务描述', 'error');
+                return;
+            }
+            
+            btn.disabled = true;
+            btn.textContent = '派发中...';
+            
+            try {
+                const response = await fetch(`${API_URL}/api/tasks`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        title: input.value.slice(0, 50),
+                        description: input.value,
+                        budget: parseFloat(budget.value) || 0,
+                        priority: priority.value,
+                        requester: 'dashboard'
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    showResult(`
+                        <h3>✅ 任务已派发</h3>
+                        <p><strong>任务ID:</strong> ${data.id}</p>
+                        <p><strong>指派给:</strong> @${data.agent_name} (${data.agent_role})</p>
+                        <p><strong>预算:</strong> $${data.budget}</p>
+                        <p><strong>状态:</strong> ${data.status}</p>
+                    `, 'success');
+                    
+                    input.value = '';
+                    loadTasks();
+                } else {
+                    showResult(`派发失败: ${data.error || '未知错误'}`, 'error');
+                }
+            } catch (error) {
+                showResult(`网络错误: ${error.message}`, 'error');
+            } finally {
+                btn.disabled = false;
+                btn.textContent = '🚀 智能派发';
+            }
+        }
+        
+        function showResult(html, type) {
+            const resultBox = document.getElementById('resultBox');
+            resultBox.innerHTML = html;
+            resultBox.className = `result-box show ${type}`;
+        }
+        
+        async function loadTasks() {
+            try {
+                const response = await fetch(`${API_URL}/api/tasks`);
+                const tasks = await response.json();
+                
+                const container = document.getElementById('tasksList');
+                
+                if (tasks.length === 0) {
+                    container.innerHTML = `
+                        <div class="empty-state">
+                            <div class="empty-state-icon">📭</div>
+                            <p>暂无任务，在上方输入任务描述开始派发</p>
+                        </div>
+                    `;
+                    return;
+                }
+                
+                container.innerHTML = tasks.reverse().map(task => `
+                    <div class="task-item">
+                        <div class="task-info">
+                            <div class="task-title">${task.title}</div>
+                            <div class="task-meta">
+                                <span>👤 @${task.agent_name}</span>
+                                <span>💰 $${task.budget}</span>
+                                <span>📅 ${new Date(task.created_at).toLocaleString()}</span>
+                            </div>
+                        </div>
+                        <span class="task-status status-${task.status}">${task.status}</span>
+                    </div>
+                `).join('');
+            } catch (error) {
+                console.error('加载任务失败:', error);
+            }
+        }
+        
+        // 页面加载时获取任务列表
+        loadTasks();
+        
+        // 每 10 秒刷新一次
+        setInterval(loadTasks, 10000);
+    </script>
+</body>
+</html>

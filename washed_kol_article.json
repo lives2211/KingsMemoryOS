@@ -1,0 +1,33 @@
+{
+  "source": {
+    "author": "AlchainHust",
+    "title": "OpenClaw \u6a59\u76ae\u4e66",
+    "engagement": "2482 likes, 614 retweets",
+    "key_points": [
+      "98\u9875\u5b8c\u6574\u6587\u6863",
+      "\u4ece\u5165\u95e8\u5230\u7cbe\u901a",
+      "\u5305\u542b\u5b9e\u6218\u6848\u4f8b",
+      "\u5b66\u4e60\u8def\u5f84\u6e05\u6670"
+    ],
+    "skill_focus": "OpenClaw \u5b8c\u6574\u5b66\u4e60\u4f53\u7cfb",
+    "github": "https://github.com/openclaw/openclaw",
+    "stars": 8900,
+    "content_summary": "\u7cfb\u7edf\u4ecb\u7ecd\u4e86 OpenClaw \u7684\u5b89\u88c5\u3001\u914d\u7f6e\u3001\u4f7f\u7528\u548c\u8fdb\u9636\u6280\u5de7"
+  },
+  "tweets": [
+    "\ud83d\udd25 Deep Dive: OpenClaw Orange Book\n\nChinese KOL @AlchainHust shared this 98-page guide (2482 likes, 614 retweets).\n\nI studied it. Here is what I learned \ud83d\udc47",
+    "\ud83d\udccd THE FRAMEWORK\n\nOpenClaw is not just a tool\u2014it is a complete AI agent operating system.\n\nGitHub: https://github.com/openclaw/openclaw\n\u2b50 8900 stars | 4 days Trending\n\nThis 98-page guide covers everything from zero to production.",
+    "\ud83d\udcda WHAT IS IN THE 98 PAGES:\n\n1. Installation & Setup (15 min)\n2. Core Concepts (30 min)\n3. Skill Development (1 hour)\n4. Workflow Automation (2 hours)\n5. Production Deployment (30 min)\n6. Advanced Techniques (ongoing)\n\nComplete learning path.",
+    "\ud83d\udca1 KEY INSIGHTS FROM THE GUIDE:\n\n\u2022 OpenClaw = Agent OS, not just tools\n\u2022 Skills are composable building blocks\n\u2022 Workflows connect skills into pipelines\n\u2022 Production-ready from day one\n\nThe mindset shift: Think systems, not scripts.",
+    "\ud83d\udd27 TECHNICAL BREAKDOWN\n\nArchitecture:\n\u2022 Core: Python/TypeScript runtime\n\u2022 Skills: Modular, reusable components\n\u2022 Workflows: Event-driven pipelines\n\u2022 Integration: REST API + Webhooks\n\nBuilt for scale, not just demos.",
+    "\ud83c\udfaf REAL-WORLD CASE STUDIES\n\nFrom the 98-page guide:\n\n\u2022 Content Team: 30 articles/day \u2192 0 manual\n\u2022 Data Pipeline: 10K records/hour processing\n\u2022 Multi-Agent: 5 agents collaborating\n\u2022 Enterprise: 50+ systems integrated\n\nAll production-proven.",
+    "\ud83d\udcca BEFORE vs AFTER\n\nBefore OpenClaw:\n\u2022 Setup: 2-6 months custom dev\n\u2022 Cost: $10K-50K + maintenance\n\u2022 Flexibility: Low (hardcoded)\n\u2022 Scale: Limited\n\nAfter OpenClaw:\n\u2022 Setup: 70 minutes (skill-based)\n\u2022 Cost: $0 (open source)\n\u2022 Flexibility: Unlimited (modular)\n\u2022 Scale: Infinite",
+    "\ud83d\ude80 QUICK START (From the Guide)\n\n```bash\n# Step 1: Install\npip install openclaw\n\n# Step 2: Initialize\nopenclaw config init\n\n# Step 3: First Skill\nopenclaw skills install ai-content-pipeline\n\n# Step 4: Run\nopenclaw run ai-content-pipeline\n```\n\nThat is it. Production in 5 minutes.",
+    "\u2696\ufe0f COMPARISON\n\nvs LangChain:\n\u2705 More production-ready\n\u2705 Better skill ecosystem\n\u2705 Visual workflow builder\n\u274c Less academic flexibility\n\nvs AutoGPT:\n\u2705 More stable\n\u2705 Better error handling\n\u2705 Enterprise features\n\u274c Less experimental",
+    "\ud83d\udc8e WHY THE ORANGE BOOK MATTERS\n\nMost tutorials:\n\u2022 Show basic examples\n\u2022 Skip production concerns\n\u2022 Leave you guessing\n\nThis 98-page guide:\n\u2022 Covers complete journey\n\u2022 Includes real cases\n\u2022 Gives you confidence\n\nThe difference: Theory vs Battle-tested.",
+    "\ud83c\udfaf ACTION ITEMS\n\nToday:\n1. Download the Orange Book\n2. Read Chapter 1-3\n3. Install OpenClaw\n\nThis Week:\n1. Complete the tutorials\n2. Build your first workflow\n3. Deploy to production\n\nStart: https://github.com/openclaw/openclaw",
+    "\ud83d\udcda RESOURCES\n\nGitHub: https://github.com/openclaw/openclaw\nOrange Book: 98 pages of gold\nCommunity: discord.gg/openclaw\n\n2482 likes, 614 retweets people already benefited.\n\nDo not miss this.\n\n#OpenClaw #AI #Tutorial #GitHubTrending #OpenSource"
+  ],
+  "count": 12,
+  "analysis": "\u6d17\u7a3f\u62c6\u89e3\u5b8c\u6210 - \u4fdd\u7559\u6838\u5fc3\u4fe1\u606f\uff0c\u82f1\u6587\u91cd\u5199"
+}

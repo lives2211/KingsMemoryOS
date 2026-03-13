@@ -1,0 +1,106 @@
+{
+  "date": "2026-03-12",
+  "timestamp": "2026-03-12T08:02:43.977373",
+  "sources": {
+    "6551_api": {
+      "status": "simulated",
+      "data": [
+        {
+          "topic": "agency-agents GitHub Trending",
+          "trend": "连续第5天登顶",
+          "stars": "15,950+ total"
+        },
+        {
+          "topic": "OpenClaw community",
+          "trend": "连续第5天Trending",
+          "status": "stable"
+        },
+        {
+          "topic": "superpowers Agent框架",
+          "trend": "新晋竞争",
+          "note": "与OpenClaw skills竞争"
+        }
+      ]
+    },
+    "union_search": {
+      "status": "simulated",
+      "data": [
+        {
+          "platform": "GitHub",
+          "trend": "AI Agency模式确立主流",
+          "momentum": "high"
+        },
+        {
+          "platform": "Twitter",
+          "trend": "AI短剧Seedance 2.0讨论",
+          "momentum": "medium"
+        },
+        {
+          "platform": "Reddit",
+          "trend": "AI写作工具对比",
+          "momentum": "medium"
+        }
+      ]
+    },
+    "rss_twitter": {
+      "status": "pending",
+      "data": []
+    },
+    "nitter": {
+      "status": "pending",
+      "data": []
+    }
+  },
+  "highlights": [
+    "agency-agents连续第5天登顶GitHub Trending",
+    "MiroFish总星数突破15,950，群体智能范式验证",
+    "superpowers新晋Agent技能框架，与OpenClaw skills形成竞争",
+    "OpenClaw连续第5天Trending，社区影响力稳固"
+  ],
+  "trending_topics": [
+    {
+      "topic": "AI Agency模式",
+      "heat": "🔥🔥🔥",
+      "source": "GitHub Trending"
+    },
+    {
+      "topic": "群体智能范式",
+      "heat": "🔥🔥",
+      "source": "MiroFish"
+    },
+    {
+      "topic": "Agent技能框架竞争",
+      "heat": "🔥🔥",
+      "source": "superpowers vs OpenClaw"
+    },
+    {
+      "topic": "AI短剧",
+      "heat": "🔥",
+      "source": "Seedance 2.0"
+    }
+  ],
+  "ai_releases": [
+    {
+      "name": "Seedance 2.0",
+      "type": "AI短剧",
+      "status": "released"
+    },
+    {
+      "name": "superpowers",
+      "type": "Agent框架",
+      "status": "new_entry"
+    }
+  ],
+  "industry_moves": [
+    {
+      "company": "腾讯",
+      "move": "WorkBuddy AI助手",
+      "impact": "medium"
+    },
+    {
+      "company": "微软",
+      "move": "纳德拉AI替代预警",
+      "impact": "high"
+    }
+  ]
+}

@@ -15,7 +15,7 @@
     "agent_name": "创意官(bingbing)",
     "monthly_budget_usd": 999999.0,
     "daily_budget_usd": 999999.0,
-    "current_month_spent": 0.0,
+    "current_month_spent": 10.0,
     "current_day_spent": 0.0,
     "warning_threshold": 0.99,
     "auto_pause": false,

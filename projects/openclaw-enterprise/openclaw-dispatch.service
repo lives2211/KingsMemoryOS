@@ -1,0 +1,15 @@
+[Unit]
+Description=OpenClaw Task Dispatch Server
+After=network.target
+
+[Service]
+Type=simple
+User=fengxueda
+WorkingDirectory=/home/fengxueda/.openclaw/workspace/projects/openclaw-enterprise
+ExecStart=/usr/bin/python3 dispatch_server.py
+Restart=always
+RestartSec=5
+Environment="PYTHONUNBUFFERED=1"
+
+[Install]
+WantedBy=multi-user.target

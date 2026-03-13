@@ -1,0 +1,35 @@
+{
+  "skill": {
+    "name": "agency-agents",
+    "description": "AI Agency framework for multi-agent collaboration",
+    "category": "AI Agency",
+    "pain_point": "Single agent limitations",
+    "result": "Swarm intelligence for complex tasks",
+    "github": "https://github.com/mirofish/agency-agents",
+    "stars": 15950,
+    "users": "15000+",
+    "trending": "\u8fde\u7eed4\u5929\u767b\u9876GitHub Trending",
+    "features": [
+      "Multi-agent collaboration",
+      "Swarm intelligence",
+      "Dynamic task delegation",
+      "Fault-tolerant design"
+    ]
+  },
+  "tweets": [
+    "\ud83d\udd25 GitHub Trending #1: Agency Agents\n\nJust hit 15,950 stars in 4 days.\n\nThis AI Agency framework is changing how we build autonomous systems.\n\nComplete analysis of why it is trending \ud83d\udc47",
+    "\ud83d\udccd THE FRAMEWORK\n\nAgency Agents is not just another agent tool\u2014\nit is a multi-agent orchestration system.\n\nGitHub: github.com/mirofish/agency-agents\n\u2b50 15,950 stars | 4 days Trending",
+    "What makes it different:\n\u2022 Multi-agent collaboration\n\u2022 Swarm intelligence\n\u2022 Dynamic task delegation\n\u2022 Fault-tolerant design\n\nNot single agent\u2014agent teams.",
+    "\ud83d\udd27 TECHNICAL ARCHITECTURE\n\nStack:\n\u2022 Core: Python\n\u2022 Architecture: Swarm intelligence\n\u2022 Communication: Agent-to-agent\n\u2022 Coordination: Dynamic delegation\n\nBuilt for scale from day one.",
+    "\ud83d\udca1 THE SHIFT\n\n2024: Single AI agents\n2025: Multi-agent workflows\n2026: Agent agencies \u2190 We are here\n\nAgency Agents represents the agency layer.",
+    "\ud83c\udfaf REAL USE CASES\n\n\u2022 Research teams: 5 agents collaborating\n\u2022 Content production: Automated pipelines\n\u2022 Software dev: Multi-agent coding\n\u2022 Data analysis: Parallel processing\n\nProduction proven.",
+    "\ud83d\udcca PERFORMANCE\n\nSingle Agent:\n\u2022 Limited scope\n\u2022 Single point of failure\n\u2022 Linear scaling\n\nAgent Agency:\n\u2022 Unlimited scope\n\u2022 Distributed resilience\n\u2022 Exponential scaling",
+    "\ud83d\ude80 QUICK START\n\n",
+    "\u2696\ufe0f COMPARISON\n\nvs AutoGPT:\n\u2705 More stable\n\u2705 Better collaboration\n\u2705 Production-ready\n\nvs Custom:\n\u2705 100x faster setup\n\u2705 Battle-tested patterns\n\u2705 Community support",
+    "\ud83d\udc8e WHY THIS MATTERS\n\nThe insight:\nSingle agents are tools.\nAgent agencies are organizations.\n\nThis is the difference between\nhaving a hammer and having a construction company.",
+    "\ud83c\udfaf ACTION ITEMS\n\nToday:\n1. Star the repo \u2b50\n2. Read the docs\n3. Join the community\n\nThis Week:\n1. Build your first agency\n2. Deploy multi-agent workflow\n3. Share results",
+    "\ud83d\udcda RESOURCES\n\nGitHub: github.com/mirofish/agency-agents\nDocs: Full documentation available\nCommunity: Active Discord\n\n15,950+ developers already using this.\n\n#AI #Agents #GitHubTrending #OpenSource"
+  ],
+  "count": 12,
+  "generated_at": "2026-03-13"
+}

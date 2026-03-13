@@ -1,0 +1,314 @@
+# OpenClaw + Paperclip 集成配置
+# 配置 6 个独立 Agent，通过 Paperclip API 管理
+
+agents:
+  defaults:
+    model: "kimi-k2.5"
+    skills: []
+    memorySearch:
+      enabled: true
+    sandbox:
+      mode: "inherit"
+  
+  list:
+    # Agent 1: Monica (总管/CEO)
+    - id: main
+      name: "Monica"
+      default: true
+      identity:
+        name: "龙虾总管"
+        role: "CEO"
+        emoji: "🦞"
+        creature: "AI Coordinator"
+        vibe: "专业、高效、统筹全局"
+      heartbeat:
+        enabled: true
+        prompt: "检查 Paperclip Dashboard，查看各 Agent 任务状态，处理待办事项"
+      tools:
+        allowed:
+          - "sessions_spawn"
+          - "message"
+          - "cron"
+          - "web_search"
+          - "web_fetch"
+      # Paperclip 集成配置
+      paperclip:
+        api_url: "http://localhost:3100"
+        agent_id: "main"
+        role: "CEO"
+        capabilities:
+          - "统筹"
+          - "决策"
+          - "协调"
+          - "审核"
+    
+    # Agent 2: yitai (技术官/CTO)
+    - id: yitai
+      name: "yitai"
+      identity:
+        name: "技术官"
+        role: "CTO"
+        emoji: "💻"
+        creature: "Code Master"
+        vibe: "技术极客、代码洁癖、高效执行"
+      heartbeat:
+        enabled: true
+        prompt: "检查技术任务队列，执行编程任务，代码审查"
+      tools:
+        allowed:
+          - "exec"
+          - "write"
+          - "edit"
+          - "read"
+          - "sessions_spawn"
+      paperclip:
+        api_url: "http://localhost:3100"
+        agent_id: "yitai"
+        role: "CTO"
+        capabilities:
+          - "编程"
+          - "开发"
+          - "架构"
+          - "脚本"
+    
+    # Agent 3: bingbing (创意官/CCO)
+    - id: bingbing
+      name: "bingbing"
+      identity:
+        name: "创意官"
+        role: "CCO"
+        emoji: "🎨"
+        creature: "Creative Genius"
+        vibe: "创意无限、设计敏锐、内容达人"
+      heartbeat:
+        enabled: true
+        prompt: "检查创作任务，生成内容，设计素材"
+      tools:
+        allowed:
+          - "write"
+          - "edit"
+          - "web_search"
+          - "web_fetch"
+          - "canvas"
+      paperclip:
+        api_url: "http://localhost:3100"
+        agent_id: "bingbing"
+        role: "CCO"
+        capabilities:
+          - "内容"
+          - "设计"
+          - "文案"
+          - "创意"
+    
+    # Agent 4: daping (检测官/QA Lead)
+    - id: daping
+      name: "daping"
+      identity:
+        name: "检测官"
+        role: "QA Lead"
+        emoji: "🔍"
+        creature: "Quality Guardian"
+        vibe: "严谨细致、数据敏感、测试专家"
+      heartbeat:
+        enabled: true
+        prompt: "检查待审核任务，执行质量检测，数据分析"
+      tools:
+        allowed:
+          - "exec"
+          - "read"
+          - "web_search"
+          - "web_fetch"
+      paperclip:
+        api_url: "http://localhost:3100"
+        agent_id: "daping"
+        role: "QA Lead"
+        capabilities:
+          - "检测"
+          - "分析"
+          - "测试"
+          - "数据"
+    
+    # Agent 5: spikey (审计官/Auditor)
+    - id: spikey
+      name: "spikey"
+      identity:
+        name: "审计官"
+        role: "Auditor"
+        emoji: "📊"
+        creature: "Audit Expert"
+        vibe: "复盘达人、质量把控、文档规范"
+      heartbeat:
+        enabled: true
+        prompt: "执行周复盘，质量审计，文档整理"
+      tools:
+        allowed:
+          - "read"
+          - "write"
+          - "edit"
+          - "web_search"
+      paperclip:
+        api_url: "http://localhost:3100"
+        agent_id: "spikey"
+        role: "Auditor"
+        capabilities:
+          - "审计"
+          - "复盘"
+          - "质量"
+          - "文档"
+    
+    # Agent 6: xiaohongcai (运营官/COO)
+    - id: xiaohongcai
+      name: "xiaohongcai"
+      identity:
+        name: "运营官"
+        role: "COO"
+        emoji: "📱"
+        creature: "Social Media Guru"
+        vibe: "社媒达人、运营专家、增长黑客"
+      heartbeat:
+        enabled: true
+        prompt: "检查社媒任务，内容发布，数据分析"
+      tools:
+        allowed:
+          - "message"
+          - "web_search"
+          - "web_fetch"
+          - "browser"
+      paperclip:
+        api_url: "http://localhost:3100"
+        agent_id: "xiaohongcai"
+        role: "COO"
+        capabilities:
+          - "社媒"
+          - "运营"
+          - "小红书"
+          - "公众号"
+
+# Paperclip 集成配置
+paperclip:
+  enabled: true
+  api_url: "http://localhost:3100"
+  webhook_url: "http://localhost:18788/webhook/paperclip"
+  
+  # 心跳同步
+  heartbeat_sync:
+    enabled: true
+    interval_minutes: 5
+  
+  # 预算同步
+  budget_sync:
+    enabled: true
+    check_interval_minutes: 10
+  
+  # 任务同步
+  task_sync:
+    enabled: true
+    auto_dispatch: true
+
+# 技能共享配置
+skills:
+  shared_dir: "~/.openclaw/skills"
+  auto_load: true
+  
+  # 所有 Agent 共享的技能
+  common:
+    - "ai-image-generation"
+    - "ai-video-generation"
+    - "ai-content-pipeline"
+    - "web_search"
+    - "web_fetch"
+  
+  # Agent 专属技能
+  per_agent:
+    yitai:
+      - "dev-planner"
+      - "proactive-solvr"
+    bingbing:
+      - "ai-social-media-content"
+      - "content-repurposing"
+    daping:
+      - "data-visualization"
+      - "ai-rag-pipeline"
+    spikey:
+      - "audit"
+      - "competitor-teardown"
+    xiaohongcai:
+      - "ai-social-media-content"
+      - "xiaohongshu-ops"
+
+# 任务委派规则
+delegation:
+  enabled: true
+  
+  # 自动委派规则
+  auto_rules:
+    - pattern: "编程|代码|脚本|开发"
+      assign_to: "yitai"
+    - pattern: "设计|内容|文案|创意"
+      assign_to: "bingbing"
+    - pattern: "检测|测试|分析|数据"
+      assign_to: "daping"
+    - pattern: "审计|复盘|质量|文档"
+      assign_to: "spikey"
+    - pattern: "社媒|运营|小红书|公众号"
+      assign_to: "xiaohongcai"
+  
+  # 审核规则
+  review_rules:
+    - task_type: "code"
+      reviewer: "spikey"
+    - task_type: "content"
+      reviewer: "daping"
+    - task_type: "design"
+      reviewer: "bingbing"
+
+# 预算控制
+budget:
+  enabled: true
+  
+  # 告警阈值
+  alert_threshold: 0.8
+  
+  # 自动暂停
+  auto_pause: true
+  
+  # 月度预算（USD）
+  monthly:
+    main: 100.0
+    yitai: 80.0
+    bingbing: 70.0
+    daping: 60.0
+    spikey: 60.0
+    xiaohongcai: 70.0
+
+# 定时任务
+cron:
+  # 站会（每天 10:30）
+  - name: "daily-standup"
+    schedule: "30 10 * * *"
+    agent: "main"
+    task: "生成站会报告"
+    
+  # 日报（每天 21:00）
+  - name: "daily-report"
+    schedule: "0 21 * * *"
+    agent: "main"
+    task: "生成日报"
+    
+  # 周复盘（每周五 21:00）
+  - name: "weekly-review"
+    schedule: "0 21 * * 5"
+    agent: "spikey"
+    task: "周复盘"
+    
+  # 预算同步（每 10 分钟）
+  - name: "budget-sync"
+    schedule: "*/10 * * * *"
+    agent: "main"
+    task: "同步 Paperclip 预算"
+    
+  # 任务同步（每 5 分钟）
+  - name: "task-sync"
+    schedule: "*/5 * * * *"
+    agent: "main"
+    task: "同步 Paperclip 任务"

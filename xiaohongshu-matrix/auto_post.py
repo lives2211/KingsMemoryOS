@@ -66,17 +66,69 @@ class AutoPoster:
         # 3. 发布到小红书（需要配置Cookie）
         print("\n3️⃣ 发布到小红书...")
         
-        # 检查是否有Cookie配置
-        env_file = self.base_path / f".env.{account}"
-        if not env_file.exists():
-            print(f"⚠️ 未找到账号配置: {env_file}")
-            print(f"请先创建配置文件，格式:")
-            print(f"XHS_COOKIE=your_cookie_here")
-            return False
+        # 3. 发布到小红书
+        print("\n3️⃣ 发布到小红书...")
         
-        # 调用发布脚本
-        # TODO: 实现实际发布逻辑
-        print("✅ 发布成功（模拟）")
+        # 使用 xhs CLI 工具发布
+        import subprocess
+        
+        # 检查并限制内容长度
+        title = result["title"]
+        content = result["content"]
+        
+        # 小红书限制：标题 + 正文 + 其他数据 < 260096 bytes
+        # 预留 10000 bytes 给其他字段，图片单独上传
+        MAX_TOTAL_LENGTH = 250000
+        
+        title_bytes = title.encode('utf-8')
+        content_bytes = content.encode('utf-8')
+        total_bytes = len(title_bytes) + len(content_bytes)
+        
+        print(f"   标题长度: {len(title)} 字符 ({len(title_bytes)} bytes)")
+        print(f"   正文长度: {len(content)} 字符 ({len(content_bytes)} bytes)")
+        print(f"   总长度: {total_bytes} bytes")
+        
+        # 如果超长，截断正文
+        if total_bytes > MAX_TOTAL_LENGTH:
+            print(f"   ⚠️ 内容超长，截断正文...")
+            # 保留标题，截断正文
+            max_content_bytes = MAX_TOTAL_LENGTH - len(title_bytes) - 100  # 留100字节余量
+            content = content_bytes[:max_content_bytes].decode('utf-8', errors='ignore')
+            print(f"   截断后正文: {len(content)} 字符 ({len(content.encode('utf-8'))} bytes)")
+        
+        # 准备图片路径（逗号分隔）
+        images_str = ",".join([str(img) for img in images])
+        
+        # 构建发布命令
+        cmd = [
+            "xhs", "post",
+            "--title", title,
+            "--body", content,
+            "--images", images_str
+        ]
+        
+        try:
+            # 执行发布命令
+            publish_result = subprocess.run(
+                cmd, 
+                capture_output=True, 
+                text=True, 
+                timeout=120
+            )
+            
+            if publish_result.returncode == 0:
+                print("✅ 发布成功！")
+                print(f"   输出: {publish_result.stdout[:200]}...")
+            else:
+                print(f"❌ 发布失败: {publish_result.stderr}")
+                return False
+                
+        except subprocess.TimeoutExpired:
+            print("❌ 发布超时")
+            return False
+        except Exception as e:
+            print(f"❌ 发布异常: {e}")
+            return False
         
         # 4. 标记为已发布
         self.scheduler.mark_posted(post_time, account)

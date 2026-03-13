@@ -1,0 +1,81 @@
+{
+  "timestamp": "2026-03-12T07:15:16.667727",
+  "total": 18,
+  "passed": 18,
+  "failed": 0,
+  "pass_rate": 100.0,
+  "results": [
+    {
+      "name": "预算管理器初始化",
+      "status": "PASSED"
+    },
+    {
+      "name": "预算检查",
+      "status": "PASSED"
+    },
+    {
+      "name": "成本记录",
+      "status": "PASSED"
+    },
+    {
+      "name": "仪表盘生成",
+      "status": "PASSED"
+    },
+    {
+      "name": "任务创建",
+      "status": "PASSED"
+    },
+    {
+      "name": "状态流转",
+      "status": "PASSED"
+    },
+    {
+      "name": "任务委派",
+      "status": "PASSED"
+    },
+    {
+      "name": "任务完成",
+      "status": "PASSED"
+    },
+    {
+      "name": "任务审核",
+      "status": "PASSED"
+    },
+    {
+      "name": "看板生成",
+      "status": "PASSED"
+    },
+    {
+      "name": "API 服务启动",
+      "status": "PASSED"
+    },
+    {
+      "name": "Stats API",
+      "status": "PASSED"
+    },
+    {
+      "name": "Agents API",
+      "status": "PASSED"
+    },
+    {
+      "name": "Tickets API",
+      "status": "PASSED"
+    },
+    {
+      "name": "Budget API",
+      "status": "PASSED"
+    },
+    {
+      "name": "组织架构初始化",
+      "status": "PASSED"
+    },
+    {
+      "name": "层级结构",
+      "status": "PASSED"
+    },
+    {
+      "name": "HTML 生成",
+      "status": "PASSED"
+    }
+  ]
+}

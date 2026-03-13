@@ -1,0 +1,100 @@
+# 小红书自动发布系统配置
+
+# 账号配置
+accounts:
+  # 默认账号
+  default: account_1
+  
+  # 账号列表
+  account_1:
+    alias: "主账号"
+    cookie_file: "cookies/account_1.json"
+    # 发布时间段配置（模拟真人作息）
+    publish_windows:
+      - { start: "08:00", end: "10:00", weight: 0.3 }  # 早上 30%
+      - { start: "12:00", end: "14:00", weight: 0.3 }  # 中午 30%
+      - { start: "19:00", end: "22:00", weight: 0.4 }  # 晚上 40%
+    # 每日最大发布数
+    max_daily_posts: 3
+    # 发布间隔（秒）
+    min_interval: 1800  # 最小30分钟
+    max_interval: 7200  # 最大2小时
+
+# 风控配置
+safety:
+  # 操作延迟配置（秒）
+  delays:
+    page_load: { min: 2, max: 5 }
+    typing: { min: 0.05, max: 0.2 }  # 每个字符输入延迟
+    click: { min: 0.5, max: 2 }
+    upload: { min: 3, max: 8 }
+    between_actions: { min: 1, max: 3 }
+  
+  # 浏览器指纹配置
+  fingerprint:
+    user_agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+    viewport: { width: 1920, height: 1080 }
+    locale: "zh-CN"
+    timezone: "Asia/Shanghai"
+  
+  # 随机行为配置
+  random_behavior:
+    # 是否模拟鼠标移动
+    simulate_mouse: true
+    # 是否模拟页面滚动
+    simulate_scroll: true
+    # 是否模拟阅读停顿
+    simulate_reading: true
+    reading_pause: { min: 2, max: 5 }
+
+# 内容配置
+content:
+  # 内容来源目录
+  source_dir: "../xiaohongshu"
+  # 图片生成配置
+  image_generation:
+    enabled: true
+    # 卡片主题：default, playful-geometric, neo-brutalism, botanical, professional, retro, terminal, sketch
+    theme: "playful-geometric"
+    # 分页模式：separator, auto-fit, auto-split, dynamic
+    mode: "auto-split"
+    width: 1080
+    height: 1440
+    dpr: 2
+  
+  # 话题标签配置
+  hashtags:
+    max_count: 10
+    # 默认标签
+    defaults:
+      - "AI工具"
+      - "效率神器"
+      - "打工人必备"
+
+# 浏览器配置
+browser:
+  # Chrome可执行文件路径（自动检测）
+  # chrome_path: "/usr/bin/google-chrome"
+  # CDP端口
+  cdp_port: 9222
+  # 无头模式（生产环境建议true）
+  headless: false
+  # 是否使用已有浏览器实例
+  reuse_existing: false
+  # 远程CDP配置（可选）
+  # remote_host: "127.0.0.1"
+  # remote_port: 9222
+
+# 日志配置
+logging:
+  level: "INFO"
+  file: "logs/auto-publisher.log"
+  max_size: "10MB"
+  backup_count: 7
+
+# 定时任务配置
+scheduler:
+  # 是否启用自动发布
+  enabled: false
+  # 检查新内容的时间（Cron表达式）
+  check_interval: "0 8,12,19 * * *"

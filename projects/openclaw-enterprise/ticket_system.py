@@ -249,9 +249,19 @@ class TicketSystem:
         ticket.artifacts = artifacts or []
         ticket.actual_cost = actual_cost
         
+        # 确保任务状态是 in_progress 才能流转到 review
+        if ticket.status == TicketStatus.BACKLOG.value:
+            self.update_status(ticket_id, TicketStatus.TODO.value)
+        if ticket.status == TicketStatus.TODO.value:
+            self.update_status(ticket_id, TicketStatus.IN_PROGRESS.value)
+        
         # 更新状态为审核中（需要审核后才算完成）
-        self.update_status(ticket_id, TicketStatus.REVIEW.value, 
+        success = self.update_status(ticket_id, TicketStatus.REVIEW.value, 
                          f"任务完成，等待审核")
+        
+        if not success:
+            logger.error(f"❌ 无法将任务状态更新为 review: {ticket_id}")
+            return False
         
         # 如果有父任务，检查是否所有子任务都完成
         if ticket.parent_ticket:

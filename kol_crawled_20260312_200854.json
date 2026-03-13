@@ -1,0 +1,755 @@
+{
+  "crawled_at": "2026-03-12T20:08:54.065612",
+  "total": 35,
+  "tweets": [
+    {
+      "id": "2031395382660354218",
+      "text": "华尔街藏了几十年的投研黑箱，被一套开源系统彻底砸穿了，\n\n4.6万GitHub星标，8千次分叉，MIT协议100%开源，一分钱不用花，\n\n你不用凑2.5万美元的开户门槛，不用付彭博终端的六位数年费，更不用给对冲基金交2%管理费+20%的业绩分成，\n\n18位带着华尔街传奇投资思维的智能体，直接在你的笔记本上运行。 https://t.co/DftYDdWEqH",
+      "author": "AYi_AInotes",
+      "likes": 1586,
+      "retweets": 468,
+      "created_at": "Tue Mar 10 15:42:55 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": true,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 1
+      }
+    },
+    {
+      "id": "2031412457537704358",
+      "text": "最近把 CLI 工具生态做了一轮大更新：\n\nxiaohongshu-cli — 逆向小红书 Web 接口，搜索/阅读/评论/发帖/点赞，终端里全搞定 \ntwitter-cli — 写接口全覆盖 + 反风控升级 + 架构重构 bilibili-cli — 结构化输出 + 错误分类 + 反风控 \ndiscord-cli /  tg-cli — 统一结构化输出\n\n五个项目全部支持",
+      "author": "jakevin7",
+      "likes": 796,
+      "retweets": 117,
+      "created_at": "Tue Mar 10 16:50:46 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": true,
+        "has_data": false,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": true,
+        "thread_marker": false,
+        "structure_score": 3
+      }
+    },
+    {
+      "id": "2031212582510674055",
+      "text": "这两天已经不下5个出版社编辑老师找我合作出版OpenClaw的书了。\n\n但自从去年完成过出版这件事之后，我确实对「出书」这事没啥光环了。所以呢，干脆整了份98页的OpenClaw橙皮书📙开源（链接见评论区）\n\n简单说一下里面有什么👇\nPart 1-2",
+      "author": "AlchainHust",
+      "likes": 530,
+      "retweets": 115,
+      "created_at": "Tue Mar 10 03:36:32 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": true,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": true,
+        "thread_marker": true,
+        "structure_score": 3
+      }
+    },
+    {
+      "id": "2031222020323848235",
+      "text": "解决你的 OpenClaw 龙虾的爬虫痛点\n智能算法突破防爬，狂揽 github2.3万星🤩\n\n最近很多铁汁问我有没有好用的爬虫插件给自己的龙虾爬数据，\n\n这个Scrapling 简直就是 OpenClaw 的超强外挂，真的好用，强推！\n\n它能智能绕过验证码和网页改版，实现24小时稳定数据采集，\n\n内置MCP模式精简内容， https://t.co/N14C3TwH1f",
+      "author": "AYi_AInotes",
+      "likes": 401,
+      "retweets": 101,
+      "created_at": "Tue Mar 10 04:14:02 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": true,
+        "has_solution": true,
+        "has_data": true,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 5
+      }
+    },
+    {
+      "id": "2024467001385660670",
+      "text": "下午转发了LobsterAI（有道龙虾），就是那个网易有道最新推出的桌面级Agent开源的消息之后，忍不住花了几个小时认真测了一圈。\n\n先说整体感受，确实有中国版OpenClaw的味道了，体感来说能力强、易上手、还比OpenClaw安全不少。 https://t.co/DP6yOsteqb",
+      "author": "AlchainHust",
+      "likes": 320,
+      "retweets": 72,
+      "created_at": "Thu Feb 19 12:52:00 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": true,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 1
+      }
+    },
+    {
+      "id": "2030220004566978897",
+      "text": "🤣 笑死，我的小龙虾自己适配了 bibigpt-skill，\n所以随手甩它一个 B 站、YouTube、小宇宙任何链接都能总结啦～\n\n关键是！！它还给自己写了篇博客，\n快给你的小龙虾也看看，聪明的都能自己安装上\n\nhttps://t.co/HpAseZhwJp https://t.co/NDF6eETinF",
+      "author": "Jimmy_JingLv",
+      "likes": 322,
+      "retweets": 70,
+      "created_at": "Sat Mar 07 09:52:23 +0000 2026",
+      "urls": [
+        "https://bibigpt.co/blog/posts/openclaw-bibigpt-skill-ai-agent-video-2026"
+      ],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": false,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": true,
+        "thread_marker": false,
+        "structure_score": 1
+      }
+    },
+    {
+      "id": "2031736821902901376",
+      "text": "我哥和女朋友都开始问我小龙虾是什么东西,怎么安装了.\n我赶紧让他两用飞书连接了一下我自己的 openclaw\n然后他问了几句之后，后面就再也没问了\n........\n这才是绝大部分人的现状",
+      "author": "jakevin7",
+      "likes": 360,
+      "retweets": 5,
+      "created_at": "Wed Mar 11 14:19:40 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": false,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 0
+      }
+    },
+    {
+      "id": "2031540041969963391",
+      "text": "卧槽，一行命令，就能开一家不用你管的全自动公司！\n\n它叫Paperclip，MIT协议完全开源，发布直接干到Trendshift榜首，GitHub三天揽了1.4K星标。\n\n之前爆火的OpenClaw，顶多算个全能打工仔，你还得天天给它派活盯进度，\n这个Paperclip，直接给你搭了一整家带全套规矩的完整公司。 https://t.co/flxu3Knh60",
+      "author": "AYi_AInotes",
+      "likes": 269,
+      "retweets": 83,
+      "created_at": "Wed Mar 11 01:17:44 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": true,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 1
+      }
+    },
+    {
+      "id": "2031329754775957853",
+      "text": "用 Paperclip，我开始运营“一人公司”了\n\n国外大神已经靠 Paperclip 跑出一人公司模型\n\n自动化接单、自动化交付、自动化增长，赚得盆满钵满\n\n我研究完才发现：\n\n这玩意儿不是“一个 Agent”\n\n而是“一个公司操作系统”\n\n它把你所有的 AI 工人\n\nOpenClaw、Claude Code、Cursor、Codex https://t.co/GCGMhlBPHc",
+      "author": "dashen_wang",
+      "likes": 267,
+      "retweets": 56,
+      "created_at": "Tue Mar 10 11:22:08 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": false,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 0
+      }
+    },
+    {
+      "id": "2028396451588460924",
+      "text": "给龙虾🦞做了一个PolyMarket跟单工具\n\n官方发了几天的 cli,好像也没看到什么水花\n我先拿来练练手啦\n能让 OpenClaw 龙虾直接接管、稳定跑、还带回测与风控 \n把“跟单”变成一套 Agent 可调用的 CLI 工作流（可回测、可配置、可复盘）。\n\n也可以让你的龙虾🦞在这个基础上修改\n\n具体的介绍： https://t.co/hVUeoziadO",
+      "author": "hunterweb303",
+      "likes": 262,
+      "retweets": 50,
+      "created_at": "Mon Mar 02 09:06:14 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": true,
+        "has_data": true,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 3
+      }
+    },
+    {
+      "id": "2031492830636683708",
+      "text": "如果你想给自己的 AI 小龙虾配备一个后端工程师，InsForge 就是最佳选择。\n\nOpenClaw 负责聊天和任务调度，但它不会建数据库、不会部署网站、不会管认证——直到遇见 InsForge。\n\nInsForge 是开源的 AI-native Supabase 替代品，专为 AI 编码 Agent",
+      "author": "Jimmy_JingLv",
+      "likes": 264,
+      "retweets": 39,
+      "created_at": "Tue Mar 10 22:10:08 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": true,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 1
+      }
+    },
+    {
+      "id": "2031357079966175720",
+      "text": "Anthropic 悄悄发布了一份免费的构建 Claude Skill 的 33页速查表\n\n大多数人可能永远不会阅读它，以下是你需要知道的一切：\n\n1️⃣什么是技能 Skill？\n把它想象成培训新员工，每次你现在打开Claude，都是第一天，没有记忆，你需要从头开始重新解释一切。\n\nSkill 是一个你一次性编写的指令文件夹，Claude https://t.co/bdsSvWjcMY",
+      "author": "wangray",
+      "likes": 214,
+      "retweets": 61,
+      "created_at": "Tue Mar 10 13:10:43 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": true,
+        "has_github": false,
+        "has_steps": true,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 2
+      }
+    },
+    {
+      "id": "2031708685886771482",
+      "text": "今天在这里更新了一版我的🦞OpenClaw橙皮书📙，98页-&gt;103页了\nhttps://t.co/KkBnzq1TxX https://t.co/BZ7K9i3ksW",
+      "author": "AlchainHust",
+      "likes": 220,
+      "retweets": 45,
+      "created_at": "Wed Mar 11 12:27:52 +0000 2026",
+      "urls": [
+        "https://my.feishu.cn/wiki/H27Iw9ussiaYbokymhncExtjnAh?from=from_copylink"
+      ],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": true,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 1
+      }
+    },
+    {
+      "id": "2031246432351523028",
+      "text": "最近我一直在用的工具：Telegram-CLI ！\n\n没想到上一条 twitter-cli 的帖子爆炸了。之前一些自己用的CLI 我准备也继续放出来。\n做这个工具主要是帮自己去筛选工作机会。\n\n如果你也想把 Telegram 变成 AI 可检索的本地知识流，应该会有用。\n\n里面相对麻烦的是  APP API https://t.co/NBj2Q0is1e",
+      "author": "jakevin7",
+      "likes": 214,
+      "retweets": 24,
+      "created_at": "Tue Mar 10 05:51:02 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": true,
+        "has_data": false,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 2
+      }
+    },
+    {
+      "id": "2031213731741602089",
+      "text": "两天前，她还在看教程学怎么安装 Claude Code\n\n两天后，她已经开始写自己的 Skill 了\n\n这种成长速度，看得我有点破防。\n\n不是因为她天赋异禀\n\n而是因为那种「我现在就想动手」的冲劲太难得了\n\n学不会就查，卡住就问，搞懂一点就立刻去做\n\n你能看到一个人从迷茫到开窍的瞬间在加速发生\n\n很多人以为做",
+      "author": "dashen_wang",
+      "likes": 188,
+      "retweets": 28,
+      "created_at": "Tue Mar 10 03:41:06 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": true,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 1
+      }
+    },
+    {
+      "id": "2022894613812646406",
+      "text": "OpenClaw的部署门槛终于被打下来了。\n\n百度App 搜索 OpenClaw 即可一键部署，不到 1 分钟。不用服务器，不用写代码，5000万Tokens白送。\n\n搜索框直接输指令，百度App本身就是控制台。 https://t.co/8BV0TGfaX4",
+      "author": "AlchainHust",
+      "likes": 167,
+      "retweets": 35,
+      "created_at": "Sun Feb 15 04:43:54 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": true,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 1
+      }
+    },
+    {
+      "id": "2029497437765714073",
+      "text": "你的龙虾赚钱了吗哈哈哈\n灵魂拷问\n\nClawQuant Trader — AI Agent 原生的量化研究终端  \n龙虾版 TradingView                                        \n                                                                  \n功能亮点：\n  - 深度集成 @binance 数据 https://t.co/ZqKlQ6t8oZ",
+      "author": "hunterweb303",
+      "likes": 162,
+      "retweets": 31,
+      "created_at": "Thu Mar 05 10:01:10 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": false,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 0
+      }
+    },
+    {
+      "id": "2030684527182610675",
+      "text": "这个 GitHub repo 7天获得了1万+stars，说能“用 AI 员工组建公司”\n\n我拉下来一看，结果是61个 prompt 文件，一行可执行代码都没有\n\nAgent 之间不通信、没有调度、没有记忆、没有反馈，还得你手动一个一个激活，手动传上下文，那就只是角色扮演\n\n真正的 AI 团队不是 prompt",
+      "author": "wangray",
+      "likes": 134,
+      "retweets": 16,
+      "created_at": "Sun Mar 08 16:38:14 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": true,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 1
+      }
+    },
+    {
+      "id": "2029832852528058502",
+      "text": "OpenClaw 24万星标了。研究了一圈，说说我的判断。\n\n其实大部分对比CC和OpenClaw的文章都在拿苹果比橘子。Claude Code处理代码库，OpenClaw处理数字生活，一个在终端跑，一个接WhatsApp、飞书、Telegram。这是产品定位不同，不是谁比谁强。\n\n在agent智力层面，我没看到代差。Claude",
+      "author": "AlchainHust",
+      "likes": 114,
+      "retweets": 7,
+      "created_at": "Fri Mar 06 08:13:59 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": false,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 0
+      }
+    },
+    {
+      "id": "2031611104993157300",
+      "text": "AI agent 时代的办公环境 多块显示屏是必不可少的 https://t.co/MnSyjs0V6R",
+      "author": "jakevin7",
+      "likes": 112,
+      "retweets": 3,
+      "created_at": "Wed Mar 11 06:00:07 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": false,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 0
+      }
+    },
+    {
+      "id": "2030455734484475986",
+      "text": "太高效了，来的真是时候\n有了这个名单，龙虾替我刷推了\n\n每隔一段时间，帮我扫描一下这些博主，\n根据记忆+偏好记忆+用户画像，抽取我的兴趣爱好\n找到我要的文章，学习好文章的内容，找到各种工具/优质开源项目等，主动给我建议，我可以躺着了\n\n最后感谢鱼总推荐：真不敢当，有幸上榜",
+      "author": "servasyy_ai",
+      "likes": 79,
+      "retweets": 11,
+      "created_at": "Sun Mar 08 01:29:05 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": true,
+        "has_data": false,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 2
+      }
+    },
+    {
+      "id": "2031263109651034307",
+      "text": "不仅要在群里表白，推特上也必须再次鸣谢一次原作者Roland @rwayne！这套SOP是大佬在社群里免费分享给群友使用的！！！！我来做了整理～\n\n就像大佬说的“好的内容应该开源”！！希望可以有更多的人可以利用这套SOP输出更优质的内容",
+      "author": "Graceruansu",
+      "likes": 74,
+      "retweets": 12,
+      "created_at": "Tue Mar 10 06:57:19 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": true,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": false,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 2
+      }
+    },
+    {
+      "id": "2031260068218548492",
+      "text": "新手小白想搭AI Agent终于不用头秃了！\n\nGitHub这个爆火的AI代理全家桶，\n7天狂揽10000+星😮\n\n直接把你的专属AI打工人团队配齐了！\n\n纯小白也能秒上手！\n\n不用懂代码，不用配复杂环境，\n\n全套配置直接给你搞定，工程师、设计师、运营、产品经理的专属AI代理，55+专业角色全给你配齐了， https://t.co/fFgmeLDQnJ",
+      "author": "AYi_AInotes",
+      "likes": 58,
+      "retweets": 19,
+      "created_at": "Tue Mar 10 06:45:13 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": true,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 1
+      }
+    },
+    {
+      "id": "2031238023535567275",
+      "text": "太魔幻了，龙虾能赚钱了😯\n\n这个老哥用OpenClaw4 周赚了 7000 美元💵💵💵\n\n这篇文章我花了 3 个多小时翻译和拆解，\n全部分享给大家，\n最后放了咱们大对数普通人能直接上手用的底层框架，以及 3 个最小可执行计划😉\n不管用不用OpenClaw都能用上，评论区一起学习交流👇\n#OpenClaw #AIAgent #AI搞钱 #创业 https://t.co/fAF8ByHwOb",
+      "author": "AYi_AInotes",
+      "likes": 55,
+      "retweets": 18,
+      "created_at": "Tue Mar 10 05:17:38 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": true,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": true,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": true,
+        "thread_marker": true,
+        "structure_score": 5
+      }
+    },
+    {
+      "id": "2029568304453685254",
+      "text": "娃，终于睡了。\n\n本来我买了一个 Claude Code Max 5X 想着工作效率可以翻 5 倍，但没想到最近带娃难度翻了 5 倍。娃，现在两岁了，最近几天小核桃总是突然就暴哭。 https://t.co/phWuPq0FFT",
+      "author": "Jimmy_JingLv",
+      "likes": 60,
+      "retweets": 1,
+      "created_at": "Thu Mar 05 14:42:45 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": true,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 1
+      }
+    },
+    {
+      "id": "2030087036049445017",
+      "text": "除了乔帮主文章里推荐skill\n\n这里也有很多龙虾用到的skill合集👇\nhttps://t.co/z7zfmxPEno",
+      "author": "servasyy_ai",
+      "likes": 44,
+      "retweets": 9,
+      "created_at": "Sat Mar 07 01:04:01 +0000 2026",
+      "urls": [
+        "https://github.com/VoltAgent/awesome-openclaw-skills"
+      ],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": false,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": true,
+        "structure_score": 1
+      }
+    },
+    {
+      "id": "2031794017030324656",
+      "text": "github 1k following ，推特也\n6k following 了。\n没想到涨的这么快。\n\nAI时代，大家都有点焦虑或者迷茫。\n我也是，我自己想用学习和 build 的来对抗这种迷茫。\n希望自己持续进步，做一些不一样的事情。 https://t.co/jkmXcI5fUl",
+      "author": "jakevin7",
+      "likes": 52,
+      "retweets": 0,
+      "created_at": "Wed Mar 11 18:06:57 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": false,
+        "has_github": false,
+        "has_steps": true,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 1
+      }
+    },
+    {
+      "id": "2031417846400479328",
+      "text": "最近一直在用的 discord-cli 的 也把它 public 出来了\n\n做这个工具主要是帮自己去看浪总 @cyrilxuq  的Discord 频道。去看股票的信息之类的。\n \n如果你也想把 discord 里面的信息进行检索、总结等\n应该会有用。\n\nhttps://t.co/v2RTrwNduC https://t.co/cGl5mgNhYM",
+      "author": "jakevin7",
+      "likes": 42,
+      "retweets": 5,
+      "created_at": "Tue Mar 10 17:12:11 +0000 2026",
+      "urls": [
+        "https://github.com/jackwener/discord-cli"
+      ],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": true,
+        "has_data": false,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 2
+      }
+    },
+    {
+      "id": "2030448913237582048",
+      "text": "Karpathy 分享的新项目 autoresearch，把 LLM 训练研究全自动化：\n\n- 核心是一个精简到 630 行的单 GPU 训练代码（nanochat）\n- 人只写 prompt（.md），AI agent 自己迭代训练代码（.py）\n- Agent 在 git feature branch 上自主循环：每轮跑 5 分钟完整训练 → 比较 validation loss →",
+      "author": "wangray",
+      "likes": 36,
+      "retweets": 7,
+      "created_at": "Sun Mar 08 01:01:59 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": true,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": true,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 3
+      }
+    },
+    {
+      "id": "2030492620666143178",
+      "text": "牛逼，Jason三天不到就做好了\n而且直接开源了，推荐👇\n\nhttps://t.co/CnPrDItClT",
+      "author": "servasyy_ai",
+      "likes": 35,
+      "retweets": 6,
+      "created_at": "Sun Mar 08 03:55:40 +0000 2026",
+      "urls": [
+        "https://github.com/zhuyansen/agent-skills-hub/"
+      ],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": true,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": true,
+        "structure_score": 2
+      }
+    },
+    {
+      "id": "2031536352760836600",
+      "text": "来了，BitfinexSentry @bitfinex_asia \n已发布一套Dashboard\n一套 AI Agent策略工具 cli+skill（龙虾、cc、codex 等适配）\n\n并且打通 polymarket\nDashboard板块\n聪明钱跟单：看顶级交易者方向\n融资套利：偏资金市场逻辑，不是纯猜方向\n爆仓猎人：抓级联之后的顺势或反转窗口 https://t.co/j9ZPpzpwHe",
+      "author": "hunterweb303",
+      "likes": 35,
+      "retweets": 6,
+      "created_at": "Wed Mar 11 01:03:05 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": true,
+        "has_data": false,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 2
+      }
+    },
+    {
+      "id": "2030645659024666771",
+      "text": "985该不该写提示词我不知道\n\n我只知道，我第一个开源项目，1.1k stars 提示词很多是来源于你，而且应该要再次升级才行\n\n好久没更新了，本来想等seedance2.0 API出来，将视频的提示词生成也一起更新\n\n苦于API迟迟没看到，我想就算更新了，限制也一堆\n\nhttps://t.co/LYjh41Ion5",
+      "author": "servasyy_ai",
+      "likes": 34,
+      "retweets": 3,
+      "created_at": "Sun Mar 08 14:03:47 +0000 2026",
+      "urls": [
+        "https://github.com/huangserva/skill-prompt-generator"
+      ],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": false,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 0
+      }
+    },
+    {
+      "id": "2030943655641678198",
+      "text": "养龙虾只要三步：\n1.  准备充足的钱，要么买个macmini，要么买个云主机\n2. 准备充足的钱，买\"饲料\"，养虾比较费Token\n3. 准备充足的时间，按照网上的各种教程安装好\n\n然后第一步，劝退了99%的人，因为不肯花钱~ https://t.co/OCgEsCeYAx",
+      "author": "cnyzgkc",
+      "likes": 33,
+      "retweets": 3,
+      "created_at": "Mon Mar 09 09:47:55 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": true,
+        "has_github": false,
+        "has_steps": true,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 2
+      }
+    },
+    {
+      "id": "2029361279190876575",
+      "text": "想尝鲜的朋友们，bibi CLI 终于来啦～\n可以给 Claude Code、OpenClaw 安装一下对应的 Agent Skill\nhttps://t.co/tU0m7LnaUB\n\nhhhh 其实前几天 AI 就写好了，我一直没来得及测 😂 https://t.co/QsZwyHcTue",
+      "author": "Jimmy_JingLv",
+      "likes": 33,
+      "retweets": 2,
+      "created_at": "Thu Mar 05 01:00:07 +0000 2026",
+      "urls": [
+        "https://github.com/JimmyLv/bibigpt-skill"
+      ],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": false,
+        "has_data": true,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 1
+      }
+    },
+    {
+      "id": "2031211246956216478",
+      "text": "超棒的思路！@ThisisHan1_ 给 OpenClaw 做了 GPS 感知的轻量方案，skill 包开箱即用\n\n利用开源免费的 OwnTracks 发坐标到本地 Node 服务器，agent 就能知道你在哪\n\n亮点：\n• 零依赖，一个 node scripts/server.mjs 就跑起来\n• places.json 把坐标映射成\"在家\"\"在公司\"这种语义\n• 数据全本地，不过云",
+      "author": "wangray",
+      "likes": 32,
+      "retweets": 2,
+      "created_at": "Tue Mar 10 03:31:14 +0000 2026",
+      "urls": [],
+      "has_chinese": true,
+      "structure": {
+        "has_hook": false,
+        "has_problem": false,
+        "has_solution": true,
+        "has_data": false,
+        "has_github": false,
+        "has_steps": false,
+        "has_cta": false,
+        "thread_marker": false,
+        "structure_score": 2
+      }
+    }
+  ]
+}

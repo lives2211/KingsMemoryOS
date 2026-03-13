@@ -1,0 +1,185 @@
+{
+  "date": "2026-03-13",
+  "generated_at": "2026-03-13 08:15",
+  "agent": "Dwight (Morning Intel)",
+  "sources": {
+    "github_trending": "completed",
+    "news_verge": "completed",
+    "news_techcrunch": "timeout",
+    "twitter": "pending",
+    "rsshub": "pending"
+  },
+  "github_trending": [
+    {
+      "rank": 1,
+      "repo": "microsoft/BitNet",
+      "description": "Official inference framework for 1-bit LLMs",
+      "stars": 32275,
+      "stars_today": 2149,
+      "language": "Python"
+    },
+    {
+      "rank": 2,
+      "repo": "fishaudio/fish-speech",
+      "description": "SOTA Open Source TTS",
+      "stars": 26335,
+      "stars_today": 637,
+      "language": "Python"
+    },
+    {
+      "rank": 3,
+      "repo": "langflow-ai/openrag",
+      "description": "OpenRAG is a comprehensive, single package Retrieval-Augmented Generation platform built on Langflow, Docling, and Opensearch",
+      "stars": 1505,
+      "stars_today": 322,
+      "language": "Python"
+    },
+    {
+      "rank": 4,
+      "repo": "InsForge/InsForge",
+      "description": "Give agents everything they need to ship fullstack apps. The backend built for agentic development",
+      "stars": 3079,
+      "stars_today": 263,
+      "language": "TypeScript"
+    },
+    {
+      "rank": 5,
+      "repo": "vectorize-io/hindsight",
+      "description": "Hindsight: Agent Memory That Learns",
+      "stars": 3058,
+      "stars_today": 217,
+      "language": "Python"
+    },
+    {
+      "rank": 6,
+      "repo": "alibaba/page-agent",
+      "description": "JavaScript in-page GUI agent. Control web interfaces with natural language",
+      "stars": 5897,
+      "stars_today": 1205,
+      "language": "TypeScript"
+    },
+    {
+      "rank": 7,
+      "repo": "obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works",
+      "stars": 79882,
+      "stars_today": 1706,
+      "language": "Shell"
+    },
+    {
+      "rank": 8,
+      "repo": "NousResearch/hermes-agent",
+      "description": "The agent that grows with you",
+      "stars": 6133,
+      "stars_today": 1264,
+      "language": "Python"
+    },
+    {
+      "rank": 9,
+      "repo": "666ghj/MiroFish",
+      "description": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物",
+      "stars": 19065,
+      "stars_today": 1857,
+      "language": "Python"
+    },
+    {
+      "rank": 10,
+      "repo": "google-ai-edge/LiteRT",
+      "description": "LiteRT, successor to TensorFlow Lite. Google's On-device framework for high-performance ML & GenAI deployment on edge platforms",
+      "stars": 1656,
+      "stars_today": 13,
+      "language": "C++"
+    },
+    {
+      "rank": 11,
+      "repo": "msitarzewski/agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas",
+      "stars": 34719,
+      "stars_today": 4168,
+      "language": "Shell"
+    },
+    {
+      "rank": 12,
+      "repo": "google/A2UI",
+      "description": "Agent-to-User Interface framework",
+      "stars": 12580,
+      "stars_today": 225,
+      "language": "TypeScript"
+    },
+    {
+      "rank": 13,
+      "repo": "anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins",
+      "stars": 10234,
+      "stars_today": 150,
+      "language": "Python"
+    }
+  ],
+  "news_headlines": [
+    {
+      "source": "The Verge",
+      "title": "Adobe CEO Shantanu Narayen is stepping down after 18 years",
+      "summary": "Narayen told investors AI-first products should be Adobe's next billion-dollar business. He will leave once the board names a successor.",
+      "category": "industry_moves",
+      "impact": "high"
+    },
+    {
+      "source": "The Verge",
+      "title": "Amazon's 'sassy' personality style for Alexa Plus has a lot of warning labels",
+      "summary": "New 'Sassy' personality for Alexa Plus features razor-sharp wit and playful sarcasm. Adults-only and requires additional verification.",
+      "category": "product_launch",
+      "impact": "medium"
+    },
+    {
+      "source": "The Verge",
+      "title": "Anthropic's Claude AI can respond with charts, diagrams, and other visuals now",
+      "summary": "Claude gains visual response capabilities including charts and diagrams.",
+      "category": "product_update",
+      "impact": "medium"
+    },
+    {
+      "source": "The Verge",
+      "title": "Perplexity's Personal Computer turns your spare Mac into an AI agent",
+      "summary": "Perplexity launches new product to convert spare Mac computers into AI agents.",
+      "category": "product_launch",
+      "impact": "medium"
+    },
+    {
+      "source": "The Verge",
+      "title": "OpenAI's Sora video generator is reportedly coming to ChatGPT",
+      "summary": "Sora integration with ChatGPT is reportedly in development.",
+      "category": "rumor",
+      "impact": "high"
+    },
+    {
+      "source": "The Verge",
+      "title": "Meta acquires Moltbook, the Reddit-like network for AI agents",
+      "summary": "Meta acquires platform described as Reddit-like network for AI agents.",
+      "category": "acquisition",
+      "impact": "high"
+    },
+    {
+      "source": "The Verge",
+      "title": "Thinking Machines Lab is partnering with Nvidia",
+      "summary": "Mira Murati's Thinking Machines Lab announces long-term gigawatt scale strategic partnership with Nvidia for AI model training.",
+      "category": "partnership",
+      "impact": "high"
+    },
+    {
+      "source": "The Verge",
+      "title": "Yann LeCun's startup raised $1 billion for AI world models",
+      "summary": "Advance Machine Intelligence, LeCun's Paris-based startup, raised $1 billion to build AI world models.",
+      "category": "funding",
+      "impact": "high"
+    }
+  ],
+  "key_insights": [
+    "agency-agents continues dominance with 34,719 stars and 4,168 stars today - AI Agency pattern is now mainstream",
+    "MiroFish breaks 19,000 stars (19,065 total) with 1,857 stars today - swarm intelligence gaining traction",
+    "superpowers hits 79,882 stars with 1,706 today - established as leading agent skills framework",
+    "Adobe CEO departure signals major transition to AI-first business model",
+    "Meta acquiring Moltbook shows social platforms for AI agents emerging as new category",
+    "Yann LeCun's $1B raise for world models indicates next AI paradigm shift",
+    "Microsoft BitNet (1-bit LLMs) trending #1 with 2,149 stars today - efficiency focus"
+  ]
+}

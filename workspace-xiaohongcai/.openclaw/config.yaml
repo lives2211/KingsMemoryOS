@@ -1,0 +1,33 @@
+# 小红财 Agent 配置
+# 修复 MiniMax 输入长度限制问题
+
+model:
+  primary: "bailian/kimi-k2.5"  # 主模型：Kimi（无长度限制）
+  fallback:
+    - "minimax/MiniMax-M2.1"     # 备选：MiniMax
+    - "openrouter/anthropic/claude-3.5-sonnet"
+
+# 上下文压缩设置 - 关键配置
+context:
+  max_tokens: 4000              # 限制最大 token 数（MiniMax 安全范围）
+  max_input_chars: 200000       # 限制输入字符数（MiniMax 限制 260096）
+  compression_threshold: 0.7    # 达到 70% 时自动压缩
+  
+# 会话管理 - 不自动清理，用户手动控制
+session:
+  max_history: 8                # 最多保留 8 轮对话
+  auto_compact: false           # 不自动压缩，用户手动开启新对话
+  
+# 请求限制
+request:
+  max_content_length: 150000    # 单次请求最大 150KB
+  truncate_long_messages: true  # 自动截断过长消息
+  
+# 错误处理
+error_handling:
+  retry_count: 3
+  fallback_on_error: true       # 出错时自动切换模型
+  error_patterns:
+    - "Range of input length"   # MiniMax 长度错误
+    - "InvalidParameter"        # 参数错误
+    - "context length"          # 上下文长度错误

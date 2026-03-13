@@ -1,0 +1,21 @@
+# 小红书自动发布系统依赖
+# 基础依赖
+playwright>=1.40.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+Pillow>=10.0.0
+markdown>=3.5.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# 风控规避
+random-user-agent>=1.0.0
+fake-useragent>=1.4.0
+
+# 日志与监控
+loguru>=0.7.0
+schedule>=1.2.0
+
+# 数据处理
+pydantic>=2.5.0
+pyyaml>=6.0.1
