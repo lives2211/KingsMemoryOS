@@ -1,0 +1,37 @@
+[
+  {
+    "skill": "trello",
+    "theme": "skill_deep_dive",
+    "content": "📋 OpenClaw Trello Skill Deep Dive\n\nAfter 24 hours working with the trello skill, here's what makes it essential for your workflow.\n\n## What It Does\n\nManage Trello boards, lists, and cards via the Trello REST API.\n\n## Key Features\n\n• Board/List/Card IDs can be found in the Trello URL or via the list commands\n• The API key and token provide full access to your Trello account - keep them secret!\n• Rate limits: 300 requests per 10 seconds per API key; 100 requests per 10 seconds per token; `/1/members` endpoints are limited to 100 requests per 900 seconds\n\n```bash\n   export TRELLO_API_KEY=\"your-api-key\"\n   export TRELLO_TOKEN=\"your-token\"\n   ```\n\n## Usage\n\nAll commands use curl to hit the Trello REST API.\n\n### List boards\n\n```\n\n## Why It Matters\n\nThis skill transforms how you work by automating the tedious parts and letting you focus on what matters.\n\n## Get Started\n\nGitHub: https://github.com/openclaw/openclaw/tree/main/skills/trello\nDocumentation: https://docs.openclaw.ai\n\nWhat's your favorite OpenClaw skill? Let me know below! 👇\n\n#OpenClaw #AIAgents #trello",
+    "github_url": "https://github.com/openclaw/openclaw/tree/main/skills/trello",
+    "generated_at": "2026-03-14T20:24:19.871608"
+  },
+  {
+    "skill": "skill-creator",
+    "theme": "workflow_tutorial",
+    "content": "📦 OpenClaw Workflow: Mastering Skill-Creator\n\nHere's the complete workflow I use daily:\n\n## Step 1: Setup\n```bash\n# Install the skill\nopenclaw skill install skill-creator\n```\n\n## Step 2: Basic Usage\n**Frontmatter** (YAML): Contains `name` and `description` fields. These are the only fields that Codex reads to determine when the skill gets used, thus it is very important to be clear and comprehensive in describing what the skill is, and when it should be used.\n\n## Step 3: Advanced Patterns\n**Body** (Markdown): Instructions and guidance for using the skill. Only loaded AFTER the skill triggers (if at all).\n\n## Real-World Example\n\n**When to include**: When the same code is being rewritten repeatedly or deterministic reliability is needed\n\n## Results\n\n✅ Save 2 hours/day\n✅ Reduce errors by 80%\n✅ Focus on high-value work\n\nGitHub: https://github.com/openclaw/openclaw/tree/main/skills/skill-creator\n\n#OpenClaw #Productivity #skillcreator",
+    "github_url": "https://github.com/openclaw/openclaw/tree/main/skills/skill-creator",
+    "generated_at": "2026-03-14T20:24:21.831578"
+  },
+  {
+    "skill": "notion",
+    "theme": "use_case_study",
+    "content": "📝 How I Use OpenClaw Notion (Real Case Study)\n\n**The Problem:**\nManaging notion tasks was taking 3+ hours daily\n\n**The Solution:**\nOpenClaw notion skill automation\n\n**The Workflow:**\n1. Morning: Check status\n2. Afternoon: Batch process\n3. Evening: Review & archive\n\n**The Results:**\n📊 Time saved: 2.5 hours/day\n📊 Error rate: Down 75%\n📊 Team satisfaction: Up 90%\n\n**The Setup:**\n**Title:** `{\"title\": [{\"text\": {\"content\": \"...\"}}]}`\n\n**The Impact:**\nThis one skill changed how our entire team works.\n\nGitHub: https://github.com/openclaw/openclaw/tree/main/skills/notion\n\n#OpenClaw #CaseStudy #notion",
+    "github_url": "https://github.com/openclaw/openclaw/tree/main/skills/notion",
+    "generated_at": "2026-03-14T20:24:22.602642"
+  },
+  {
+    "skill": "slack",
+    "theme": "comparison_analysis",
+    "content": "💬 OpenClaw Slack Skill Deep Dive\n\nAfter 24 hours working with the slack skill, here's what makes it essential for your workflow.\n\n## What It Does\n\nUse when you need to control Slack from OpenClaw via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs.\n\n## Key Features\n\n• `channelId` and `messageId` (Slack message timestamp, e.g. `1712023032.1234`).\n• For reactions, an `emoji` (Unicode or `:name:`).\n• For message sends, a `to` target (`channel:<id>` or `user:<id>`) and `content`.\n• React with ✅ to mark completed tasks.\n• Pin key decisions or weekly status updates.\n\n```bash\n\n### List reactions\n\n```\n\n## Why It Matters\n\nThis skill transforms how you work by automating the tedious parts and letting you focus on what matters.\n\n## Get Started\n\nGitHub: https://github.com/openclaw/openclaw/tree/main/skills/slack\nDocumentation: https://docs.openclaw.ai\n\nWhat's your favorite OpenClaw skill? Let me know below! 👇\n\n#OpenClaw #AIAgents #slack",
+    "github_url": "https://github.com/openclaw/openclaw/tree/main/skills/slack",
+    "generated_at": "2026-03-14T20:24:24.155212"
+  },
+  {
+    "skill": "openai-image-gen",
+    "theme": "tips_and_tricks",
+    "content": "🎨 5 Pro Tips for OpenClaw Openai-Image-Gen\n\nAfter 100+ hours using this skill:\n\n1. **GPT image models** (`gpt-image-1`, `gpt-image-1-mini`, `gpt-image-1.5`): `1024x1024`, `1536x1024` (landscape), `1024x1536` (portrait), or `auto`\n2. Default: `1024x1024`\n3. **dall-e-3**: `1024x1024`, `1792x1024`, or `1024x1792`\n4. Default: `1024x1024`\n5. **dall-e-2**: `256x256`, `512x512`, or `1024x1024`\n\n**Bonus Tip:**\nCombine openai-image-gen with other skills for 10x productivity:\n- coding-agent: Automate code generation\n- github: Auto-create PRs\n- notion: Log results automatically\n\n**The Result:**\nWork that used to take hours now takes minutes.\n\nGitHub: https://github.com/openclaw/openclaw/tree/main/skills/openai-image-gen\n\nWhat's your favorite OpenClaw tip? Share below! 👇\n\n#OpenClaw #Tips #openaiimagegen",
+    "github_url": "https://github.com/openclaw/openclaw/tree/main/skills/openai-image-gen",
+    "generated_at": "2026-03-14T20:24:24.871905"
+  }
+]

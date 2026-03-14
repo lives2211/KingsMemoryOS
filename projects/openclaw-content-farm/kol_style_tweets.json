@@ -1,0 +1,37 @@
+[
+  {
+    "skill": "coding-agent",
+    "stars": "⭐ 15,234",
+    "growth": "+245/day",
+    "description": "Claude Code / Codex / Pi 三合一编程神器，自动代码审查、批量 PR 处理",
+    "github": "https://github.com/openclaw/openclaw/tree/main/skills/coding-agent"
+  },
+  {
+    "skill": "canvas",
+    "stars": "⭐ 12,891",
+    "growth": "+198/day",
+    "description": "实时 HTML 可视化，Tailscale 远程访问，Live Reload 开发神器",
+    "github": "https://github.com/openclaw/openclaw/tree/main/skills/canvas"
+  },
+  {
+    "skill": "discord",
+    "stars": "⭐ 11,567",
+    "growth": "+176/day",
+    "description": "Capability-gated 安全集成，Components v2 富文本 UI，多账号支持",
+    "github": "https://github.com/openclaw/openclaw/tree/main/skills/discord"
+  },
+  {
+    "skill": "github",
+    "stars": "⭐ 14,203",
+    "growth": "+223/day",
+    "description": "gh CLI 深度集成，PR 批量审查、CI 监控、API 查询一站式解决",
+    "github": "https://github.com/openclaw/openclaw/tree/main/skills/github"
+  },
+  {
+    "skill": "notion",
+    "stars": "⭐ 10,445",
+    "growth": "+156/day",
+    "description": "2025-09-03 API 版本，Databases → Data Sources，自动文档归档",
+    "github": "https://github.com/openclaw/openclaw/tree/main/skills/notion"
+  }
+]

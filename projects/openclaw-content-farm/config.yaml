@@ -1,0 +1,95 @@
+# OpenClaw Content Farm Configuration
+# 自动化推文生成系统配置
+
+# 监控配置
+monitoring:
+  # 中文 KOL 账号列表（需要监控的 Twitter/X 账号）
+  kol_accounts:
+    - "@wangxiaolou"      # 日拱一卒王小楼
+    - "@candycion"        # 你的账号（用于发现互动）
+    # 添加更多 KOL 账号...
+  
+  # 关键词过滤
+  keywords:
+    - "OpenClaw"
+    - "skill"
+    - "agent"
+    - "Claude Code"
+    - "Codex"
+    - "GitHub"
+    - "自动化"
+    - "工作流"
+  
+  # 监控频率（分钟）
+  check_interval: 30
+
+# 内容生成配置
+content_generation:
+  # 每天生成推文数量
+  tweets_per_day: 5
+  
+  # 发布间隔（分钟）
+  publish_interval: 180  # 3小时一篇
+  
+  # 推文主题轮换
+  themes:
+    - "skill_deep_dive"      # Skill 深度分析
+    - "workflow_tutorial"    # 工作流教程
+    - "use_case_study"       # 使用案例
+    - "comparison_analysis"  # 对比分析
+    - "tips_and_tricks"      # 技巧分享
+  
+  # 推文长度（字符）
+  tweet_length:
+    min: 2000
+    max: 5000
+
+# GitHub 配置
+github:
+  # OpenClaw 官方仓库
+  main_repo: "openclaw/openclaw"
+  skills_path: "skills"
+  
+  # 需要优先分析的 skills（热门/新发布）
+  priority_skills:
+    - "coding-agent"
+    - "canvas"
+    - "discord"
+    - "github"
+    - "notion"
+    - "obsidian"
+    - "slack"
+    - "trello"
+    - "1password"
+    - "gemini"
+    - "openai-image-gen"
+    - "spotify-player"
+    - "session-logs"
+    - "skill-creator"
+
+# 发布配置
+publishing:
+  # X/Twitter 配置
+  twitter:
+    enabled: true
+    use_premium: true  # 使用 X Premium 长推文
+    max_chars: 25000
+  
+  # 发布时间段（24小时制）
+  publish_hours:
+    - 8:00
+    - 11:00
+    - 14:00
+    - 17:00
+    - 20:00
+
+# 输出配置
+output:
+  # 生成的推文保存路径
+  save_path: "./generated_tweets/"
+  
+  # 日志路径
+  log_path: "./logs/"
+  
+  # 备份路径
+  backup_path: "./backup/"

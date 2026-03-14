@@ -139,7 +139,10 @@ class XHSPublisher:
             raise RuntimeError("浏览器未启动")
         
         logger.info("检查登录状态...")
-        await self.page.goto("https://www.xiaohongshu.com")
+        try:
+            await self.page.goto("https://www.xiaohongshu.com", timeout=30000, wait_until="domcontentloaded")
+        except Exception as e:
+            logger.warning(f"页面加载部分超时: {e}")
         await self._random_delay('page_load')
         
         # 检查是否有登录按钮
@@ -162,18 +165,39 @@ class XHSPublisher:
             raise RuntimeError("浏览器未启动")
         
         logger.info("启动登录流程，请扫码...")
-        await self.page.goto("https://www.xiaohongshu.com")
+        try:
+            await self.page.goto("https://www.xiaohongshu.com", timeout=60000)
+        except Exception as e:
+            logger.warning(f"页面加载超时，继续尝试: {e}")
+        
         await self._random_delay('page_load')
         
-        # 点击登录按钮
-        login_btn = await self.page.query_selector('.login-btn, .login-button')
-        if login_btn:
-            await login_btn.click()
-            await self._random_delay('click')
+        # 关闭可能的弹窗
+        try:
+            close_btn = await self.page.query_selector('.reds-mask, .close-btn, .close')
+            if close_btn:
+                await close_btn.click()
+                await self._random_delay('click')
+                logger.info("关闭弹窗")
+        except:
+            pass
+        
+        # 尝试点击登录按钮
+        try:
+            login_btn = await self.page.query_selector('.login-btn, .login-button, [class*="login"]')
+            if login_btn:
+                await login_btn.click()
+                await self._random_delay('click')
+                logger.info("点击登录按钮")
+        except Exception as e:
+            logger.warning(f"点击登录按钮失败: {e}")
         
         # 等待扫码完成（手动）
-        logger.info("请在浏览器中完成扫码登录...")
-        await asyncio.sleep(30)  # 给用户30秒扫码时间
+        logger.info("=" * 50)
+        logger.info("请在浏览器中完成扫码登录")
+        logger.info("等待90秒，请尽快扫码...")
+        logger.info("=" * 50)
+        await asyncio.sleep(90)  # 给用户90秒扫码时间
         
         # 保存登录状态
         await self._save_cookies()
