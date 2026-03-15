@@ -1,0 +1,107 @@
+{
+  "date": "2026-03-15",
+  "timestamp": "2026-03-15T01:10:00Z",
+  "source": "daily-intel-collection",
+  "markets": {
+    "bitcoin": {
+      "symbol": "BTC",
+      "price_usd": 70995,
+      "change_24h_percent": 0.36,
+      "high_24h": 71281,
+      "low_24h": 70417,
+      "market_cap": 1420050263333,
+      "volume_24h": 22830733652,
+      "rank": 1
+    },
+    "ethereum": {
+      "symbol": "ETH",
+      "price_usd": 2088.45,
+      "change_24h_percent": -0.01,
+      "high_24h": 2105.38,
+      "low_24h": 2063.26,
+      "market_cap": 252059346888,
+      "volume_24h": 9009464306,
+      "rank": 2
+    },
+    "tether": {
+      "symbol": "USDT",
+      "price_usd": 1.00,
+      "change_24h_percent": 0.0017,
+      "market_cap": 184048466132,
+      "rank": 3
+    },
+    "bnb": {
+      "symbol": "BNB",
+      "price_usd": 655.82,
+      "change_24h_percent": 0.25,
+      "market_cap": 89452982027,
+      "rank": 4
+    },
+    "xrp": {
+      "symbol": "XRP",
+      "price_usd": 1.41,
+      "change_24h_percent": 0.80,
+      "market_cap": 86104353009,
+      "rank": 5
+    }
+  },
+  "news_headlines": [
+    {
+      "title": "Ethereum Foundation sells 5,000 ether to Tom Lee's BitMine in $10.2 million deal",
+      "source": "CoinDesk",
+      "sentiment": "positive",
+      "category": "institutional"
+    },
+    {
+      "title": "Boris Johnson calling Bitcoin a 'Ponzi' draws rebuttal from Michael Saylor",
+      "source": "CoinDesk",
+      "sentiment": "negative",
+      "category": "regulation"
+    },
+    {
+      "title": "Wall Street pushes tokenized stocks, but institutions aren't eager to trade them",
+      "source": "CoinDesk",
+      "sentiment": "negative",
+      "category": "defi"
+    },
+    {
+      "title": "Brazil industry giants decry stablecoin tax threat",
+      "source": "CoinDesk",
+      "sentiment": "negative",
+      "category": "regulation"
+    },
+    {
+      "title": "The math behind Strategy's path to 1 million bitcoin by end of 2026",
+      "source": "CoinDesk",
+      "sentiment": "positive",
+      "category": "analysis"
+    },
+    {
+      "title": "Trump Meme Coin price skyrockets as holders vie for exclusive event access",
+      "source": "Decrypt",
+      "sentiment": "positive",
+      "category": "meme"
+    },
+    {
+      "title": "Hoskinson might be wrong about the future of decentralized compute",
+      "source": "CoinDesk Opinion",
+      "sentiment": "neutral",
+      "category": "opinion"
+    },
+    {
+      "title": "Why Verifiable Data Is the Missing Layer in AI: Walrus",
+      "source": "Decrypt",
+      "sentiment": "neutral",
+      "category": "ai"
+    }
+  ],
+  "market_summary": {
+    "btc_dominance": "stable",
+    "overall_sentiment": "neutral",
+    "key_levels": {
+      "btc_support": 70400,
+      "btc_resistance": 71300
+    }
+  },
+  "collected_at": "2026-03-15T01:10:30Z"
+}

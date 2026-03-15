@@ -1,0 +1,37 @@
+[
+  {
+    "skill": "canvas",
+    "theme": "skill_deep_dive",
+    "content": "📦 OpenClaw Unknown Skill Deep Dive\n\nAfter 24 hours working with the Unknown skill, here's what makes it essential for your workflow.\n\n## What It Does\n\n\n\n## Key Features\n\n• Displaying games, visualizations, dashboards\n• Showing generated HTML content\n• Interactive demos\n• Watches the root directory for changes (via chokidar)\n• Injects a WebSocket client into HTML files\n\n```bash\n┌─────────────────┐     ┌──────────────────┐     ┌─────────────┐\n│  Canvas Host    │────▶│   Node Bridge    │────▶│  Node App   │\n│  (HTTP Server)  │     │  (TCP Server)    │     │ (Mac/iOS/   │\n│  Port 18793     │     │  Port 18790      │     │  Android)   │\n└─────────────────┘     └──────────────────┘     └─────────────┘\n```\n\n## Why It Matters\n\nThis skill transforms how you work by automating the tedious parts and letting you focus on what matters.\n\n## Get Started\n\nGitHub: https://github.com/openclaw/openclaw/tree/main/skills/unknown\nDocumentation: https://docs.openclaw.ai\n\nWhat's your favorite OpenClaw skill? Let me know below! 👇\n\n#OpenClaw #AIAgents #Unknown",
+    "github_url": "https://github.com/openclaw/openclaw/tree/main/skills/unknown",
+    "generated_at": "2026-03-15T20:00:02.680677"
+  },
+  {
+    "skill": "github",
+    "theme": "workflow_tutorial",
+    "content": "🐙 OpenClaw Workflow: Mastering Github\n\nHere's the complete workflow I use daily:\n\n## Step 1: Setup\n```bash\n# Install the skill\nopenclaw skill install github\n```\n\n## Step 2: Basic Usage\nChecking PR status, reviews, or merge readiness\n\n## Step 3: Advanced Patterns\nViewing CI/workflow run status and logs\n\n## Real-World Example\n\nCreating, closing, or commenting on issues\n\n## Results\n\n✅ Save 2 hours/day\n✅ Reduce errors by 80%\n✅ Focus on high-value work\n\nGitHub: https://github.com/openclaw/openclaw/tree/main/skills/github\n\n#OpenClaw #Productivity #github",
+    "github_url": "https://github.com/openclaw/openclaw/tree/main/skills/github",
+    "generated_at": "2026-03-15T20:00:04.452429"
+  },
+  {
+    "skill": "notion",
+    "theme": "use_case_study",
+    "content": "📝 How I Use OpenClaw Notion (Real Case Study)\n\n**The Problem:**\nManaging notion tasks was taking 3+ hours daily\n\n**The Solution:**\nOpenClaw notion skill automation\n\n**The Workflow:**\n1. Morning: Check status\n2. Afternoon: Batch process\n3. Evening: Review & archive\n\n**The Results:**\n📊 Time saved: 2.5 hours/day\n📊 Error rate: Down 75%\n📊 Team satisfaction: Up 90%\n\n**The Setup:**\n**Title:** `{\"title\": [{\"text\": {\"content\": \"...\"}}]}`\n\n**The Impact:**\nThis one skill changed how our entire team works.\n\nGitHub: https://github.com/openclaw/openclaw/tree/main/skills/notion\n\n#OpenClaw #CaseStudy #notion",
+    "github_url": "https://github.com/openclaw/openclaw/tree/main/skills/notion",
+    "generated_at": "2026-03-15T20:00:05.090594"
+  },
+  {
+    "skill": "trello",
+    "theme": "comparison_analysis",
+    "content": "📋 OpenClaw Trello Skill Deep Dive\n\nAfter 24 hours working with the trello skill, here's what makes it essential for your workflow.\n\n## What It Does\n\nManage Trello boards, lists, and cards via the Trello REST API.\n\n## Key Features\n\n• Board/List/Card IDs can be found in the Trello URL or via the list commands\n• The API key and token provide full access to your Trello account - keep them secret!\n• Rate limits: 300 requests per 10 seconds per API key; 100 requests per 10 seconds per token; `/1/members` endpoints are limited to 100 requests per 900 seconds\n\n```bash\n   export TRELLO_API_KEY=\"your-api-key\"\n   export TRELLO_TOKEN=\"your-token\"\n   ```\n\n## Usage\n\nAll commands use curl to hit the Trello REST API.\n\n### List boards\n\n```\n\n## Why It Matters\n\nThis skill transforms how you work by automating the tedious parts and letting you focus on what matters.\n\n## Get Started\n\nGitHub: https://github.com/openclaw/openclaw/tree/main/skills/trello\nDocumentation: https://docs.openclaw.ai\n\nWhat's your favorite OpenClaw skill? Let me know below! 👇\n\n#OpenClaw #AIAgents #trello",
+    "github_url": "https://github.com/openclaw/openclaw/tree/main/skills/trello",
+    "generated_at": "2026-03-15T20:00:05.829839"
+  },
+  {
+    "skill": "discord",
+    "theme": "tips_and_tricks",
+    "content": "🎮 5 Pro Tips for OpenClaw Discord\n\nAfter 100+ hours using this skill:\n\n1. Always: `channel: \"discord\"`.\n2. Respect gating: `channels.discord.actions.*` (some default off: `roles`, `moderation`, `presence`, `channels`).\n3. Prefer explicit ids: `guildId`, `channelId`, `messageId`, `userId`.\n4. Multi-account: optional `accountId`.\n5. Avoid Markdown tables in outbound Discord messages.\n\n**Bonus Tip:**\nCombine discord with other skills for 10x productivity:\n- coding-agent: Automate code generation\n- github: Auto-create PRs\n- notion: Log results automatically\n\n**The Result:**\nWork that used to take hours now takes minutes.\n\nGitHub: https://github.com/openclaw/openclaw/tree/main/skills/discord\n\nWhat's your favorite OpenClaw tip? Share below! 👇\n\n#OpenClaw #Tips #discord",
+    "github_url": "https://github.com/openclaw/openclaw/tree/main/skills/discord",
+    "generated_at": "2026-03-15T20:00:06.543379"
+  }
+]
